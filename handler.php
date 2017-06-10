@@ -18,19 +18,15 @@
 <body>
 <?php
 
+//print_r($_POST);
+
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $to = 'domosed365365@gmail.com, fricadelka78@gmail.com';
 $subject = "Nulevka.online";
 
 
-if (isset($_GET['submit-free-consult'])) {    
-    echo '<strong>Тема: бесплатная консультация</strong><br>';
-    echo 'Имя: ' . $_GET['name-free-consult'] . '<br>';
-    echo 'Телефон: ' . $_GET['phone-free-consult'] . '<br>';
-    echo 'Email: ' . $_GET['email-free-consult'] . '<br>';
-    echo 'Спасибо за заявку!';
-    
+if (isset($_GET['submit-free-consult'])) {  
     $message = '<html><head><title></title></head><body>
                         <strong>Тема: бесплатная консультация</strong><br>' .
                         'Имя: ' . $_GET['name-free-consult'] . '<br>' .
@@ -42,12 +38,6 @@ if (isset($_GET['submit-free-consult'])) {
 
 
 if (isset($_GET['submit-envd-ooo'])) {
-    echo '<strong>Тема: ЕНВД - ООО</strong><br>';
-    echo 'Имя: ' . $_GET['name-envd-ooo'] . '<br>';
-    echo 'Телефон: ' . $_GET['phone-envd-ooo'] . '<br>';
-    echo 'Email: ' . $_GET['email-envd-ooo'] . '<br>';
-    echo 'Спасибо за заявку!';
-
     $message = '<html><head><title></title></head><body>
     <strong>Тема: ЕНВД - ООО</strong><br>' .
     'Имя: ' . $_GET['name-envd-ooo'] . '<br>' .
@@ -58,14 +48,8 @@ if (isset($_GET['submit-envd-ooo'])) {
 }
 
 if (isset($_GET['submit-not-know-ooo'])) {
-    echo '<strong>Тема: Не знаю - ООО</strong><br>';
-    echo 'Имя: ' . $_GET['name-not-know-ooo'] . '<br>';
-    echo 'Телефон: ' . $_GET['phone-not-know-ooo'] . '<br>';
-    echo 'Email: ' . $_GET['email-not-know-ooo'] . '<br>';
-    echo 'Спасибо за заявку!';
-
     $message = '<html><head><title></title></head><body>
-<strong>Тема: Не знаю - ООО</strong><br>' .
+    <strong>Тема: Не знаю - ООО</strong><br>' .
             'Имя: ' . $_GET['name-not-know-ooo'] . '<br>' .
             'Телефон: ' . $_GET['phone-not-know-ooo'] . '<br>' .
             'Email: ' . $_GET['email-not-know-ooo'] . '<br></body></html>';
@@ -75,12 +59,6 @@ if (isset($_GET['submit-not-know-ooo'])) {
 
 
 if (isset($_GET['submit-envd-ip'])) {
-    echo '<strong>Тема: ЕНВД - ИП</strong><br>';
-    echo 'Имя: ' . $_GET['name-envd-ip'] . '<br>';
-    echo 'Телефон: ' . $_GET['phone-envd-ip'] . '<br>';
-    echo 'Email: ' . $_GET['email-envd-ip'] . '<br>';
-    echo 'Спасибо за заявку!';
-
     $message = '<html><head><title></title></head><body>
     <strong>Тема: ЕНВД - ИП</strong><br>' .
     'Имя: ' . $_GET['name-envd-ip'] . '<br>' .
@@ -91,12 +69,6 @@ if (isset($_GET['submit-envd-ip'])) {
 }
 
 if (isset($_GET['submit-patent-ip'])) {
-    echo '<strong>Тема: Патент - ИП</strong><br>';
-    echo 'Имя: ' . $_GET['name-patent-ip'] . '<br>';
-    echo 'Телефон: ' . $_GET['phone-patent-ip'] . '<br>';
-    echo 'Email: ' . $_GET['email-patent-ip'] . '<br>';
-    echo 'Спасибо за заявку!';
-
     $message = '<html><head><title></title></head><body>
     <strong>Тема: Патент - ИП</strong><br>' .
     'Имя: ' . $_GET['name-patent-ip'] . '<br>' .
@@ -122,8 +94,81 @@ if (isset($_GET['submit-not-know-ip'])) {
 
     mail($to, $subject, $message, $headers);
 }
+
+
+function findQuart () {
+    $str = '<b>Периоды:</b><br>';
+    if (isset($_POST['qrt-2-2017'])) { $str = $str . '2-й квартал 2017 года' . '<br>'; }
+    if (isset($_POST['qrt-1-2017'])) { $str = $str . '1-й квартал 2017 года' . '<br>'; }
+    if (isset($_POST['qrt-4-2016'])) { $str = $str . '4-й квартал 2016 года' . '<br>'; }
+    if (isset($_POST['qrt-4-2016'])) { $str = $str . '4-й квартал 2016 года' . '<br>'; }
+    if (isset($_POST['qrt-3-2016'])) { $str = $str . '3-й квартал 2016 года' . '<br>'; }
+    if (isset($_POST['qrt-2-2016'])) { $str = $str . '2-й квартал 2016 года' . '<br>'; }
+    if (isset($_POST['qrt-1-2016'])) { $str = $str . '1-й квартал 2015 года' . '<br>'; }
+    if (isset($_POST['qrt-3-2015'])) { $str = $str . '3-й квартал 2015 года' . '<br>'; }
+    if (isset($_POST['qrt-2-2015'])) { $str = $str . '2-й квартал 2015 года' . '<br>'; }
+    if (isset($_POST['qrt-1-2015'])) { $str = $str . '1-й квартал 2015 года' . '<br>'; } 
+    if (isset($_POST['qrt-3-2014'])) { $str = $str . '3-й квартал 2014 года' . '<br>'; }
+    if (isset($_POST['qrt-2-2014'])) { $str = $str . '2-й квартал 2014 года' . '<br>'; }   
     
+    return $str;   
+}
+
+function findUK () {
+    if (isset($_POST['deposit-uk-4-2016'])) {
+        if ($_POST['deposit-uk-4-2016'] == 'money-0') {
+            echo 'УК: Деньги-4-2016<br>';
+        } else echo 'УК: Имущество-4-2016<br>';
+    }
+    if (isset($_POST['deposit-uk-4-2015'])) {
+        if ($_POST['deposit-uk-4-2015'] == 'money-1') {
+            echo 'УК: Деньги-4-2015<br>';
+        } else echo 'УК: Имущество-4-2015<br>';
+    }
+    if (isset($_POST['deposit-uk-4-2014'])) {
+        if ($_POST['deposit-uk-4-2014'] == 'money-2') {
+            echo 'УК: Деньги-4-2014<br>';
+        } else echo 'УК: Имущество-4-2014<br>';
+    }
+    echo '<br>';
+}
+
+function showQuestOOO () {
+    if ($_POST['tranz'] == 'tranz-yes') { echo '<b>Движения по р/с: </b>да<br>'; }
+    if ($_POST['tranz'] == 'tranz-no') { echo '<b>Движения по р/с: </b>нет<br>'; }    
+}
+
+function isGeneralTaxSystem () {
+    if ($_POST['tax-system'] == 'general') {
+        return '<b>Система налогообложения:</b> общая<br><br>';
+    }
+}
+
+if (isset($_POST['submit-go-to-pay-ooo'])) {
+    echo 'Спасибо за заявку!'; 
+    
+    $message = '<html><head><title></title></head><body>
+    <b>Кто обращается:</b> ООО<br><br>' .
+    isGeneralTaxSystem () .
+    findQuart () .
+
+    '</body></html>';
+
+    mail($to, $subject, $message, $headers);
+    
+//        echo '<b>Кто обращается:</b> ООО<br><br>';
+//        if ($_POST['tax-system'] == 'general') {        
+//        echo '<b>Система налогообложения:</b> общая<br><br>';
+//        findQuart();
+//        findUK ();
+//    }
+//    showQuestOOO ();    
+}
+    
+
 ?>
+    
+
 
 </body>
 </html>

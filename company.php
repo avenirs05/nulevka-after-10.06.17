@@ -82,7 +82,7 @@ $(function () {
 <div class="row">
 <div class="col-md-12 visible-md-block visible-lg-block">
 
-<form id="form-tax-system" action="handler.php" method="get" novalidate>
+<form id="form-tax-system" action="handler.php" method="post" novalidate>
     <div id="div-tax-system">
         <span class="question">Выберите систему налогообложения:</span><br>        
         <label id="label-choice-tax-system" class="tax-system-answer" for="general"><input id="general" type="radio" name="tax-system" value="general">Общая</label><br>
@@ -183,14 +183,14 @@ $(function () {
     </div>
 
     <div id="div-from-customer" style="display: none;">
-        <div style="display: none;"><div>Количество работников</div><input id="cnt-workers" type="text" name="cnt-workers"></div>
-        <div style="display: none;"><div>СНИЛС директора</div><input id="snils-dir" type="text" name="snils-dir"></div>
-        <div><div>Название компании</div><input id="company-name" type="text" name="company-name"></div>
-        <div><div>Инн</div><input id="inn" type="text" name="inn"></div>
-        <div><div>Телефон</div><input id="phone" type="text" name="phone"></div>
-        <div><div>Email</div><input id="email" type="text" name="email"></div>
+        <div style="display: none;"><div>Количество работников</div><input id="cnt-workers" type="text" name="cnt-workers-ooo"></div>
+        <div style="display: none;"><div>СНИЛС директора</div><input id="snils-dir" type="text" name="snils-dir-ooo"></div>
+        <div><div>Название компании</div><input id="company-name" type="text" name="name-ooo"></div>
+        <div><div>Инн</div><input id="inn" type="text" name="inn-ooo"></div>
+        <div><div>Телефон</div><input id="phone" type="text" name="phone-ooo"></div>
+        <div><div>Email</div><input id="email" type="text" name="email-ooo"></div>
         <button id="btn-back-will-send" onclick="return false;">Назад</button>
-        <input type="submit" value="Перейти к оплате" name="go-to-pay">
+        <input type="submit" value="Перейти к оплате" name="submit-go-to-pay-ooo">
     </div>
 
     <div id="dialog-callback" title="" style="display: none;">

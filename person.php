@@ -181,7 +181,7 @@ $(function () {
         <div><div>Кем выдан</div><input id="pasp-who-issue-ip" type="text" name="pasp-who-issue-ip"></div>
         <div><div>Код подразделения</div><input id="pasp-kp-ip" type="text" name="pasp-kp-ip"></div>        
         <button id="btn-back-will-send-ip" onclick="return false;">Назад</button>
-        <input type="submit" value="Перейти к оплате" name="go-to-pay-ip">
+        <input type="submit" value="Перейти к оплате" name="submit-go-to-pay-ip">
     </div>
 
     <div id="dialog-callback" title="" style="display: none;">
