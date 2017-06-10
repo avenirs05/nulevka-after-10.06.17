@@ -6,10 +6,12 @@
                 <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
             </div>
             <div class="modal-body">
-                <div><div>Имя</div><input id="name-envd" type="text" name="name-free-consult" form="form-tax-system"></div>
-                <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-free-consult" form="form-tax-system"></div>
-                <div><div>Email</div><input id="email-envd" type="text" name="email-free-consult" form="form-tax-system"></div>
-                <input type="submit" value="Отправить" name="submit-free-consult" form="form-tax-system">
+                <form action="handler.php" method="get">
+                    <div><div>Имя</div><input id="name-envd" type="text" name="name-free-consult"></div>
+                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-free-consult"></div>
+                    <div><div>Email</div><input id="email-envd" type="text" name="email-free-consult"></div>
+                    <input type="submit" value="Отправить" name="submit-free-consult">
+                </form>
             </div>
         </div>
     </div>

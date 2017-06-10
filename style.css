@@ -435,7 +435,6 @@ input[type="checkbox"] {
 .modal-body input[type="text"] {
 	width: 416px;
 	height: 35px;
-	/*background-color: #F1F1F1;*/
 }
 
 .modal-body form > div {
@@ -469,7 +468,7 @@ input[type="checkbox"] {
 	background-color: #B03A32;
 }
 
-.modal-body > div:first-child {
+.modal-body > form div:first-child {
 	margin-top: 5px;
 }
 
