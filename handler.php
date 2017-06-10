@@ -25,7 +25,6 @@ $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $to = 'domosed365365@gmail.com, fricadelka78@gmail.com';
 $subject = "Nulevka.online";
 
-
 if (isset($_GET['submit-free-consult'])) {  
     $message = '<html><head><title></title></head><body>
                         <strong>Тема: бесплатная консультация</strong><br>' .
@@ -35,7 +34,6 @@ if (isset($_GET['submit-free-consult'])) {
 
     mail($to, $subject, $message, $headers);
 }
-
 
 if (isset($_GET['submit-envd-ooo'])) {
     $message = '<html><head><title></title></head><body>
@@ -57,7 +55,6 @@ if (isset($_GET['submit-not-know-ooo'])) {
     mail($to, $subject, $message, $headers);
     }
 
-
 if (isset($_GET['submit-envd-ip'])) {
     $message = '<html><head><title></title></head><body>
     <strong>Тема: ЕНВД - ИП</strong><br>' .
@@ -78,7 +75,6 @@ if (isset($_GET['submit-patent-ip'])) {
     mail($to, $subject, $message, $headers);
 }
 
-
 if (isset($_GET['submit-not-know-ip'])) {
     echo '<strong>Тема: Не знаю - ИП</strong><br>';
     echo 'Имя: ' . $_GET['name-not-know-ip'] . '<br>';
@@ -95,6 +91,12 @@ if (isset($_GET['submit-not-know-ip'])) {
     mail($to, $subject, $message, $headers);
 }
 
+function isGeneralOrSimpleTaxSystem () {
+    if ($_POST['tax-system'] == 'general') {
+        return '<b>Система налогообложения:</b> общая<br><br>';
+    } else
+        return '<b>Система налогообложения:</b> упрощенная<br><br>';
+}
 
 function findQuart () {
     $str = '<b>Периоды:</b><br>';
@@ -135,16 +137,93 @@ function findUK () {
     return $str .= '<br>';  
 }
 
-function showQuestOOO () {
-    if ($_POST['tranz'] == 'tranz-yes') { echo '<b>Движения по р/с: </b>да<br>'; }
-    if ($_POST['tranz'] == 'tranz-no') { echo '<b>Движения по р/с: </b>нет<br>'; }    
+function showQuestTranz () {
+    if (isset($_POST['tranz'])) {
+        if ($_POST['tranz'] == 'tranz-yes') { 
+            return '<b>Движения по р/с: </b>да<br><br>';
+        }
+        if ($_POST['tranz'] == 'tranz-no') { 
+            return '<b>Движения по р/с: </b>нет<br><br>'; 
+        }  
+    } 
 }
 
-function isGeneralOrSimpleTaxSystem () {
-    if ($_POST['tax-system'] == 'general') {
-        return '<b>Система налогообложения:</b> общая<br><br>';
-    } else return '<b>Система налогообложения:</b> упрощенная<br><br>';
+function showBase () {
+    if (isset($_POST['base'])) {
+        if ($_POST['base'] == 'base-inc') { 
+            return '<b>База налогообложения: </b>Доходы<br><br>';
+        }
+        if ($_POST['base'] == 'base-inc-spent') { 
+            return '<b>База налогообложения: </b>Доходы - Расходы<br><br>'; 
+        }  
+    } 
 }
+
+function showOneFace () {
+    if (isset($_POST['one-face'])) {
+        if ($_POST['one-face'] == 'one-face-yes') { 
+            return '<b>Директор и учредитель в одном лице: </b>Да<br><br>';
+        }
+        if ($_POST['one-face'] == 'one-face-no') { 
+            return '<b>Директор и учредитель в одном лице: </b>Нет<br><br>'; 
+        }  
+    } 
+}
+
+function showSzvQuest () {
+    if (isset($_POST['szv-quest'])) {
+        if ($_POST['szv-quest'] == 'szv-quest-yes') { 
+            return '<b>Сдавали ли Вы форму СЗВ-М: </b>Да<br><br>';
+        }
+        if ($_POST['szv-quest'] == 'szv-quest-no') { 
+            return '<b>Сдавали ли Вы форму СЗВ-М: </b>Нет<br><br>'; 
+        }  
+    } 
+}
+
+function showCntWorkers () {
+    if (isset($_POST['cnt-workers-ooo'])) {
+        return '<b>Количество работников: </b>' . $_POST['cnt-workers-ooo'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showSnilsDir () {
+    if (isset($_POST['snils-dir-ooo'])) {
+        return '<b>СНИЛС директора: </b>' . $_POST['snils-dir-ooo'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showNameOfCompany () {
+    if (isset($_POST['name-ooo'])) {
+        return '<b>Название компании: </b>' . $_POST['name-ooo'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showInnOfCompany () {
+    if (isset($_POST['inn-ooo'])) {
+        return '<b>ИНН: </b>' . $_POST['inn-ooo'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showPhoneOfCompany () {
+    if (isset($_POST['phone-ooo'])) {
+        return '<b>Телефон: </b>' . $_POST['phone-ooo'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showEmailOfCompany () {
+    if (isset($_POST['email-ooo'])) {
+        return '<b>Email: </b>' . $_POST['email-ooo'] . 
+               '<br><br>'; 
+    } 
+}
+
+
 
 if (isset($_POST['submit-go-to-pay-ooo'])) {
     echo 'Спасибо за заявку!'; 
@@ -153,19 +232,20 @@ if (isset($_POST['submit-go-to-pay-ooo'])) {
     <b>Кто обращается:</b> ООО<br><br>' .
     isGeneralOrSimpleTaxSystem() .
     findQuart() .
-    findUK () .
-
+    findUK() .
+    showQuestTranz() .
+    showBase() .
+    showOneFace() .
+    showSzvQuest() .
+    showCntWorkers() .
+    showSnilsDir() .
+    showNameOfCompany() .
+    showInnOfCompany () .
+    showPhoneOfCompany() .
+    showEmailOfCompany() .
     '</body></html>';
-
-    mail($to, $subject, $message, $headers);
     
-//        echo '<b>Кто обращается:</b> ООО<br><br>';
-//        if ($_POST['tax-system'] == 'general') {        
-//        echo '<b>Система налогообложения:</b> общая<br><br>';
-//        findQuart();
-//        findUK ();
-//    }
-//    showQuestOOO ();    
+    mail($to, $subject, $message, $headers);  
 }
     
 
