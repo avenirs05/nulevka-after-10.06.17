@@ -101,36 +101,38 @@ function findQuart () {
     if (isset($_POST['qrt-2-2017'])) { $str = $str . '2-й квартал 2017 года' . '<br>'; }
     if (isset($_POST['qrt-1-2017'])) { $str = $str . '1-й квартал 2017 года' . '<br>'; }
     if (isset($_POST['qrt-4-2016'])) { $str = $str . '4-й квартал 2016 года' . '<br>'; }
-    if (isset($_POST['qrt-4-2016'])) { $str = $str . '4-й квартал 2016 года' . '<br>'; }
     if (isset($_POST['qrt-3-2016'])) { $str = $str . '3-й квартал 2016 года' . '<br>'; }
     if (isset($_POST['qrt-2-2016'])) { $str = $str . '2-й квартал 2016 года' . '<br>'; }
-    if (isset($_POST['qrt-1-2016'])) { $str = $str . '1-й квартал 2015 года' . '<br>'; }
+    if (isset($_POST['qrt-1-2016'])) { $str = $str . '1-й квартал 2016 года' . '<br>'; }
+    if (isset($_POST['qrt-4-2015'])) { $str = $str . '4-й квартал 2015 года' . '<br>'; }
     if (isset($_POST['qrt-3-2015'])) { $str = $str . '3-й квартал 2015 года' . '<br>'; }
-    if (isset($_POST['qrt-2-2015'])) { $str = $str . '2-й квартал 2015 года' . '<br>'; }
-    if (isset($_POST['qrt-1-2015'])) { $str = $str . '1-й квартал 2015 года' . '<br>'; } 
-    if (isset($_POST['qrt-3-2014'])) { $str = $str . '3-й квартал 2014 года' . '<br>'; }
-    if (isset($_POST['qrt-2-2014'])) { $str = $str . '2-й квартал 2014 года' . '<br>'; }   
+    if (isset($_POST['qrt-2-2015'])) { $str = $str . '2-й квартал 2015 года' . '<br>'; } 
+    if (isset($_POST['qrt-1-2015'])) { $str = $str . '1-й квартал 2015 года' . '<br>'; }
+    if (isset($_POST['qrt-4-2014'])) { $str = $str . '4-й квартал 2014 года' . '<br>'; }
+    if (isset($_POST['qrt-3-2014'])) { $str = $str . '3-й квартал 2014 года' . '<br>'; } 
+    if (isset($_POST['qrt-2-2014'])) { $str = $str . '2-й квартал 2014 года' . '<br>'; }
     
     return $str;   
 }
 
 function findUK () {
+    $str = '';
     if (isset($_POST['deposit-uk-4-2016'])) {
         if ($_POST['deposit-uk-4-2016'] == 'money-0') {
-            echo 'УК: Деньги-4-2016<br>';
-        } else echo 'УК: Имущество-4-2016<br>';
+            $str .= 'УК: Деньги-4-2016<br>';
+        } else $str .= 'УК: Имущество-4-2016<br>';
     }
     if (isset($_POST['deposit-uk-4-2015'])) {
         if ($_POST['deposit-uk-4-2015'] == 'money-1') {
-            echo 'УК: Деньги-4-2015<br>';
-        } else echo 'УК: Имущество-4-2015<br>';
+            $str .= 'УК: Деньги-4-2015<br>';
+        } else $str .= 'УК: Имущество-4-2015<br>';
     }
     if (isset($_POST['deposit-uk-4-2014'])) {
         if ($_POST['deposit-uk-4-2014'] == 'money-2') {
-            echo 'УК: Деньги-4-2014<br>';
-        } else echo 'УК: Имущество-4-2014<br>';
+            $str .= 'УК: Деньги-4-2014<br>';
+        } else $str .= 'УК: Имущество-4-2014<br>';
     }
-    echo '<br>';
+    return $str .= '<br>';  
 }
 
 function showQuestOOO () {
@@ -138,10 +140,10 @@ function showQuestOOO () {
     if ($_POST['tranz'] == 'tranz-no') { echo '<b>Движения по р/с: </b>нет<br>'; }    
 }
 
-function isGeneralTaxSystem () {
+function isGeneralOrSimpleTaxSystem () {
     if ($_POST['tax-system'] == 'general') {
         return '<b>Система налогообложения:</b> общая<br><br>';
-    }
+    } else return '<b>Система налогообложения:</b> упрощенная<br><br>';
 }
 
 if (isset($_POST['submit-go-to-pay-ooo'])) {
@@ -149,8 +151,9 @@ if (isset($_POST['submit-go-to-pay-ooo'])) {
     
     $message = '<html><head><title></title></head><body>
     <b>Кто обращается:</b> ООО<br><br>' .
-    isGeneralTaxSystem () .
-    findQuart () .
+    isGeneralOrSimpleTaxSystem() .
+    findQuart() .
+    findUK () .
 
     '</body></html>';
 
