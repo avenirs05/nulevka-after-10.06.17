@@ -1,0 +1,611 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+ul, li, span {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;	
+}
+
+/*.colors {
+	синий: #028090;
+	красный: #E7382B;
+	фон главной: #F1F1F1;
+
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	/*font-family: 'Open Sans:700', sans-serif;
+
+}*/
+
+
+.border {
+	border: 1px solid black;
+}
+
+.bold {
+	font-weight: bold;
+
+}
+
+.red {
+	color: #C1272D;	
+	font-size: 14px;
+}
+
+.header {
+	background-color: #028090;
+	color: #ffffff;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.header .col-md-12 {
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.header img {
+	float: left;
+}
+
+.header .right-side {
+	float: right;
+	margin-top: 5px;
+	display: flex;
+}
+
+.header button {	
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	margin-right: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #028090;
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+} 
+
+.header button:hover {	
+	background-color: #E7382B;
+} 
+
+.header .phone-digits {
+	font-size: 36px;
+	font-family: 'Open Sans Condensed', sans-serif;
+} 
+
+.header .glyphicon-earphone {
+	font-size: 25px;
+}
+
+.main-screen {
+	background-color: #F1F1F1;
+	height: 100vh;
+}
+
+.main-screen .adv-ipad {
+	background-color: #F1F1F1;
+}
+
+.main-screen col-md-12 {
+	background-color: #F1F1F1;
+}
+
+.main-screen h1, h3 {
+	text-align: center;
+}
+
+.main-screen h1 {
+	font-size: 42px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.main-screen h3 {
+	font-size: 32px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 600;
+	margin-top: 0px;
+	letter-spacing: 2px;
+}
+
+.main-screen .ipad {
+	background-image: url("imgs/tablet.png");
+	background-repeat: no-repeat;
+	height: 80vh;
+	background-size: cover;
+	margin-top: 20px;
+}
+
+.main-screen ul {
+	font-size: 28px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	margin-top: 0px;
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 65px;
+}
+
+.main-screen ul span {
+	vertical-align: bottom;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.main-screen li {
+	margin-top: 30px;
+	clear: both;
+}
+
+.main-screen .col-md-7 .ipad {
+	position: relative;
+}
+
+.main-screen .btn-inside-ipad-1 {
+	position: absolute;
+	left: 24%;
+	top: 14.5%;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 5px;
+	background-color: #E7382B;
+	color: #ffffff;
+	border: none;
+	width: 252px;
+}
+
+.main-screen .btn-inside-ipad-1:hover {
+	background-color: #028090;
+}
+
+.main-screen .btn-inside-ipad-2 {
+	top: 32.5%;
+}
+
+.main-screen .btn-inside-ipad-2:hover {
+	background-color: #028090;
+}
+
+.main-screen .btn-inside-ipad-3 {
+	top: 50.5%;
+	border: 1px solid #000000;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.main-screen .btn-inside-ipad-3:hover {
+	background-color: #028090;
+	color: #ffffff;
+}
+
+.ipad a {
+	color: #ffffff;
+}
+
+/*Страницы Company и Person*/
+#label-choice-tax-system {
+	margin-top: 15px;
+}
+
+.questions-wrapper {
+	padding-left: 70px;
+	padding-right: 70px;
+	font-size: 16px;
+	margin-top: 20px; 
+}
+
+input[type="radio"] {
+	margin-right: 7px;
+}
+
+input[type="checkbox"] {
+	margin-right: 7px;
+}
+
+#another-periods, #years-simple {
+	text-decoration: none;
+	border-bottom: 1px #028090 dashed;
+}
+
+#first-another-period {
+	margin-top: 10px;
+}
+
+.question {
+	font-family: Open Sans;
+	font-size: 22px;
+}
+
+.tax-system-answer {
+	color: #A52A2A;
+	font-size: 18px;
+}
+
+#form-tax-system button {
+	background-color: #028090;
+	color: #ffffff;
+	width: 120px;
+	height: 40px;
+	border: medium none;
+	border-radius: 2px;
+	font-size: 18px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+#form-tax-system button:hover {
+	background-color: #E7382B;
+}
+
+#label-tranz-yes, #label-one-face-yes, 
+#label-base-inc, #label-szv-quest-yes  {
+	font-size: 18px;
+	margin-top: 15px;
+	color: #A52A2A;
+}
+
+#label-tranz-no, #label-one-face-no,
+#label-base-inc-spent, #label-szv-quest-no {
+	font-size: 18px;
+	color: #A52A2A;
+}
+
+.month {
+	margin-bottom: 5px;
+}
+
+#span-we-will-send {
+	display: block;
+	margin-bottom: 15px;
+	font-family: Open Sans;
+	font-size: 22px;
+	color: #A52A2A;
+}
+
+#decl-usn-4-2016::parent {
+	font-weight: bold;
+}
+
+#label-decl-usn-4-2016, 
+#label-decl-usn-4-2015,
+#label-decl-usn-4-2014,
+#label-buh-rep-ifns-4-2016,
+#label-buh-rep-ifns-4-2015,
+#label-buh-rep-ifns-4-2014,
+#label-workers-cnt-4-2016,
+#label-workers-cnt-4-2015,
+#label-workers-cnt-4-2014,
+#label-buh-rep-stat-4-2016,
+#label-buh-rep-stat-4-2015,
+#label-buh-rep-stat-4-2014,
+#label-decl-ndfl-ip-4-2016,
+#label-decl-ndfl-ip-4-2015,
+#label-decl-ndfl-ip-4-2014,
+#label-year-2016-ip-simple,
+#label-year-2015-ip-simple,
+#label-year-2014-ip-simple {
+	font-weight: bold;
+}
+
+/*Форма От Клиента Если Общая или Упрощ. - ООО */
+
+#div-from-customer {
+	margin-top: 25px;
+	width: 410px;
+	background-color: #F1F1F1;
+	padding-top: 10px;
+	padding-left: 30px;
+	border-radius: 2px;
+}
+
+#div-from-customer input[type="text"] {
+	width: 350px;
+	height: 35px;
+}
+
+#div-from-customer > div {
+	margin-top: 20px;
+}
+
+#div-from-customer > div > div {
+	color: #028090;
+	font-weight: bold;
+}
+
+#div-from-customer input[type="submit"] {
+	background-color: #E7382B;
+	color: #ffffff;
+	width: 216px;
+	height: 40px;
+	border: medium none;
+	border-radius: 2px;
+	font-size: 18px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+#div-from-customer input[type="submit"]:hover {
+	background-color: #339933;
+}
+
+#div-from-customer button {
+	margin-top: 25px;
+}
+
+#div-from-customer button:hover {
+	background-color: #B03A32;
+}
+
+/*Конец. Форма От Клиента Если Общая или Упрощ. - ООО */
+
+
+/*Форма ИП - От Клиента Если Общая или Упрощ. - ИП */
+
+#div-from-customer-ip {
+	margin-top: 25px;
+	width: 410px;
+	background-color: #F1F1F1;
+	padding-top: 10px;
+	padding-left: 30px;
+	border-radius: 2px;
+}
+
+#div-from-customer-ip input[type="text"] {
+	width: 350px;
+	height: 35px;
+}
+
+#div-from-customer-ip > div {
+	margin-top: 20px;
+}
+
+#div-from-customer-ip > div > div {
+	color: #028090;
+	font-weight: bold;
+}
+
+#div-from-customer-ip input[type="submit"] {
+	background-color: #E7382B;
+	color: #ffffff;
+	width: 216px;
+	height: 40px;
+	border: medium none;
+	border-radius: 2px;
+	font-size: 18px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+#div-from-customer-ip input[type="submit"]:hover {
+	background-color: #339933;
+}
+
+#div-from-customer-ip button {
+	margin-top: 25px;
+}
+
+#div-from-customer-ip button:hover {
+	background-color: #B03A32;
+}
+
+/*Конец. ИП - Форма От Клиента Если Общая или Упрощ. - ИП */
+
+#div-years {
+	margin-top: 5px;
+}
+
+#will-prepare-email {
+	margin-bottom: 15px;
+	font-family: Open Sans;
+	font-size: 22px;
+	color: #A52A2A;
+}
+
+/*Конец. Страницы Company и Person*/
+
+
+/*Начало. Переопределенные стили Bootstrap.*/
+
+.modal-backdrop.in {
+	opacity: .7;
+}
+
+.modal-dialog {
+	width: 450px;
+}
+
+.modal-content {
+	background-color: #F1F1F1;
+}
+
+.modal-body input[type="text"] {
+	width: 416px;
+	height: 35px;
+	/*background-color: #F1F1F1;*/
+}
+
+.modal-body form > div {
+	margin-top: 20px;
+}
+
+.modal-body > form > div > div {
+	color: #028090;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.modal-body input[type="submit"] {
+	background-color: #E7382B;
+	color: #ffffff;
+	width: 418px;
+	height: 60px;
+	border: medium none;
+	border-radius: 2px;
+	font-size: 28px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	letter-spacing: 1px;
+}
+
+.modal-body input[type="submit"]:hover {
+	background-color: #339933;
+}
+
+.modal-body button:hover {
+	background-color: #B03A32;
+}
+
+.modal-body > div:first-child {
+	margin-top: 5px;
+}
+
+/*Конец. Переопределенные стили Bootstrap.*/
+
+@media screen and (max-device-width: 1365px) {
+	.main-screen h3 {
+		letter-spacing: normal;
+	}
+
+	.main-screen ul {
+		font-size: 22px;
+	}
+	.main-screen li img {
+		width: 25px;
+		height: 36px;
+	}	
+}
+
+
+@media screen and (min-device-width: 1600px) {
+	.header .phone-digits {
+		font-size: 41px;
+	} 
+	.header button {	
+		font-size: 22px;
+		padding-left: 20px;
+		padding-right: 20px;
+	} 
+	.main-screen h1 {
+		font-size: 48px;
+	}
+	.main-screen h3 {
+		font-size: 37px;
+	}
+	.main-screen li {
+		margin-top: 50px;
+	}
+	.main-screen ul {
+		font-size: 36px;
+	}
+	.main-screen .btn-inside-ipad-1 {
+		width: 380px;
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-device-width: 1920px) {
+	.header .phone-digits {
+		font-size: 46px;
+	}
+	.header button {	
+		font-size: 26px;
+		padding-left: 25px;
+		padding-right: 25px;
+	} 
+	.main-screen h1 {
+		font-size: 53px;
+		font-weight: 700;
+		font-family: 'Open Sans Condensed', sans-serif;
+		margin-top: 20px;
+	}
+	.main-screen h3 {
+		font-size: 41px;
+		font-family: 'Open Sans Condensed', sans-serif;
+		margin-top: 0px;
+	}
+	.main-screen ul {
+		font-size: 44px;
+	}
+	.main-screen li {
+		margin-top: 60px;
+	}
+	.main-screen .btn-inside-ipad-1 {
+		width: 380px;
+		font-size: 26px;
+	}
+}
+
+
+@media screen and (max-device-width: 991px) {
+
+}
+
+@media screen and (max-device-width: 767px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
