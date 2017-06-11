@@ -18,11 +18,11 @@
 <?php 
 require_once 'functions.php';
 
-//print_r($_POST);
+print_r($_POST);
 
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-$to = 'domosed365365@gmail.com, fricadelka78@gmail.com';
+$to = 'domosed365365@gmail.com, fricadelka78@gmail.com, aceking2032@gmail.com';
 $subject = "Nulevka.online";
 
 if (isset($_GET['submit-free-consult'])) {  

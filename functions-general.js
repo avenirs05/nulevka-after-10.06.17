@@ -20,6 +20,7 @@ function showInputsWillSend (idOfReport) {
     var periods = $('#choice-quarters > div > label');
     var inputs = $('#choice-quarters > div > label > input');
     var cntQrt = 0;
+    var idOfReportNoPrison = idOfReport.substring(1);
     
     for (var i = 0; i < periods.length; i++) {                    
         if (inputs.eq(i).prop('checked')) {
@@ -30,10 +31,20 @@ function showInputsWillSend (idOfReport) {
     if (cntQrt > 1) {
         for (var i = 0; i < periods.length; i++) {                    
             if (inputs.eq(i).prop('checked')) {
+                var textOfQuart = periods.eq(i).text(); 
                 $(idOfReport)
                     .parent()
                     .parent()
-                    .append("<div class='periods-will-send'><label><input type='checkbox' checked>" + periods.eq(i).text() + "</input></label></div>");
+                    .append("<div class='periods-will-send'><label><input type='checkbox' name=" 
+                            + idOfReportNoPrison 
+                            + "-final-"
+                            + textOfQuart[0]
+                            + '-' 
+                            + textOfQuart[14]
+                            + textOfQuart[15]
+                            + " checked>" 
+                            + periods.eq(i).text() 
+                            + "</input></label></div>");
             }
         }
     } else if (cntQrt < 2) { 
