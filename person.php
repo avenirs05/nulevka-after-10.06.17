@@ -25,7 +25,6 @@
     <script src="events-person.js"></script>
     <script src="events-general.js"></script>
 
-
 <script>
 
 $(function () {   
