@@ -19,6 +19,9 @@ function isGeneralOrSimpleTaxSystemIp () {
 }
 
 function findQuart () {
+    if (isset($_POST['submit-go-to-pay-ip']) && ($_POST['tax-system'] == 'simple-ip')) {
+        return null;
+    }
     $str = '<b>Периоды:</b><br>';
     if (isset($_POST['qrt-2-2017'])) { $str = $str . '2-й квартал 2017 года' . '<br>'; }
     if (isset($_POST['qrt-1-2017'])) { $str = $str . '1-й квартал 2017 года' . '<br>'; }
@@ -33,6 +36,15 @@ function findQuart () {
     if (isset($_POST['qrt-4-2014'])) { $str = $str . '4-й квартал 2014 года' . '<br>'; }
     if (isset($_POST['qrt-3-2014'])) { $str = $str . '3-й квартал 2014 года' . '<br>'; } 
     if (isset($_POST['qrt-2-2014'])) { $str = $str . '2-й квартал 2014 года' . '<br>'; }
+    
+    return $str;   
+}
+
+function findYearIfSimpleIP () {
+    $str = '<b>Периоды:</b><br>';
+    if (isset($_POST['year-2016-ip-simple'])) { $str = $str . '2016 год' . '<br>'; }
+    if (isset($_POST['year-2015-ip-simple'])) { $str = $str . '2015 год' . '<br>'; }
+    if (isset($_POST['year-2014-ip-simple'])) { $str = $str . '2014 год' . '<br>'; }
     
     return $str;   
 }

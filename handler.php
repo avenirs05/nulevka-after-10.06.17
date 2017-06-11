@@ -5,18 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <meta name="format-detection" content="telephone=no" />
-
         <title>Nulevka.online</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<!--         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
         <link href="css/jquery-ui.min.css" rel="stylesheet">
         <link href="css/jquery-ui.theme.css" rel="stylesheet">
         <link href="css/jquery-ui.structure.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet"> -->
     </head>
 <body>
-<?php
+<?php 
 require_once 'functions.php';
 
 //print_r($_POST);
@@ -122,17 +121,13 @@ if (isset($_POST['submit-go-to-pay-ip'])) {
     <b>Кто обращается:</b> ИП<br><br>' .
     isGeneralOrSimpleTaxSystemIp() .
     findQuart() .
-
-//    showQuestTranz() .
-
-//    showNameOfCompany() .
-//    showInnOfCompany () .
-//    showPhoneOfCompany() .
-//    showEmailOfCompany() .
+    findYearIfSimpleIP() .
     '</body></html>';
     
     mail($to, $subject, $message, $headers);  
 }
-?> 
+
+?>
+
 </body>
 </html>
