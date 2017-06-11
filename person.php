@@ -164,7 +164,6 @@ $(function () {
         <div style="display: none;">
             <label for='count-fss'><input id='count-fss' type='checkbox' name='count-fss' checked><strong>Расчетная ведомость в ФСС</strong></label>
         </div>
-
         <div style="display: none;">
             <label for='szv-m'><input id='szv-m' type='checkbox' name='szv-m' checked><strong>СЗВ-М</strong></label>
         </div>

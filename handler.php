@@ -122,6 +122,15 @@ if (isset($_POST['submit-go-to-pay-ip'])) {
     isGeneralOrSimpleTaxSystemIp() .
     findQuart() .
     findYearIfSimpleIP() .
+    showNameOfIp() .
+    showInnOfIp() .
+    showPhoneOfIP() .
+    showEmailOfIp () .
+    showPaspSerOfIp() .
+    showPaspNumOfIp () .
+    showPaspDateOfIssueOfIp () .
+    showPaspWhoIssueOfIp () .
+    showPaspKpOfIp () .       
     '</body></html>';
     
     mail($to, $subject, $message, $headers);  

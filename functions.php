@@ -37,16 +37,19 @@ function findQuart () {
     if (isset($_POST['qrt-3-2014'])) { $str = $str . '3-й квартал 2014 года' . '<br>'; } 
     if (isset($_POST['qrt-2-2014'])) { $str = $str . '2-й квартал 2014 года' . '<br>'; }
     
-    return $str;   
+    return $str . '<br>';   
 }
 
 function findYearIfSimpleIP () {
+    if ($_POST['tax-system'] == 'general-ip') {
+        return null;
+    }
     $str = '<b>Периоды:</b><br>';
     if (isset($_POST['year-2016-ip-simple'])) { $str = $str . '2016 год' . '<br>'; }
     if (isset($_POST['year-2015-ip-simple'])) { $str = $str . '2015 год' . '<br>'; }
     if (isset($_POST['year-2014-ip-simple'])) { $str = $str . '2014 год' . '<br>'; }
     
-    return $str;   
+    return $str . '<br>';   
 }
 
 function findUK () {
@@ -134,9 +137,23 @@ function showNameOfCompany () {
     } 
 }
 
+function showNameOfIp () {
+    if (isset($_POST['fio-ip'])) {
+        return '<b>ФИО: </b>' . $_POST['fio-ip'] . 
+               '<br><br>'; 
+    } 
+}
+
 function showInnOfCompany () {
     if (isset($_POST['inn-ooo'])) {
         return '<b>ИНН: </b>' . $_POST['inn-ooo'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showInnOfIp () {
+    if (isset($_POST['inn-ip'])) {
+        return '<b>ИНН: </b>' . $_POST['inn-ip'] . 
                '<br><br>'; 
     } 
 }
@@ -148,9 +165,59 @@ function showPhoneOfCompany () {
     } 
 }
 
+function showPhoneOfIP () {
+    if (isset($_POST['phone-ip'])) {
+        return '<b>Телефон: </b>' . $_POST['phone-ip'] . 
+               '<br><br>'; 
+    } 
+}
+
 function showEmailOfCompany () {
     if (isset($_POST['email-ooo'])) {
         return '<b>Email: </b>' . $_POST['email-ooo'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showEmailOfIp () {
+    if (isset($_POST['email-ip'])) {
+        return '<b>Email: </b>' . $_POST['email-ip'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showPaspSerOfIp () {
+    
+    if (isset($_POST['pasp-ser-ip']) && $_POST['tax-system'] == 'general-ip') {
+        return '<b>Паспорт серия: </b>' . $_POST['pasp-ser-ip'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showPaspNumOfIp () {
+    if (isset($_POST['pasp-num-ip']) && $_POST['tax-system'] == 'general-ip') {
+        return '<b>Паспорт номер: </b>' . $_POST['pasp-num-ip'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showPaspDateOfIssueOfIp () {
+    if (isset($_POST['pasp-date-issue-ip']) && $_POST['tax-system'] == 'general-ip') {
+        return '<b>Дата выдачи: </b>' . $_POST['pasp-date-issue-ip'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showPaspWhoIssueOfIp () {
+    if (isset($_POST['email-ip']) && $_POST['tax-system'] == 'general-ip') {
+        return '<b>Кем выдан: </b>' . $_POST['pasp-who-issue-ip'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showPaspKpOfIp () {
+    if (isset($_POST['pasp-kp-ip']) && $_POST['tax-system'] == 'general-ip') {
+        return '<b>Код подразделения: </b>' . $_POST['pasp-kp-ip'] . 
                '<br><br>'; 
     } 
 }
