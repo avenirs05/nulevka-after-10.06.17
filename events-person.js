@@ -55,7 +55,13 @@ $(function () {
                 $('#div-tax-system').hide();
                 $('#div-will-send').show();
                 $('#span-we-will-send').show();                
-                $('#div-from-customer-ip').show();            
+                $('#div-from-customer-ip').show();
+
+                $('#pasp-ser-ip').parent().show();
+                $('#pasp-num-ip').parent().show();
+                $('#pasp-date-issue-ip').parent().show(); 
+                $('#pasp-who-issue-ip').parent().show(); 
+                $('#pasp-kp-ip').parent().show();             
             } 
             else {
                 $('#decl-nds').parent().parent().show();
