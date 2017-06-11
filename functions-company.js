@@ -31,16 +31,87 @@ function findYear (str) {
 
 function listOfMonths (label) {
     if ( label.text().match(/^1/) ) {
-        return '<div><label for="szv-jan-' + findYear(label.text()) + ' " ' + '><input id="szv-jan-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-jan-' + findYear(label.text()) + ' " ' + ' ' + '>Январь</label></div><div><label for="szv-feb-' + findYear(label.text()) + ' " ' + '><input id="szv-feb-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-feb-' + findYear(label.text()) + ' " ' + ' ' + '>Февраль</label></div><div><label for="szv-mar-' + findYear(label.text()) + ' " ' + '><input id="szv-mar-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-mar-' + findYear(label.text()) + ' " ' + ' ' + '>Март</label></div>';
+        return '<div><label for="final-szv-jan-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-jan-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-jan-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Январь</label></div><div><label for="final-szv-feb-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-feb-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-feb-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Февраль</label></div><div><label for="final-szv-mar-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-mar-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-mar-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Март</label></div>';
     }
     if ( label.text().match(/^2/) ) {
-        return '<div><label for="szv-apr-' + findYear(label.text()) + ' " ' + '><input id="szv-apr-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-apr-' + findYear(label.text()) + ' " ' + ' ' + '>Апрель</label></div><div><label for="szv-may-' + findYear(label.text()) + ' " ' + '><input id="szv-may-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-may-' + findYear(label.text()) + ' " ' + ' ' + '>Май</label></div><div><label for="szv-jun-' + findYear(label.text()) + ' " ' + '><input id="szv-jun-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-jun-' + findYear(label.text()) + ' " ' + ' ' + '>Июнь</label></div>';
+        return '<div><label for="final-szv-apr-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-apr-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-apr-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Апрель</label></div><div><label for="final-szv-may-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-may-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-may-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Май</label></div><div><label for="final-szv-jun-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-jun-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-jun-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Июнь</label></div>';
     }
     if ( label.text().match(/^3/) ) {
-        return '<div><label for="szv-jul-' + findYear(label.text()) + ' " ' + '><input id="szv-jul-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-jul-' + findYear(label.text()) + ' " ' + ' ' + '>Июль</label></div><div><label for="szv-aug-' + findYear(label.text()) + ' " ' + '><input id="szv-aug-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-aug-' + findYear(label.text()) + ' " ' + ' ' + '>Август</label></div><div><label for="szv-sep-' + findYear(label.text()) + ' " ' + '><input id="szv-sep-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-sep-' + findYear(label.text()) + ' " ' + ' ' + '>Сентябрь</label></div>';
+        return '<div><label for="final-szv-jul-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-jul-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-jul-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Июль</label></div><div><label for="final-szv-aug-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-aug-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-aug-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Август</label></div><div><label for="final-szv-sep-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-sep-' + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-sep-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Сентябрь</label></div>';
     }
     if ( label.text().match(/^4/) ) {
-        return '<div><label for="szv-oct-' + findYear(label.text()) + ' " ' + '><input id="szv-oct-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-oct-' + findYear(label.text()) + ' " ' + ' ' + '>Октябрь</label></div><div><label for="szv-nov-' + findYear(label.text()) + ' " ' + '><input id="szv-nov-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-nov-' + findYear(label.text()) + ' " ' + ' ' + '>Ноябрь</label></div><div><label for="szv-dec-' + findYear(label.text()) + ' " ' + '><input id="szv-dec-' + findYear(label.text()) + ' " ' + ' ' + ' type="checkbox" name="szv-dec-' + findYear(label.text()) + ' " ' + ' ' + '>Декабрь</label></div>';
+        return '<div><label for="final-szv-oct-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-oct-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-oct-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Октябрь</label></div><div><label for="final-szv-nov-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-nov-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-nov-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Ноябрь</label></div><div><label for="final-szv-dec-' 
+        + findYear(label.text()) + ' " ' 
+        + '><input id="szv-dec-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + ' type="checkbox" name="final-szv-dec-' 
+        + findYear(label.text()) + ' " ' + ' ' 
+        + '>Декабрь</label></div>';
     }
 }
 
@@ -58,7 +129,10 @@ var showAndHideSzvMonths = function () {
           for (var i = inputs.length - 1; i >= 0; i--) {
                if ( inputs.eq(i).prop('checked') ) {
                     $('#choice-months')
-                    .after('<div class="month"><span>' + inputs.eq(i).parent('label').text() + '</span>' + listOfMonths( inputs.eq(i).parent('label'), i ) + '</div>');
+                    .after('<div class="month"><span>' 
+                            + inputs.eq(i).parent('label').text() 
+                            + '</span>' + listOfMonths( inputs.eq(i).parent('label'), i ) 
+                            + '</div>');
                } 
           }
 
