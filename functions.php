@@ -336,57 +336,57 @@ function willSendSzv () {
     $str = "";
     if (isset($_POST['szv-m']) && $_POST['one-face'] == 'one-face-no') {
         $str .= '<b>СЗВ-М: </b>' . '<br><br>';
-        if (isset($_POST['final-szv-apr-2017'])) { $str .= '<i style="color: #66CCCC">2-й квартал 2017 года</i><br>Апрель<br>'; }
-        if (isset($_POST['final-szv-may-2017'])) { $str .= 'Май<br>'; }
-        if (isset($_POST['final-szv-jun-2017'])) { $str .= 'Июнь<br><br>'; }
+        if (isset($_POST['final-szv-apr-2017'])) { $str .= 'Апрель 2017 года<br>'; }
+        if (isset($_POST['final-szv-may-2017'])) { $str .= 'Май 2017 года<br>'; }
+        if (isset($_POST['final-szv-jun-2017'])) { $str .= 'Июнь 2017 года<br><br>'; }
 
-        if (isset($_POST['final-szv-jan-2017'])) { $str .= '<i style="color: #66CCCC">1-й квартал 2017 года</i><br>Январь<br>'; }
-        if (isset($_POST['final-szv-feb-2017'])) { $str .= 'Февраль<br>'; }
-        if (isset($_POST['final-szv-mar-2017'])) { $str .= 'Март<br><br>'; }
+        if (isset($_POST['final-szv-jan-2017'])) { $str .= 'Январь 2017 года<br>'; }
+        if (isset($_POST['final-szv-feb-2017'])) { $str .= 'Февраль 2017 года<br>'; }
+        if (isset($_POST['final-szv-mar-2017'])) { $str .= 'Март 2017 года<br><br>'; }
 
-        if (isset($_POST['final-szv-oct-2016'])) { $str .= '<i style="color: #66CCCC">4-й квартал 2016 года</i><br>Октябрь<br>'; }
-        if (isset($_POST['final-szv-nov-2016'])) { $str .= 'Ноябрь<br>'; }
-        if (isset($_POST['final-szv-dec-2016'])) { $str .= 'Декабрь<br><br>'; }
+        if (isset($_POST['final-szv-oct-2016'])) { $str .= 'Октябрь 2016 года<br>'; }
+        if (isset($_POST['final-szv-nov-2016'])) { $str .= 'Ноябрь 2016 года<br>'; }
+        if (isset($_POST['final-szv-dec-2016'])) { $str .= 'Декабрь 2016 года<br><br>'; }
 
-        if (isset($_POST['final-szv-jul-2016'])) { $str .= '<i style="color: #66CCCC">3-й квартал 2016 года</i><br>Июль<br>'; }
-        if (isset($_POST['final-szv-aug-2016'])) { $str .= 'Август<br>'; }
-        if (isset($_POST['final-szv-sep-2016'])) { $str .= 'Сентябрь<br><br>'; }
+        if (isset($_POST['final-szv-jul-2016'])) { $str .= 'Июль 2016 года<br>'; }
+        if (isset($_POST['final-szv-aug-2016'])) { $str .= 'Август 2016 года<br>'; }
+        if (isset($_POST['final-szv-sep-2016'])) { $str .= 'Сентябрь 2016 года<br><br>'; }
 
-        if (isset($_POST['final-szv-apr-2016'])) { $str .= '<i style="color: #66CCCC">2-й квартал 2016 года</i><br>Апрель<br>'; }
-        if (isset($_POST['final-szv-may-2016'])) { $str .= 'Май<br>'; }
-        if (isset($_POST['final-szv-jun-2016'])) { $str .= 'Июнь<br><br>'; }
+        if (isset($_POST['final-szv-apr-2016'])) { $str .= 'Апрель 2016 года<br>'; }
+        if (isset($_POST['final-szv-may-2016'])) { $str .= 'Май 2016 года<br>'; }
+        if (isset($_POST['final-szv-jun-2016'])) { $str .= 'Июнь 2016 года<br><br>'; }
 
-        if (isset($_POST['final-szv-jan-2016'])) { $str .= '<i style="color: #66CCCC">1-й квартал 2016 года</i><br>Январь<br>'; }
-        if (isset($_POST['final-szv-feb-2016'])) { $str .= 'Февраль<br>'; }
-        if (isset($_POST['final-szv-mar-2016'])) { $str .= 'Март<br><br>'; }
+        if (isset($_POST['final-szv-jan-2016'])) { $str .= 'Январь 2016 года<br>'; }
+        if (isset($_POST['final-szv-feb-2016'])) { $str .= 'Февраль 2016 года<br>'; }
+        if (isset($_POST['final-szv-mar-2016'])) { $str .= 'Март 2016 года<br><br>'; }
 
-        if (isset($_POST['final-szv-oct-2015'])) { $str .= '<i style="color: #66CCCC">4-й квартал 2015 года</i><br>Октябрь<br>'; }
-        if (isset($_POST['final-szv-nov-2015'])) { $str .= 'Ноябрь<br>'; }
-        if (isset($_POST['final-szv-dec-2015'])) { $str .= 'Декабрь<br><br>'; }
+        if (isset($_POST['final-szv-oct-2015'])) { $str .= 'Октябрь 2015 года<br>'; }
+        if (isset($_POST['final-szv-nov-2015'])) { $str .= 'Ноябрь 2015 года<br>'; }
+        if (isset($_POST['final-szv-dec-2015'])) { $str .= 'Декабрь 2015 года<br><br>'; }
 
-        if (isset($_POST['final-szv-jul-2015'])) { $str .= '<i style="color: #66CCCC">3-й квартал 2015 года</i><br>Июль<br>'; }
-        if (isset($_POST['final-szv-aug-2015'])) { $str .= 'Август<br>'; }
-        if (isset($_POST['final-szv-sep-2015'])) { $str .= 'Сентябрь<br><br>'; }
+        if (isset($_POST['final-szv-jul-2015'])) { $str .= 'Июль 2015 года<br>'; }
+        if (isset($_POST['final-szv-aug-2015'])) { $str .= 'Август 2015 года<br>'; }
+        if (isset($_POST['final-szv-sep-2015'])) { $str .= 'Сентябрь 2015 года<br><br>'; }
 
-        if (isset($_POST['final-szv-apr-2015'])) { $str .= '<i style="color: #66CCCC">2-й квартал 2015 года</i><br>Апрель<br>'; }
-        if (isset($_POST['final-szv-may-2015'])) { $str .= 'Май<br>'; }
-        if (isset($_POST['final-szv-jun-2015'])) { $str .= 'Июнь<br><br>'; }
+        if (isset($_POST['final-szv-apr-2015'])) { $str .= 'Апрель 2015 года<br>'; }
+        if (isset($_POST['final-szv-may-2015'])) { $str .= 'Май 2015 года<br>'; }
+        if (isset($_POST['final-szv-jun-2015'])) { $str .= 'Июнь 2015 года<br><br>'; }
 
-        if (isset($_POST['final-szv-jan-2015'])) { $str .= '<i style="color: #66CCCC">1-й квартал 2015 года</i><br>Январь<br>'; }
-        if (isset($_POST['final-szv-feb-2015'])) { $str .= 'Февраль<br>'; }
-        if (isset($_POST['final-szv-mar-2015'])) { $str .= 'Март<br><br>'; }
+        if (isset($_POST['final-szv-jan-2015'])) { $str .= 'Январь 2015 года<br>'; }
+        if (isset($_POST['final-szv-feb-2015'])) { $str .= 'Февраль 2015 года<br>'; }
+        if (isset($_POST['final-szv-mar-2015'])) { $str .= 'Март 2015 года<br><br>'; }
 
-        if (isset($_POST['final-szv-oct-2014'])) { $str .= '<i style="color: #66CCCC">4-й квартал 2014 года</i><br>Октябрь<br>'; }
-        if (isset($_POST['final-szv-nov-2014'])) { $str .= 'Ноябрь<br>'; }
-        if (isset($_POST['final-szv-dec-2014'])) { $str .= 'Декабрь<br><br>'; }
+        if (isset($_POST['final-szv-oct-2014'])) { $str .= 'Октябрь 2014 года<br>'; }
+        if (isset($_POST['final-szv-nov-2014'])) { $str .= 'Ноябрь 2014 года<br>'; }
+        if (isset($_POST['final-szv-dec-2014'])) { $str .= 'Декабрь 2014 года<br><br>'; }
 
-        if (isset($_POST['final-szv-jul-2014'])) { $str .= '<i style="color: #66CCCC">3-й квартал 2014 года</i><br>Июль<br>'; }
-        if (isset($_POST['final-szv-aug-2014'])) { $str .= 'Август<br>'; }
-        if (isset($_POST['final-szv-sep-2014'])) { $str .= 'Сентябрь<br><br>'; }
+        if (isset($_POST['final-szv-jul-2014'])) { $str .= 'Июль 2014 года<br>'; }
+        if (isset($_POST['final-szv-aug-2014'])) { $str .= 'Август 2014 года<br>'; }
+        if (isset($_POST['final-szv-sep-2014'])) { $str .= 'Сентябрь 2014 года<br><br>'; }
 
-        if (isset($_POST['final-szv-apr-2014'])) { $str .= '<i style="color: #66CCCC">2-й квартал 2014 года</i><br>Апрель<br>'; }
-        if (isset($_POST['final-szv-may-2014'])) { $str .= 'Май<br>'; }
-        if (isset($_POST['final-szv-jun-2014'])) { $str .= 'Июнь<br><br>'; }
+        if (isset($_POST['final-szv-apr-2014'])) { $str .= 'Апрель 2014 года<br>'; }
+        if (isset($_POST['final-szv-may-2014'])) { $str .= 'Май 2014 года<br>'; }
+        if (isset($_POST['final-szv-jun-2014'])) { $str .= 'Июнь 2014 года<br><br>'; }
         
         return $str . '<br>' . '<br>';
     };

@@ -190,7 +190,7 @@ $(function () {
         <div><div>Телефон</div><input id="phone" type="text" name="phone-ooo"></div>
         <div><div>Email</div><input id="email" type="text" name="email-ooo"></div>
         <button id="btn-back-will-send" onclick="return false;">Назад</button>
-        <input type="submit" value="Перейти к оплате" name="submit-go-to-pay-ooo">
+        <input id="submit-go-to-pay-ooo" type="submit" value="Перейти к оплате" name="submit-go-to-pay-ooo">
     </div>
 
     <div id="dialog-callback" title="" style="display: none;">

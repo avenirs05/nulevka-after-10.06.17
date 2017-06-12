@@ -387,4 +387,13 @@ $(function () {
         $(this).css('color', '#000000');
     });
 
+    $('#submit-go-to-pay-ooo').click(function() {
+        var divs = $('.month').children('div');
+        for (var i = 0; i < divs.length; i++) {
+            if ( divs.eq(i).css('display') == 'none' ) {
+                divs.eq(i).children('label').children('input').prop('checked', false);
+            }            
+        }
+    }) 
+
 });
