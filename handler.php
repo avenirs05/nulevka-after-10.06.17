@@ -105,10 +105,14 @@ if (isset($_POST['submit-go-to-pay-ooo'])) {
     '<span style="font-size: 20px;">Мы Вам подготовим:</span><br><br>' .
     willSendDeclOne() .
     willSendDeclNds() .
-    willSendDeclProfit () .
+    willSendDeclProfit() .
     willSendCountIns() .
     willSendCountFss() .
     willSendSzv() .
+    willSendBuhRepIfns() .
+    willSendBuhRepStat() .
+    willSendWorkersCnt() .
+    willSendDeclUsn() .        
     '</body></html>';
     
     mail($to, $subject, $message, $headers);  

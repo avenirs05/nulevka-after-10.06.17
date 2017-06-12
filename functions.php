@@ -389,6 +389,65 @@ function willSendSzv () {
         if (isset($_POST['final-szv-jun-2014'])) { $str .= 'Июнь 2014 года<br><br>'; }
         
         return $str . '<br>' . '<br>';
-    };
+    }
 }
 
+function willSendBuhRepIfns () {
+    $str = ""; 
+    if (isset($_POST['buh-rep-ifns-4-2016'])) { 
+        $str .= '<b>Бухгалтерская(финансовая) отчетность в ИФНС за</b> 2016 год' . '<br>'; 
+    }
+    if (isset($_POST['buh-rep-ifns-4-2015'])) { 
+        $str .= '<b>Бухгалтерская(финансовая) отчетность в ИФНС за</b> 2015 год' . '<br>'; 
+    }
+    if (isset($_POST['buh-rep-ifns-4-2014'])) { 
+        $str .= '<b>Бухгалтерская(финансовая) отчетность в ИФНС за</b> 2014 год' . '<br>'; 
+    }
+
+    return $str . '<br>' . '<br>';
+}
+
+function willSendBuhRepStat () {
+    $str = ""; 
+    if (isset($_POST['buh-rep-stat-4-2016'])) { 
+        $str .= '<b>Бухгалтерская(финансовая) отчетность в Росстат за</b> 2016 год' . '<br>'; 
+    }
+    if (isset($_POST['buh-rep-stat-4-2015'])) { 
+        $str .= '<b>Бухгалтерская(финансовая) отчетность в Росстат за</b> 2015 год' . '<br>'; 
+    }
+    if (isset($_POST['buh-rep-stat-4-2014'])) { 
+        $str .= '<b>Бухгалтерская(финансовая) отчетность в Росстат за</b> 2014 год' . '<br>'; 
+    }
+
+    return $str . '<br>' . '<br>';
+}
+
+function willSendWorkersCnt() {
+    $str = "";
+    if (isset($_POST['workers-cnt-4-2016'])) {
+        $str .= '<b>Сведения о среднесписочной численности работников за</b> 2016 год' . '<br>';
+    }
+    if (isset($_POST['workers-cnt-4-2015'])) {
+        $str .= '<b>Сведения о среднесписочной численности работников за</b> 2015 год' . '<br>';
+    }
+    if (isset($_POST['workers-cnt-4-2014'])) {
+        $str .= '<b>Сведения о среднесписочной численности работников за</b> 2014 год' . '<br>';
+    }
+
+    return $str . '<br>' . '<br>';
+}
+
+function willSendDeclUsn () {
+    $str = "";
+    if (isset($_POST['decl-usn-4-2016'])) {
+        $str .= '<b>Налоговая декларация по УСН(годовая) за</b> 2016 год' . '<br>';
+    }
+    if (isset($_POST['decl-usn-4-2015'])) {
+        $str .= '<b>Налоговая декларация по УСН(годовая) за</b> 2015 год' . '<br>';
+    }
+    if (isset($_POST['decl-usn-4-2014'])) {
+        $str .= '<b>Налоговая декларация по УСН(годовая) за</b> 2014 год' . '<br>';
+    }
+
+    return $str . '<br>' . '<br>';
+}

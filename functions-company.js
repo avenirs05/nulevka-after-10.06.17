@@ -41,7 +41,7 @@ function listOfMonths (label) {
         + findYear(label.text()) + '" ' 
         + '><input id="final-szv-feb-' 
         + findYear(label.text()) + '" ' + ' ' 
-        + ' type="checkbox" name="szv-feb-' 
+        + ' type="checkbox" name="final-szv-feb-' 
         + findYear(label.text()) + '" ' + ' ' 
         + '>Февраль</label></div><div><label for="final-szv-mar-' 
         + findYear(label.text()) + '" ' 
@@ -103,7 +103,7 @@ function listOfMonths (label) {
         + findYear(label.text()) + '" ' 
         + '><input id="final-szv-nov-' 
         + findYear(label.text()) + '" ' + ' ' 
-        + ' type="checkbox" name="fial-szv-nov-' 
+        + ' type="checkbox" name="final-szv-nov-' 
         + findYear(label.text()) + '" ' + ' ' 
         + '>Ноябрь</label></div><div><label for="final-szv-dec-' 
         + findYear(label.text()) + '" ' 
@@ -252,7 +252,7 @@ function insertDeclUsnIfQuartIs4 () {
             $('#div-from-customer').before('<div><label id="label-decl-usn-4-2015" for="decl-usn-4-2015"><input id="decl-usn-4-2015" type="checkbox" name="decl-usn-4-2015" checked>Налоговая декларация по УСН за 2015 год</label></div>');
         }
         if ( $('#qrt-4-2014').prop('checked') ) {
-            $('#div-from-customer').before('<div><label id="label-decl-usn-4-2014" for="decl-usn-4-2014"><input id="decl-usn-4-2014" type="checkbox" name="decl-usn-4-2015" checked>Налоговая декларация по УСН за 2014 год</label></div>');
+            $('#div-from-customer').before('<div><label id="label-decl-usn-4-2014" for="decl-usn-4-2014"><input id="decl-usn-4-2014" type="checkbox" name="decl-usn-4-2014" checked>Налоговая декларация по УСН за 2014 год</label></div>');
         }
     }  
 }
