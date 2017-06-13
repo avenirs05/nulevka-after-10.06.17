@@ -451,3 +451,47 @@ function willSendDeclUsn () {
 
     return $str . '<br>' . '<br>';
 }
+
+function willSendDeclNdsIp () {
+    $str = "";
+    if (isset($_POST['decl-nds']) && $_POST['tax-system'] == 'general-ip') {
+        $str .= '<b>Налоговая декларация по НДС: </b>' . '<br><br>';
+        if (isset($_POST['decl-nds-final-2-17'])) { $str .= '2-й квартал 2017 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-1-17'])) { $str .= '1-й квартал 2017 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-4-16'])) { $str .= '4-й квартал 2016 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-3-16'])) { $str .= '3-й квартал 2016 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-2-16'])) { $str .= '2-й квартал 2016 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-1-16'])) { $str .= '1-й квартал 2016 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-4-15'])) { $str .= '4-й квартал 2015 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-3-15'])) { $str .= '3-й квартал 2015 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-2-15'])) { $str .= '2-й квартал 2015 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-1-15'])) { $str .= '1-й квартал 2015 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-4-14'])) { $str .= '4-й квартал 2014 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-3-14'])) { $str .= '3-й квартал 2014 года' . '<br>'; }
+        if (isset($_POST['decl-nds-final-2-14'])) { $str .= '2-й квартал 2014 года' . '<br>'; }
+        
+        return $str . '<br>' . '<br>';
+    };
+}
+
+function willSendDeclNdflIp () {
+    $str = "";
+    if ($_POST['tax-system'] == 'general-ip') {
+        if (isset($_POST['decl-ndfl-ip-4-2016'])) { $str .= '<b>Налоговая декларация 3-НДФЛ за 2016 год</b>' . '<br>'; }
+        if (isset($_POST['decl-ndfl-ip-4-2015'])) { $str .= '<b>Налоговая декларация 3-НДФЛ за 2015 год</b>' . '<br>'; }
+        if (isset($_POST['decl-ndfl-ip-4-2014'])) { $str .= '<b>Налоговая декларация 3-НДФЛ за 2014 год</b>' . '<br>'; }
+        
+        return $str . '<br>' . '<br>';
+    };
+}
+
+function willSendDeclYearIp () {
+    $str = "";
+    if ($_POST['tax-system'] == 'simple-ip') {
+        if (isset($_POST['year-2016-ip-simple'])) { $str .= '<b>Налоговая декларация за 2016 год</b>' . '<br>'; }
+        if (isset($_POST['year-2015-ip-simple'])) { $str .= '<b>Налоговая декларация за 2015 год</b>' . '<br>'; }
+        if (isset($_POST['year-2014-ip-simple'])) { $str .= '<b>Налоговая декларация за 2014 год</b>' . '<br>'; }
+        
+        return $str . '<br>' . '<br>';
+    }
+}

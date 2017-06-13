@@ -15,7 +15,7 @@ print_r($_POST);
 
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-$to = 'domosed365365@gmail.com, fricadelka78@gmail.com, aceking2032@gmail.com';
+$to = 'domosed365365@gmail.com, fricadelka78@gmail.com, aceking2032@gmail.com, main@pretenzor.ru';
 $subject = "Nulevka.online";
 
 if (isset($_GET['submit-free-consult'])) {  
@@ -112,7 +112,7 @@ if (isset($_POST['submit-go-to-pay-ooo'])) {
     willSendBuhRepIfns() .
     willSendBuhRepStat() .
     willSendWorkersCnt() .
-    willSendDeclUsn() .        
+    willSendDeclUsn() . 
     '</body></html>';
     
     mail($to, $subject, $message, $headers);  
@@ -129,12 +129,16 @@ if (isset($_POST['submit-go-to-pay-ip'])) {
     showNameOfIp() .
     showInnOfIp() .
     showPhoneOfIP() .
-    showEmailOfIp () .
+    showEmailOfIp() .
     showPaspSerOfIp() .
-    showPaspNumOfIp () .
-    showPaspDateOfIssueOfIp () .
-    showPaspWhoIssueOfIp () .
-    showPaspKpOfIp () .       
+    showPaspNumOfIp() .
+    showPaspDateOfIssueOfIp() .
+    showPaspWhoIssueOfIp() .
+    showPaspKpOfIp() . 
+    '<span style="font-size: 20px;">Мы Вам подготовим:</span><br><br>' .
+    willSendDeclNdsIp() .    
+    willSendDeclNdflIp() .
+    willSendDeclYearIp () .        
     '</body></html>';
     
     mail($to, $subject, $message, $headers);  
