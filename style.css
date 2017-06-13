@@ -228,7 +228,7 @@ input[type="checkbox"] {
 }
 
 .tax-system-answer {
-	color: #A52A2A;
+	color: #23527C;
 	font-size: 18px;
 }
 
@@ -435,6 +435,7 @@ input[type="checkbox"] {
 .modal-body input[type="text"] {
 	width: 416px;
 	height: 35px;
+	font-size: 18px;
 }
 
 .modal-body form > div {

@@ -12,8 +12,11 @@ $(function () {
         $('#choice-quarters').hide();
         $('.tax-answer-1').show();
         $('#choice-years').show();
-        $('#btn-next-tax-system-ip').show();
     });
+
+    $('#year-2016-ip-simple').change(showHideBtnNextSimpleIp);
+    $('#year-2015-ip-simple').change(showHideBtnNextSimpleIp);
+    $('#year-2014-ip-simple').change(showHideBtnNextSimpleIp);
 
     $("#envd-ip").change(function () {
         $('#choice-quarters').hide();
