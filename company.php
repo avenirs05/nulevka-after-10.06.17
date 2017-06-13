@@ -10,14 +10,14 @@
     <title>Сдать отчетность для ООО</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link href="css/jquery-ui.min.css" rel="stylesheet">
+<!--     <link href="css/jquery-ui.min.css" rel="stylesheet">
     <link href="css/jquery-ui.theme.css" rel="stylesheet">
-    <link href="css/jquery-ui.structure.css" rel="stylesheet">
+    <link href="css/jquery-ui.structure.css" rel="stylesheet"> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
     <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+<!--     <script src="js/jquery-ui.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="functions-company.js"></script>
     <script src="functions-general.js"></script>
@@ -43,7 +43,7 @@ $(function () {
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Согласно письму Минфина РФ от 01.01.2011г. № 777 нулевая отчетность по ЕНВД не предусмотрена. Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
+                <h4 class="modal-title" id="myModalLabel">Представление нулевых деклараций по единому налогу на вмененный доход главой 26.3 НК РФ не предусмотрено (Определение ВАС РФ от 26.02.2014 г. № ВАС-1903/14). Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
             </div>
             <div class="modal-body">
                 <form action="handler.php" method="get">
