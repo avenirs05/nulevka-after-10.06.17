@@ -488,9 +488,9 @@ function willSendDeclNdflIp () {
 function willSendDeclYearIp () {
     $str = "";
     if ($_POST['tax-system'] == 'simple-ip') {
-        if (isset($_POST['year-2016-ip-simple'])) { $str .= '<b>Налоговая декларация за 2016 год</b>' . '<br>'; }
-        if (isset($_POST['year-2015-ip-simple'])) { $str .= '<b>Налоговая декларация за 2015 год</b>' . '<br>'; }
-        if (isset($_POST['year-2014-ip-simple'])) { $str .= '<b>Налоговая декларация за 2014 год</b>' . '<br>'; }
+        if (isset($_POST['decl-year-2016-ip-simple'])) { $str .= '<b>Налоговая декларация за 2016 год</b>' . '<br>'; }
+        if (isset($_POST['decl-year-2015-ip-simple'])) { $str .= '<b>Налоговая декларация за 2015 год</b>' . '<br>'; }
+        if (isset($_POST['decl-year-2014-ip-simple'])) { $str .= '<b>Налоговая декларация за 2014 год</b>' . '<br>'; }
         
         return $str . '<br>' . '<br>';
     }
