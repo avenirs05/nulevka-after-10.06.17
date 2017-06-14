@@ -89,3 +89,20 @@ function diffHeaderWeWillSend () {
         $("#span-we-will-send").text( 'Мы подготовим за Вас' + ' за ' + singleQrt);
     } else $("#span-we-will-send").text( 'Мы подготовим за Вас:');
 }  
+
+function calculateFinalSum () {
+    // for (var i = 0; i < $('.div-quarters').length; i++) {
+
+    // }
+    //alert( $('.div-quarters').length );
+    var res = 0;
+    for (var i = 0; i < $('.div-quarters').length; i++) {
+        if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
+            if ( $('.div-quarters').eq(i).data('is-four') == 'yes' ) {
+                res = res + 2499;
+            } else res = res + 1499;
+
+        }            
+    }
+    return res;
+}

@@ -23,6 +23,7 @@
         <script src="events-general.js"></script>
     </head>
 <body>
+
 <?php require_once 'header.php'; ?> 
 <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=410015223277202&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=buyer&targets-hint=&default-sum=&button-text=01&mail=on&successURL=" width="450" height="198"></iframe> 
 

@@ -253,13 +253,13 @@ input[type="checkbox"] {
 #label-base-inc, #label-szv-quest-yes  {
 	font-size: 18px;
 	margin-top: 15px;
-	color: #A52A2A;
+	color: #028090;;
 }
 
 #label-tranz-no, #label-one-face-no,
 #label-base-inc-spent, #label-szv-quest-no {
 	font-size: 18px;
-	color: #A52A2A;
+	color: #028090;
 }
 
 .month {
@@ -271,13 +271,14 @@ input[type="checkbox"] {
 	margin-bottom: 15px;
 	font-family: Open Sans;
 	font-size: 22px;
-	color: #A52A2A;
+	color: #23527C;;
 }
 
 #decl-usn-4-2016::parent {
 	font-weight: bold;
 }
 
+.nalog-decl,
 #label-decl-usn-4-2016, 
 #label-decl-usn-4-2015,
 #label-decl-usn-4-2014,
@@ -298,6 +299,8 @@ input[type="checkbox"] {
 #label-year-2014-ip-simple {
 	font-weight: bold;
 }
+
+
 
 /*Форма От Клиента Если Общая или Упрощ. - ООО */
 
