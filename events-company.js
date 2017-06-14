@@ -198,7 +198,7 @@ $(function () {
         
         $('#div-szv-quest').hide();
         $('#div-will-send').show();
-        $('#span-we-will-send').show();        
+        $('#span-we-will-send').show();
         $('#div-from-customer').show();
         $('#snils-dir').parent('div').show();
 
@@ -270,7 +270,6 @@ $(function () {
         insertDeclUsnIfQuartIs4 ();
         insertDiffReportsIfQuartIs4 ();
 
-
         if ( $('#qrt-4-2016').prop('checked') || 
              $('#qrt-4-2015').prop('checked') ||
              $('#qrt-4-2014').prop('checked') ) 
@@ -282,24 +281,20 @@ $(function () {
             $('#snils-dir').parent('div').hide();
         }
 
-        $('#div-szv-quest').append( $('#div-final-sum') );
+        $('#div-from-customer').before( $('#div-final-sum') );
         $('#div-final-sum').show();
         $('#final-sum-text').show();
-        $('#final-sum-digits').text( calculateFinalSum () );   
-        //alert( $('.div-quarters').length );    
-        // for (var i = 0; i < $('.div-quarters').length; i++) {
-        //     if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
-        //         alert( $('.div-quarters').eq(i).data('is-four') );
-        //     }            
-        // }
+        $('#final-sum-digits').text( calculateFinalSumOOO() );
+
     });
 
     $("#btn-back-will-send").click(function() {
-        $('#snils-dir').parent('div').hide();
-        $('#cnt-workers').parent('div').hide();
         $('#div-final-sum').hide();
         $('#final-sum-text').hide();
         $('#final-sum-digits').text('');
+
+        $('#snils-dir').parent('div').hide();
+        $('#cnt-workers').parent('div').hide();
         if ( ($('#szv-quest-no').prop('checked')) && ($('#one-face-yes').prop('checked') == false) ) {
             $('#div-will-send').hide();
             $('#div-from-customer').hide();
@@ -409,8 +404,5 @@ $(function () {
             }            
         }
     }) 
-
-    
-
 
 });

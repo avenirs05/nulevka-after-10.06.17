@@ -159,6 +159,15 @@ $(function () {
         <button id="btn-next-szv-quest" style="display: none;" onclick="return false;" >Дальше</button>  
     </div>
 
+    <div id="div-final-sum" style="display: none;">
+        <span id="final-sum-text" style="display: none;">Итоговая сумма составляет 
+            <span id="final-sum-digits">1 499</span> руб. 
+        </span>
+        <span id="discount-text" style="display: none;">Скидка составляет 
+            <span id="discount-digits"></span> руб.
+        </span>
+    </div>
+
     <div id="div-will-send" style="display: none">
         <span id="span-we-will-send">Мы за Вас подготовим</span>
         <div style="display: none;">
@@ -180,15 +189,6 @@ $(function () {
         <div style="display: none;">
             <label for='szv-m'><input id='szv-m' type='checkbox' name='szv-m' checked><strong>СЗВ-М</strong></label>
         </div>
-    </div>
-
-    <div id="div-final-sum" style="display: none;">
-        <span id="final-sum-text" style="display: none;">Итоговая сумма составляет 
-            <span id="final-sum-digits">1 499</span> руб. 
-        </span>
-        <span id="discount-text" style="display: none;">Скидка составляет 
-            <span id="discount-digits"></span> руб.
-        </span>
     </div>
 
     <div id="div-from-customer" style="display: none;">

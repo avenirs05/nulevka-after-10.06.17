@@ -90,19 +90,51 @@ function diffHeaderWeWillSend () {
     } else $("#span-we-will-send").text( 'Мы подготовим за Вас:');
 }  
 
-function calculateFinalSum () {
-    // for (var i = 0; i < $('.div-quarters').length; i++) {
-
-    // }
-    //alert( $('.div-quarters').length );
+function calculateFinalSumOOO () {
     var res = 0;
-    for (var i = 0; i < $('.div-quarters').length; i++) {
-        if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
-            if ( $('.div-quarters').eq(i).data('is-four') == 'yes' ) {
-                res = res + 2499;
-            } else res = res + 1499;
+    if ( $('#general').prop('checked') ) {
+        if ( $('#tranz-yes').prop('checked') && $('#one-face-yes').prop('checked') ) { 
+            for (var i = 0; i < $('.div-quarters').length; i++) {
+                if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
+                    if ( $('.div-quarters').eq(i).data('is-four') == 'no' ) {
+                        res = res + 1999;
+                    } else res = res + 2999;
+                }            
+            }
+        }
 
-        }            
+        if ( $('#tranz-yes').prop('checked') && $('#one-face-yes').prop('checked') == false ) { 
+            for (var i = 0; i < $('.div-quarters').length; i++) {
+                if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
+                    if ( $('.div-quarters').eq(i).data('is-four') == 'no' ) {
+                        res = res + 2499;
+                    } else res = res + 3499;
+                }            
+            }
+        }
+
+        if ( $('#tranz-yes').prop('checked') == false && $('#one-face-yes').prop('checked') ) { 
+            for (var i = 0; i < $('.div-quarters').length; i++) {
+                if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
+                    if ( $('.div-quarters').eq(i).data('is-four') == 'no' ) {
+                        res = res + 1499;
+                    } else res = res + 2499;
+                }            
+            }
+        }
+
+        if ( $('#tranz-yes').prop('checked') == false && $('#one-face-yes').prop('checked') == false ) { 
+            for (var i = 0; i < $('.div-quarters').length; i++) {
+                if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
+                    if ( $('.div-quarters').eq(i).data('is-four') == 'no' ) {
+                        res = res + 1999;
+                    } else res = res + 2999;
+                }            
+            }
+        }
+        
     }
     return res;
+
+
 }
