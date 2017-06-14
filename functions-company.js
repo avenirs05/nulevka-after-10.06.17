@@ -87,7 +87,8 @@ function listOfMonths (label) {
         + findYear(label.text()) + '" ' + ' ' 
         + '>Август</label></div><div><label for="final-szv-sep-' 
         + findYear(label.text()) + '" ' 
-        + '><input id="final-szv-sep-' + findYear(label.text()) + ' " ' + ' ' 
+        + '><input id="final-szv-sep-' 
+        + findYear(label.text()) + '" ' + ' ' 
         + ' type="checkbox" name="final-szv-sep-' 
         + findYear(label.text()) + '" ' + ' ' 
         + '>Сентябрь</label></div>';
