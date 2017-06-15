@@ -30,8 +30,8 @@
 <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml"> 
     <input type="hidden" name="receiver" value="410015223277202"> 
     <input type="hidden" name="quickpay-form" value="small"> 
-    <div><input name="targets" value="<?php echo $_POST['inn-ooo']; ?>" disabled></div>
-    <div><input name="sum" value="<?php echo $_POST['total-amount']; ?>" data-type="number" disabled>Сумма</div>     
+    <input name="targets" value="Оплата за бухуслуги. Инн плательщика: <?php echo $_POST['inn-ooo']; ?>">
+    <div><input name="sum" value="<?php echo $_POST['total-amount']; ?>" data-type="number">Сумма</div>     
     <label><input type="radio" name="paymentType" value="AC">Банковской картой</label>
     <label><input type="radio" name="paymentType" value="PC">Яндекс.Деньгами</label>
     <label><input type="radio" name="paymentType" value="MC">С баланса мобильного</label> 

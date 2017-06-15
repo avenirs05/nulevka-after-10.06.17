@@ -253,13 +253,13 @@ input[type="checkbox"] {
 #label-base-inc, #label-szv-quest-yes  {
 	font-size: 18px;
 	margin-top: 15px;
-	color: #A52A2A;
+	color: #028090;
 }
 
 #label-tranz-no, #label-one-face-no,
 #label-base-inc-spent, #label-szv-quest-no {
 	font-size: 18px;
-	color: #A52A2A;
+	color: #028090;
 }
 
 .month {
@@ -271,13 +271,14 @@ input[type="checkbox"] {
 	margin-bottom: 15px;
 	font-family: Open Sans;
 	font-size: 22px;
-	color: #A52A2A;
+	color: #028090;
 }
 
 #decl-usn-4-2016::parent {
 	font-weight: bold;
 }
 
+.nalog-decl,
 #label-decl-usn-4-2016, 
 #label-decl-usn-4-2015,
 #label-decl-usn-4-2014,
@@ -299,10 +300,45 @@ input[type="checkbox"] {
 	font-weight: bold;
 }
 
+
+#choice-quarters > i > span,
+#another-periods,
+.div-quarters,
+.periods-will-send,
+.month > span,
+.month div label,
+#years-simple,
+#div-years {
+	margin-left: 40px;
+}
+
+#uk-question-0,
+#uk-question-1,
+#uk-question-2 {
+	margin-left: 80px;
+}
+
+
+
+#div-final-sum {
+    background-color: rgb(51, 153, 51);
+    width: 410px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    height: 50px;
+    display: table-cell;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+
 /*Форма От Клиента Если Общая или Упрощ. - ООО */
 
 #div-from-customer {
-	margin-top: 25px;
+	margin-top: 12px;
 	width: 410px;
 	background-color: #F1F1F1;
 	padding-top: 10px;
@@ -355,7 +391,7 @@ input[type="checkbox"] {
 /*Форма ИП - От Клиента Если Общая или Упрощ. - ИП */
 
 #div-from-customer-ip {
-	margin-top: 25px;
+	margin-top: 12px;
 	width: 410px;
 	background-color: #F1F1F1;
 	padding-top: 10px;
@@ -412,7 +448,7 @@ input[type="checkbox"] {
 	margin-bottom: 15px;
 	font-family: Open Sans;
 	font-size: 22px;
-	color: #A52A2A;
+	color: #028090;
 }
 
 /*Конец. Страницы Company и Person*/
