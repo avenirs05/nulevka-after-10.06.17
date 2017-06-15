@@ -18,8 +18,7 @@ $(function () {
         $('#choice-quarters').hide();
         $('#modal-envd').modal('show');
         $('#btn-next-tax-system').hide();
-    });
-    
+    });    
 
     $("#not-know").change(function () {
         $('#choice-quarters').hide();
@@ -52,7 +51,7 @@ $(function () {
     $("html").on('change', '.month', function() {
         var inputs = $('.month').children('div').children('label').children('input');        
         var j = 0;
-        
+
         for (var i = 0; i < inputs.length; i++) {
             if ( inputs.eq(i).prop('checked') ) {
                 $('#szv-m').prop('checked', true);
@@ -308,7 +307,7 @@ $(function () {
         $('#div-from-customer').before( $('#div-final-sum') );
         $('#div-final-sum').show();
         $('#final-sum-text').show();
-        $('#final-sum-digits').text( calculateFinalSumOOO() );
+        $('#final-sum-digits').text( calculateFinalSum() );
 
     });
 

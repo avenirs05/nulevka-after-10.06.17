@@ -80,10 +80,11 @@ $(function () {
                 $('#pasp-kp-ip').parent().hide(); 
             }
         }
+
         $('#div-from-customer-ip').before( $('#div-final-sum') );
         $('#div-final-sum').show();
         $('#final-sum-text').show();
-        $('#final-sum-digits').text( calculateFinalSumOOO() );
+        $('#final-sum-digits').text( calculateFinalSum() );
     });
 
     $("#btn-back-will-send-ip").click(function() {
@@ -123,6 +124,27 @@ $(function () {
         if ( $('#div-years').css('display') == 'block') {
             $('#div-years').hide();
         } else $('#div-years').show();
-    })    
+    });
 
+
+    $("html").on('change', '.nalog-decl', function() {
+        j = 0;        
+        for (var i = 0; i < $('.nalog-decl').length; i++) {
+            if ( $('.nalog-decl').eq(i).children('label').children('input').prop('checked') ) {
+                j++;
+            } 
+        }
+        if (j === 0) {
+            $('#final-sum-digits').text('0');
+        } 
+        if (j === 1) {
+            $('#final-sum-digits').text('299');
+        } 
+        if (j === 2) {
+            $('#final-sum-digits').text('598');
+        } 
+        if (j === 3) {
+            $('#final-sum-digits').text('897');
+        } 
+    });    
 });

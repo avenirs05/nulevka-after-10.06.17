@@ -90,7 +90,7 @@ function diffHeaderWeWillSend () {
     } else $("#span-we-will-send").text( 'Мы подготовим за Вас:');
 }  
 
-function calculateFinalSumOOO () {
+function calculateFinalSum () {
     var res = 0;
     if ( $('#general').prop('checked') ) {
         if ( $('#tranz-yes').prop('checked') && $('#one-face-yes').prop('checked') ) { 
@@ -164,6 +164,18 @@ function calculateFinalSumOOO () {
                 } else res = res + 499;
             }            
         }            
+    }
+
+    if ( $('#simple-ip').prop('checked') ) {    
+        if ( $('#decl-year-2016-ip-simple').prop('checked') ) {
+            res = res + 299;
+        } 
+        if ( $('#decl-year-2016-ip-simple').prop('checked') ) {
+            res = res + 299;
+        } 
+        if ( $('#decl-year-2016-ip-simple').prop('checked') ) {
+            res = res + 299;
+        }         
     }
 
     return res;
