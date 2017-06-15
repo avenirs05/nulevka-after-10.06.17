@@ -132,10 +132,30 @@ function calculateFinalSumOOO () {
                 }            
             }
         }
-
        
     }
-    return res;
 
+    if ( $('#simple').prop('checked') ) {
+        if ( $('#one-face-yes').prop('checked') ) { 
+            for (var i = 0; i < $('.div-quarters').length; i++) {
+                if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
+                    if ( $('.div-quarters').eq(i).data('is-four') == 'no' ) {
+                        res = res + 999;
+                    } else res = res + 1999;
+                }            
+            }
+        }
+        if ( $('#one-face-yes').prop('checked') == false ) { 
+            for (var i = 0; i < $('.div-quarters').length; i++) {
+                if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
+                    if ( $('.div-quarters').eq(i).data('is-four') == 'no' ) {
+                        res = res + 1499;
+                    } else res = res + 2499;
+                }            
+            }
+        }       
+    }
+
+    return res;
 
 }
