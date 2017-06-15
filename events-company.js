@@ -48,7 +48,7 @@ $(function () {
     $("html").on('change', '#qrt-3-2014', function () { $('.month').remove(); });
     $("html").on('change', '#qrt-2-2014', function () { $('.month').remove(); });
 
-    var discount = 'no';
+    var discountSzv = 'no';
     $("html").on('change', '.month', function () { 
 
         var inputs = $('.month').children('div').children('label').children('input');        
@@ -64,7 +64,7 @@ $(function () {
         if  ( $('#szv-m').prop('checked') == false ) {
             var oldSum = $('#final-sum-digits').text();
             $('#final-sum-digits').text(+ oldSum - 500);
-            discount = 'yes';
+            discountSzv = 'yes';
             return;
         }
 
@@ -76,7 +76,7 @@ $(function () {
             }
         }
 
-        if ( (j === 1) && (discount =='yes') ) {
+        if ( (j === 1) && (discountSzv =='yes') ) {
             var oldSum = $('#final-sum-digits').text();
             $('#final-sum-digits').text(+ oldSum + 500); 
             discount = 'no';       
