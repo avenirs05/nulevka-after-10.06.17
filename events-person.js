@@ -80,6 +80,10 @@ $(function () {
                 $('#pasp-kp-ip').parent().hide(); 
             }
         }
+        $('#div-from-customer-ip').before( $('#div-final-sum') );
+        $('#div-final-sum').show();
+        $('#final-sum-text').show();
+        $('#final-sum-digits').text( calculateFinalSumOOO() );
     });
 
     $("#btn-back-will-send-ip").click(function() {
@@ -91,6 +95,10 @@ $(function () {
         $('#div-tax-system').show();
         $("#will-prepare-email").remove();
         $('.nalog-decl').remove();
+
+        $('#div-final-sum').hide();
+        $('#final-sum-text').hide();
+        $('#final-sum-digits').text('');
     });
 
     $("#decl-nds").change(function() { showAndHideChildChecks (this); });

@@ -156,6 +156,16 @@ function calculateFinalSumOOO () {
         }       
     }
 
+    if ( $('#general-ip').prop('checked') ) {
+        for (var i = 0; i < $('.div-quarters').length; i++) {
+            if ( $('.div-quarters').eq(i).children('label').children('input').prop('checked') ) {
+                if ( $('.div-quarters').eq(i).data('is-four') == 'no' ) {
+                    res = res + 299;
+                } else res = res + 499;
+            }            
+        }            
+    }
+
     return res;
 
 }

@@ -118,20 +118,20 @@ $(function () {
         <label class="tax-system-answer" for="general-ip"><input id="general-ip" type="radio" name="tax-system" value="general-ip">Общая</label><br>        
         <div style="display: none" class="tax-answer-0"></div>  
         <div id="choice-quarters" style="display: none"><i><span>Выберите период</span></i><br>
-            <div><label for="qrt-2-2017"><input id="qrt-2-2017" type="checkbox" name="qrt-2-2017" checked>2-й квартал 2017 года</label></div>            
+            <div data-is-four="no" class="div-quarters"><label for="qrt-2-2017"><input id="qrt-2-2017" type="checkbox" name="qrt-2-2017" checked>2-й квартал 2017 года</label></div>            
             <a id="another-periods" href="#" onclick="return false;">Другие периоды</a><br>
-            <div id="first-another-period"><label style="display: none;" for="qrt-1-2017"><input id="qrt-1-2017" type="checkbox" name="qrt-1-2017">1-й квартал 2017 года</label></div>
-            <div><label style="display: none;" for="qrt-4-2016"><input id="qrt-4-2016" type="checkbox" name="qrt-4-2016">4-й квартал 2016 года</label></div>      
-            <div><label style="display: none;" for="qrt-3-2016"><input id="qrt-3-2016" type="checkbox" name="qrt-3-2016">3-й квартал 2016 года</label></div>
-            <div><label style="display: none;" for="qrt-2-2016"><input id="qrt-2-2016" type="checkbox" name="qrt-2-2016">2-й квартал 2016 года</label></div>
-            <div><label style="display: none;" for="qrt-1-2016"><input id="qrt-1-2016" type="checkbox" name="qrt-1-2016">1-й квартал 2016 года</label></div>
-            <div><label style="display: none;" for="qrt-4-2015"><input id="qrt-4-2015" type="checkbox" name="qrt-4-2015">4-й квартал 2015 года</label></div>     
-            <div><label style="display: none;" for="qrt-3-2015"><input id="qrt-3-2015" type="checkbox" name="qrt-3-2015">3-й квартал 2015 года</label></div>
-            <div><label style="display: none;" for="qrt-2-2015"><input id="qrt-2-2015" type="checkbox" name="qrt-2-2015">2-й квартал 2015 года</label></div>
-            <div><label style="display: none;" for="qrt-1-2015"><input id="qrt-1-2015" type="checkbox" name="qrt-1-2015">1-й квартал 2015 года</label></div>
-            <div><label style="display: none;" for="qrt-4-2014"><input id="qrt-4-2014" type="checkbox" name="qrt-4-2014">4-й квартал 2014 года</label></div>       
-            <div><label style="display: none;" for="qrt-3-2014"><input id="qrt-3-2014" type="checkbox" name="qrt-3-2014">3-й квартал 2014 года</label></div>
-            <div><label style="display: none;" for="qrt-2-2014"><input id="qrt-2-2014" type="checkbox" name="qrt-2-2014">2-й квартал 2014 года</label></div>
+            <div data-is-four="no" class="div-quarters" id="first-another-period"><label style="display: none;" for="qrt-1-2017"><input id="qrt-1-2017" type="checkbox" name="qrt-1-2017">1-й квартал 2017 года</label></div>
+            <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2016"><input id="qrt-4-2016" type="checkbox" name="qrt-4-2016">4-й квартал 2016 года</label></div>      
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-3-2016"><input id="qrt-3-2016" type="checkbox" name="qrt-3-2016">3-й квартал 2016 года</label></div>
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2016"><input id="qrt-2-2016" type="checkbox" name="qrt-2-2016">2-й квартал 2016 года</label></div>
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2016"><input id="qrt-1-2016" type="checkbox" name="qrt-1-2016">1-й квартал 2016 года</label></div>
+            <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2015"><input id="qrt-4-2015" type="checkbox" name="qrt-4-2015">4-й квартал 2015 года</label></div>     
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-3-2015"><input id="qrt-3-2015" type="checkbox" name="qrt-3-2015">3-й квартал 2015 года</label></div>
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2015"><input id="qrt-2-2015" type="checkbox" name="qrt-2-2015">2-й квартал 2015 года</label></div>
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2015"><input id="qrt-1-2015" type="checkbox" name="qrt-1-2015">1-й квартал 2015 года</label></div>
+            <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2014"><input id="qrt-4-2014" type="checkbox" name="qrt-4-2014">4-й квартал 2014 года</label></div>       
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-3-2014"><input id="qrt-3-2014" type="checkbox" name="qrt-3-2014">3-й квартал 2014 года</label></div>
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2014"><input id="qrt-2-2014" type="checkbox" name="qrt-2-2014">2-й квартал 2014 года</label></div>
         </div>  
       
         <label class="tax-system-answer" for="envd-ip"><input id="envd-ip" type="radio" name="tax-system" value="envd-ip">ЕНВД<br></label><br>
@@ -146,6 +146,15 @@ $(function () {
         <button id="btn-next-tax-system-ip" style="display: none;" onclick="return false;">Дальше</button>
     </div>
     
+    <div id="div-final-sum" style="display: none;">
+        <span id="final-sum-text" style="display: none;">Итоговая сумма составляет 
+            <span id="final-sum-digits">299</span> руб. 
+        </span>
+        <span id="discount-text" style="display: none;">Скидка составляет 
+            <span id="discount-digits"></span> руб.
+        </span>
+    </div>
+
     <div id="div-will-send" style="display: none">
         <span id="span-we-will-send">Мы за Вас подготовим:</span>
         <div style="display: none;">

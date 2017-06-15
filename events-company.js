@@ -49,10 +49,10 @@ $(function () {
     $("html").on('change', '#qrt-2-2014', function () { $('.month').remove(); });
 
     var discountSzv = 'no';
-    $("html").on('change', '.month', function () { 
-
+    $("html").on('change', '.month', function() {
         var inputs = $('.month').children('div').children('label').children('input');        
         var j = 0;
+        
         for (var i = 0; i < inputs.length; i++) {
             if ( inputs.eq(i).prop('checked') ) {
                 $('#szv-m').prop('checked', true);
@@ -81,7 +81,6 @@ $(function () {
             $('#final-sum-digits').text(+ oldSum + 500); 
             discount = 'no';       
         }
-
     });
 
     $("#btn-next-tax-system").click(function() {
