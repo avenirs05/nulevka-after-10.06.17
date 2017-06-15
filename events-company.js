@@ -383,6 +383,17 @@ $(function () {
     $("#count-fss").change(function() { showAndHideChildChecks (this); });
     $("#decl-one").change(function() { showAndHideChildChecks (this); });
     $("#szv-m").change(function() { showAndHideChildChecksSzv (this); });
+    $("#szv-m").change(function() { 
+        if ( $('#szv-m').prop('checked')  == false ) {
+            var oldSum = $('#final-sum-digits').text();
+            $('#final-sum-digits').text(+ oldSum - 500);
+        }
+        if ( $('#szv-m').prop('checked') ) {
+            var oldSum = $('#final-sum-digits').text();
+            $('#final-sum-digits').text(+ oldSum + 500);
+        }
+    });
+
 
     $('#div-will-send').on("change", ".periods-will-send label input", showAndHideParentCheckbox);
 

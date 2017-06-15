@@ -132,7 +132,8 @@ function calculateFinalSumOOO () {
                 }            
             }
         }
-        
+
+       
     }
     return res;
 

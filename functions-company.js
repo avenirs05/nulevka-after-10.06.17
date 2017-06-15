@@ -228,12 +228,12 @@ function showInputsWillSendSzv () {
     }     
 }
             
-function showAndHideChildChecksSzv (reportId) {        
+function showAndHideChildChecksSzv (reportId) {
     if ( $(reportId).prop('checked') == false ) {
         var inputs = $('.month').children('div').children('label').children('input');
         for (var i = 0; i < inputs.length; i++) {
             inputs.eq(i).prop("checked", false);
-        }
+        }      
     }
 
     if ( $(reportId).prop('checked')) {
