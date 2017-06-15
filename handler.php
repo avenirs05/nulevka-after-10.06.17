@@ -24,7 +24,21 @@
     </head>
 <body>
 <?php require_once 'header.php'; ?> 
-<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=410015223277202&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=buyer&targets-hint=&default-sum=&button-text=01&mail=on&successURL=" width="450" height="198"></iframe> 
+
+<?php  ?> 
+
+<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml"> 
+    <input type="hidden" name="receiver" value="410015223277202"> 
+    <input type="hidden" name="quickpay-form" value="small"> 
+    <div><input name="targets" value="<?php echo $_POST['inn-ooo']; ?>" disabled></div>
+    <div><input name="sum" value="<?php echo $_POST['total-amount']; ?>" data-type="number" disabled>Сумма</div>     
+    <label><input type="radio" name="paymentType" value="AC">Банковской картой</label>
+    <label><input type="radio" name="paymentType" value="PC">Яндекс.Деньгами</label>
+    <label><input type="radio" name="paymentType" value="MC">С баланса мобильного</label> 
+    <input type="submit" value="Перевести"> 
+</form>
+
+<!-- <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=410015223277202&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=buyer&targets-hint=&default-sum=&button-text=01&mail=on&successURL=" width="450" height="198"></iframe>  -->
 
 <?php 
 require_once 'functions.php';

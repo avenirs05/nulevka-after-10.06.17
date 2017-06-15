@@ -192,6 +192,7 @@ $(function () {
     </div>
 
     <div id="div-from-customer" style="display: none;">
+        <input id="total-amount" type="hidden" name="total-amount" value="122">
         <div style="display: none;"><div>Количество работников</div><input id="cnt-workers" type="text" name="cnt-workers-ooo"></div>
         <div style="display: none;"><div>СНИЛС директора</div><input id="snils-dir" type="text" name="snils-dir-ooo"></div>
         <div><div>Название компании</div><input id="company-name" type="text" name="name-ooo"></div>

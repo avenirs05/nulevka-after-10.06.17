@@ -436,6 +436,8 @@ $(function () {
                 divs.eq(i).children('label').children('input').prop('checked', false);
             }            
         }
+        var totalAmount = $('#final-sum-digits').text();
+        $("#total-amount").val(totalAmount);
     }) 
 
 });
