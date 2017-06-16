@@ -1,41 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <meta name="format-detection" content="telephone=no" />
-	
-    <title>Сдать отчетность для ИП</title>
-    
+    <meta name="format-detection" content="telephone=no" />	
+
+    <title>Сдать отчетность для ИП</title>   
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-<!--     <link href="css/jquery-ui.min.css" rel="stylesheet">
-    <link href="css/jquery-ui.theme.css" rel="stylesheet">
-    <link href="css/jquery-ui.structure.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-
+    
     <script src="js/jquery-3.1.1.min.js"></script>
-<!--     <script src="js/jquery-ui.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="functions-general.js"></script>
     <script src="functions-person.js"></script>
-    <script src="events-person.js"></script>
     <script src="events-general.js"></script>
-
-<script>
-
-$(function () {   
-    
-
-});
-
-</script>    
-    <style>
-
-    </style>
+    <script src="events-person.js"></script>
 </head>
 <body>
 

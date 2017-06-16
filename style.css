@@ -278,7 +278,7 @@ input[type="checkbox"] {
 	font-weight: bold;
 }
 
-.nalog-decl,
+.nalog-decl label,
 #label-decl-usn-4-2016, 
 #label-decl-usn-4-2015,
 #label-decl-usn-4-2014,
@@ -510,6 +510,21 @@ input[type="checkbox"] {
 }
 
 /*Конец. Переопределенные стили Bootstrap.*/
+
+/*Форма оплаты от Яндекса*/
+
+#form-yandex {
+	width: 600px;
+	border: 1px solid #E5E5E5;
+	padding: 20px;
+}
+
+.way-of-payment {
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+/*Конец. Форма оплаты от Яндекса*/
 
 @media screen and (max-device-width: 1365px) {
 	.main-screen h3 {

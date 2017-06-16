@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <meta name="format-detection" content="telephone=no" />
-        <title>Сдать отчетность для ООО</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-<!--         <link href="css/jquery-ui.min.css" rel="stylesheet">
-        <link href="css/jquery-ui.theme.css" rel="stylesheet">
-        <link href="css/jquery-ui.structure.css" rel="stylesheet"> -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="format-detection" content="telephone=no" />
 
-        <script src="js/jquery-3.1.1.min.js"></script>
-<!--         <script src="js/jquery-ui.min.js"></script> -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="functions-company.js"></script>
-        <script src="functions-general.js"></script>
-        <script src="events-company.js"></script>
-        <script src="events-general.js"></script>
-    </head>
+    <title>Сдать отчетность для ООО</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="functions-company.js"></script>
+    <script src="functions-general.js"></script>
+    <script src="events-company.js"></script>
+    <script src="events-general.js"></script>
+</head>
 <body>
 <?php require_once 'header.php'; ?> 
 
-<?php  ?> 
-
-<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml"> 
-    <input type="hidden" name="receiver" value="410015223277202"> 
-    <input type="hidden" name="quickpay-form" value="small"> 
-    <input name="targets" value="Оплата за бухуслуги. Инн плательщика: <?php echo $_POST['inn-ooo']; ?>">
-    <div><input name="sum" value="<?php echo $_POST['total-amount']; ?>" data-type="number">Сумма</div>     
-    <label><input type="radio" name="paymentType" value="AC">Банковской картой</label>
-    <label><input type="radio" name="paymentType" value="PC">Яндекс.Деньгами</label>
-    <label><input type="radio" name="paymentType" value="MC">С баланса мобильного</label> 
-    <input type="submit" value="Перевести"> 
-</form>
-
-<!-- <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=410015223277202&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=buyer&targets-hint=&default-sum=&button-text=01&mail=on&successURL=" width="450" height="198"></iframe>  -->
+<div class="container-fluid questions-wrapper">
+    <div class="row">
+        <div class="col-md-12 visible-md-block visible-lg-block">
+            <form id="form-yandex" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml"> 
+                <input type="hidden" name="receiver" value="410015223277202"> 
+                <input type="hidden" name="quickpay-form" value="small"> 
+                <input type="hidden" name="targets" value="Заказ № <?php echo $_POST['inn-ooo']; ?>">
+                <div>
+                    <span>Сумма</span><input name="sum" value="<?php echo $_POST['total-amount']; ?>" data-type="number" disabled><span>руб.</span>
+                </div> 
+                <div class="way-of-payment">Выберите способ оплаты</div>    
+                <div class="way-of-payment">
+                    <label>
+                        <input type="radio" name="paymentType" value="AC" checked>
+                        <img src="/imgs/bank-card.png" alt=""><!-- <span>Банковской картой</span> -->
+                    </label>
+                </div>
+                <div class="way-of-payment">
+                    <label>
+                        <input type="radio" name="paymentType" value="PC">
+                        <img src="/imgs/yandex-money.png" alt=""><!-- <span>Яндекс.Деньгами</span> -->
+                    </label>
+                </div>
+                <div class="way-of-payment">
+                    <label>
+                        <input type="radio" name="paymentType" value="MC">
+                        <img src="/imgs/mobile-payments.png" alt=""><!-- <span>С баланса мобильного</span> -->
+                    </label> 
+                </div>
+                <div><input type="submit" value="Перевести"></div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <?php 
 require_once 'functions.php';
