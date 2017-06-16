@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta name="format-detection" content="telephone=no" />
 
-    <title>Сдать отчетность для ООО</title>
+    <title>Оплата</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
@@ -160,6 +160,7 @@ if (isset($_POST['submit-go-to-pay-ooo'])) {
     willSendBuhRepStat() .
     willSendWorkersCnt() .
     willSendDeclUsn() . 
+    showTotalAmount() .
     '</body></html>';
     
     mail($to, $subject, $message, $headers);  
@@ -183,7 +184,8 @@ if (isset($_POST['submit-go-to-pay-ip'])) {
     '<span style="font-size: 20px;">Мы Вам подготовим:</span><br><br>' .
     willSendDeclNdsIp() .    
     willSendDeclNdflIp() .
-    willSendDeclYearIp () .        
+    willSendDeclYearIp () . 
+    showTotalAmount() .
     '</body></html>';
     
     mail($to, $subject, $message, $headers);  

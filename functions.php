@@ -495,3 +495,11 @@ function willSendDeclYearIp () {
         return $str . '<br>' . '<br>';
     }
 }
+
+function showTotalAmount() {
+    $str = "";
+    if (isset($_POST['total-amount'])) {
+            $str .= '<b>К оплате: </b>' . $_POST['total-amount'] .  ' руб.<br>';    
+    }
+    return $str . '<br>' . '<br>';
+}
