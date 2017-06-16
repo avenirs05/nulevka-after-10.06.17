@@ -514,14 +514,40 @@ input[type="checkbox"] {
 /*Форма оплаты от Яндекса*/
 
 #form-yandex {
-	width: 600px;
+	width: 390px;
 	border: 1px solid #E5E5E5;
 	padding: 20px;
+	font-size: 18px;
+}
+
+#form-yandex input[name="sum"] {
+	width: 70px;
+	text-align: center;
 }
 
 .way-of-payment {
 	margin-top: 20px;
 	font-size: 18px;
+}
+
+#span-text-sum {
+	margin-right: 5px;
+} 
+
+#span-text-rub {
+	margin-left: 5px;
+}
+
+#form-yandex input[type="submit"] {
+	margin-top: 20px;
+	background-color: #FFDB4D;
+	border: medium none;
+	border-radius: 2px;
+	padding: 5px 15px;
+}
+
+#form-yandex input[type="submit"]:hover {
+	background-color: #FCD600;
 }
 
 /*Конец. Форма оплаты от Яндекса*/
