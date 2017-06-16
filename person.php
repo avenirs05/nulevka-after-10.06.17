@@ -161,8 +161,9 @@
     </div>
 
     <div id="div-from-customer-ip" style="display: none;">
+        <input id="total-amount" type="hidden" name="total-amount" value="">
         <div><div>ФИО</div><input id="fio-ip" type="text" name="fio-ip"></div>
-        <div><div>Инн</div><input id="inn-ip" type="text" name="inn-ip"></div>
+        <div><div>Инн</div><input id="inn" type="text" name="inn"></div>
         <div><div>Телефон</div><input id="phone-ip" type="text" name="phone-ip"></div>
         <div><div>Email</div><input id="email-ip" type="text" name="email-ip"></div>
         <div><div>Паспорт серия</div><input id="pasp-ser-ip" type="text" name="pasp-ser-ip"></div>
@@ -171,7 +172,7 @@
         <div><div>Кем выдан</div><input id="pasp-who-issue-ip" type="text" name="pasp-who-issue-ip"></div>
         <div><div>Код подразделения</div><input id="pasp-kp-ip" type="text" name="pasp-kp-ip"></div>        
         <button id="btn-back-will-send-ip" onclick="return false;">Назад</button>
-        <input type="submit" value="Перейти к оплате" name="submit-go-to-pay-ip">
+        <input id="submit-go-to-pay-ip" type="submit" value="Перейти к оплате" name="submit-go-to-pay-ip">
     </div>
 
     <div id="dialog-callback" title="" style="display: none;">

@@ -146,5 +146,10 @@ $(function () {
         if (j === 3) {
             $('#final-sum-digits').text('897');
         } 
-    });    
+    }); 
+
+    $('#submit-go-to-pay-ip').click(function() {
+        var totalAmount = $('#final-sum-digits').text();
+        $('#total-amount').val(totalAmount);
+    })    
 });

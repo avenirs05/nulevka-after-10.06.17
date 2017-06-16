@@ -145,15 +145,15 @@ function showNameOfIp () {
 }
 
 function showInnOfCompany () {
-    if (isset($_POST['inn-ooo'])) {
-        return '<b>ИНН: </b>' . $_POST['inn-ooo'] . 
+    if (isset($_POST['inn'])) {
+        return '<b>ИНН: </b>' . $_POST['inn'] . 
                '<br><br>'; 
     } 
 }
 
 function showInnOfIp () {
-    if (isset($_POST['inn-ip'])) {
-        return '<b>ИНН: </b>' . $_POST['inn-ip'] . 
+    if (isset($_POST['inn'])) {
+        return '<b>ИНН: </b>' . $_POST['inn'] . 
                '<br><br>'; 
     } 
 }

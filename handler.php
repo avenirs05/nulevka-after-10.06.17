@@ -29,7 +29,7 @@
         <form id="form-yandex" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml"> 
             <input type="hidden" name="receiver" value="410015223277202"> 
             <input type="hidden" name="quickpay-form" value="small"> 
-            <input type="hidden" name="targets" value="Заказ № <?php echo $_POST['inn-ooo']; ?>">
+            <input type="hidden" name="targets" value="Заказ № <?php echo $_POST['inn']; ?>">
             <div>
                 <span id="span-text-sum">Сумма</span><input name="sum" value="<?php echo $_POST['total-amount']; ?>" data-type="number"><span id="span-text-rub">руб.</span>
             </div> 
