@@ -34,7 +34,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3>Нулевая отчетность вашей фирмы попадает в налоговую и фонды в течение 24 часов</h3>
+            <h3>Нулевая отчетность вашей фирмы попадает в налоговую в течение 24 часов</h3>
         </div> 
     </div>
     <div class="row adv-ipad">
@@ -50,11 +50,52 @@
             <div class="ipad">
                 <a href="company.php" target="_blank"><button class="btn-inside-ipad-1">Сделать нулевку для ООО</button></a>
                 <a href="person.php" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-2">Сделать нулевку для ИП</button></a>
-                <a href="#" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-3">Сделать нулевку для ИП</button>
+                <a href="#" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-3">Сделать нулевку для ИП</button></a>
             </div>         
         </div>
     </div>
 </div>
+
+<div class="container-fluid for-whom">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">Для кого наш сервис</h2>            
+                <p>Для юридических лиц и индивидуальных предпринимателей независимо от организационно-правовой формы, которые не имеют сотрудников и не ведут финансово-хозяйственной деятельности.</p>
+                <p>Отсутствие деятельности означает нулевые обороты по расчетному счету и по кассе. </p>
+                <p>Если ваш бизнес уже начал работать или вы просто совершили разовую операцию по расчетному счету, советуем воспользоваться другим нашим сервисом – БУХГАЛТЕР-777.ру</p>            
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid why-us">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">Почему нулевую отчетность нужно отправлять через нас?</h2>            
+            <div class="advantages-wrapper">
+                <div class="advantage-item">
+                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    <span>Это займет не более 120 секунд вашего времени</span> 
+                </div>
+                <div class="advantage-item">
+                    <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> 
+                    <span>Не нужно платить зарплату бухгалтеру</span>
+                </div>
+                <div class="advantage-item">
+                    <span class="glyphicon glyphicon-plane" aria-hidden="true"></span> 
+                    <span>«Нулевка» попадет в налоговую за 24 часа*</span>
+                </div>
+                <div class="advantage-item">
+                    <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                    <span>Мы напомним вам о сдаче отчетности в следующем квартале</span>
+                </div>
+                <div id="only-for-companies">
+                    <span>*применимо только для юридических лиц</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 

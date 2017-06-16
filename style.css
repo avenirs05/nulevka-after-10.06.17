@@ -193,6 +193,51 @@ a {
 	color: #ffffff;
 }
 
+.for-whom h2, .why-us h2 {
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+
+.why-us {
+	background-color: #028090;
+	color: #ffffff;
+}
+
+.glyphicon-plane,
+.glyphicon-time,
+.glyphicon-bell,
+.glyphicon-usd {
+	font-size: 18px;
+	margin-right: 5px;
+}
+
+.for-whom p, 
+.why-us p,
+.advantages-wrapper {
+	padding-left: 65px;
+	padding-right: 65px;
+	font-size: 20px;
+	font-family: Open Sans;	
+}
+
+.advantage-item {
+	margin-bottom: 10px;
+}
+
+.why-us #only-for-companies {
+	font-size: 14px;
+}
+
+/*.advantage-item-text {
+	margin-left: 5px;
+}*/
+
+
+
+
 /*Страницы Company и Person*/
 #label-choice-tax-system {
 	margin-top: 15px;
