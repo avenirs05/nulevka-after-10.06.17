@@ -28,7 +28,7 @@
                 <form action="handler-free.php" method="get">
                     <div><div>Названия Ваших фирм</div><input id="names-of-companies" type="text" name="names-of-companies"></div>
                     <div><div>Имя</div><input id="name-of-buh" type="text" name="name-of-buh"></div>
-                    <div><div>Телефон, на который вы получите бонус</div><input id="phone-of-buh" type="text" name="phone-of-buh"></div>
+                    <div><div>Телефон</div><input id="phone-of-buh" type="text" name="phone-of-buh"></div>
                     <input type="submit" value="Отправить" name="submit-get-bonus">
                 </form>
             </div>

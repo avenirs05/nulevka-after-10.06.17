@@ -109,16 +109,16 @@
             <div class="how-it-works-wrapper">
                 <div class="for-ooo">
                     <h4 class="text-center">Для юридических лиц</h4>
-                    <p>1. Отправьте <a href="company.php" target="_blank">заявку</a> на сдачу «нулевки».</p> 
-                    <p>2. Оплатите выбранные услуги любым удобным способом. <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
-                    <p>3. Подпишите и отправьте нам любым способом доверенность, которую вы получите на E-mail. <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title="Email, WhatsApp, Viber, Telegram"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
-                    <p>4. Получите отчет о сдаче вашей «нулевки» в течение 24 часов! <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title='ФЗ "Об электронной подписи", ФЗ "О бухгалтерском учете", Налоговый кодекс РФ (ст. 80)'><span class="glyphicon glyphicon-question-sign"></span></a></p>         
+                    <p>1. Отправьте <a href="company.php" target="_blank">заявку</a> на сдачу «нулевки»</p> 
+                    <p>2. Оплатите выбранные услуги любым удобным способом <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
+                    <p>3. Подпишите и отправьте нам любым способом доверенность, которую вы получите на E-mail <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title="Email, WhatsApp, Viber, Telegram"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
+                    <p>4. Получите отчет о сдаче вашей «нулевки» в течение 24 часов!</p>         
                 </div>
                 <div class="for-ip">
                     <h4 class="text-center">Для ИП</h4> 
-                    <p>1. Отправьте <a href="person.php" target="_blank">заявку</a> на составление «нулевки».</p> 
-                    <p>2. Оплатите выбранные услуги любым удобным способом. <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p>
-                    <p>3. Получите составленную отчетность на свой e-mail в течение 24 часов.</p> 
+                    <p>1. Отправьте <a href="person.php" target="_blank">заявку</a> на составление «нулевки»</p> 
+                    <p>2. Оплатите выбранные услуги любым удобным способом <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p>
+                    <p>3. Получите составленную отчетность на свой e-mail в течение 24 часов</p> 
                     <p>4. Подпишите и подайте в налоговую в соответствии с прилагаемой инструкцией.</p>         
                 </div>
             </div>
@@ -133,26 +133,26 @@
             <div class="price-wrapper">
                 <div id="price-ip-usn" class="price-item text-center">
                     <div class="header-price">ИП на УСН</div>
-                    <div>Подготовка годовой налоговой декларации без отправки в ИФНС</div>
+                    <div class="div-text-price">Подготовка годовой налоговой декларации без отправки в ИФНС</div>
                     <div class="price-digits">299 руб.</div>
                 </div>
                 <div id="price-ip-osn" class="price-item text-center">
                     <div class="header-price">ИП на ОСН</div>
-                    <div>Подготовка годовой налоговой декларации без отправки в ИФНС</div>
+                    <div class="div-text-price">Подготовка годовой налоговой декларации без отправки в ИФНС</div>
                     <div class="price-digits">499 руб.</div>
                 </div>
                 <div id="price-ooo-usn" class="price-item text-center">
                     <div class="header-price">ООО на УСН</div>
-                    <div>Подготовка и отправка в ИФНС квартальной отчетности</div>
+                    <div class="div-text-price">Подготовка и отправка в ИФНС квартальной отчетности</div>
                     <div class="price-digits">от 999 руб.</div>
                 </div>
                 <div class="price-item text-center">
                     <div class="header-price">ООО на ОСН</div>
-                    <div>Подготовка и отправка в ИФНС квартальной отчетности</div>
+                    <div class="div-text-price">Подготовка и отправка в ИФНС квартальной отчетности</div>
                     <div class="price-digits">от 1 499 руб.</div>
                 </div>                
             </div>
-            <div id="look-all-price"><a href="price.php" target="_blank">Посмотреть полный прайс-лист</a></div>
+            <div id="look-all-price" class="text-center"><a href="price.php" target="_blank">Посмотреть полный прайс-лист</a></div>
         </div>
     </div>
 </div>

@@ -343,17 +343,26 @@ a {
 
 .header-price {
 	font-weight: bold;	
+    border-bottom: 1px solid black;
+	padding: 5px 0px;
 }
 
 .price-item {
 	border: 1px solid black;
-	padding: 10px;
 	font-size: 18px;
 	background-color: #F5F5F5;
 }
 
+.div-text-price {
+	padding: 10px;
+}
+
 .price-digits {
 	font-weight: bold;
+	padding-bottom: 10px;
+	background-color: rgb(231, 56, 43);
+	color: rgb(255, 255, 255);
+	padding-top: 10px;
 }
 
 #price-ip-usn,
@@ -363,12 +372,13 @@ a {
 }
 
 .how-much a {
-	padding-left: 65px;
+/*	padding-left: 65px;*/
 	font-family: Open Sans;
 	font-size: 18px;
 }
 
 #look-all-price {
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
