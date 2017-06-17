@@ -25,38 +25,15 @@
 
 <div class="container-fluid questions-wrapper">
     <div class="row">
-        <div class="col-md-12 visible-md-block visible-lg-block">
-        <form id="form-yandex" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml"> 
-            <input type="hidden" name="receiver" value="410015223277202"> 
-            <input type="hidden" name="quickpay-form" value="small"> 
-            <input type="hidden" name="targets" value="Заказ № <?php echo $_POST['inn']; ?>">
-            <div>
-                <span id="span-text-sum">Сумма</span><input name="sum" value="<?php echo $_POST['total-amount']; ?>" data-type="number"><span id="span-text-rub">руб.</span>
-            </div> 
-            <div class="way-of-payment">Выберите способ оплаты:</div>    
-            <div class="way-of-payment">
-                <label>
-                    <input type="radio" name="paymentType" value="AC" checked>
-                    <img src="/imgs/bank-card.png" alt=""><!-- <span>Банковской картой</span> -->
-                </label>
+        <div class="col-md-12">
+            <div class="thank-you text-center">
+                <span>Спасибо за заявку! С вами свяжутся в ближайшее время!</span>
             </div>
-            <div class="way-of-payment">
-                <label>
-                    <input type="radio" name="paymentType" value="PC">
-                    <img src="/imgs/yandex-money.png" alt=""><!-- <span>Яндекс.Деньгами</span> -->
-                </label>
-            </div>
-            <div class="way-of-payment">
-                <label>
-                    <input type="radio" name="paymentType" value="MC">
-                    <img src="/imgs/mobile-payments.png" alt=""><!-- <span>С баланса мобильного</span> -->
-                </label> 
-            </div>
-            <input type="submit" value="Оплатить">
-        </form>
         </div>
     </div>
 </div>
+
+
 
 <?php 
 require_once 'functions.php';

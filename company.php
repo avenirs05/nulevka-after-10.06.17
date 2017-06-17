@@ -30,7 +30,7 @@
                 <h4 class="modal-title" id="myModalLabel">Представление нулевых деклараций по единому налогу на вмененный доход главой 26.3 НК РФ не предусмотрено (Определение ВАС РФ от 26.02.2014 г. № ВАС-1903/14). Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
             </div>
             <div class="modal-body">
-                <form action="handler.php" method="get">
+                <form action="handler-free.php" method="get">
                     <div><div>Имя</div><input type="text" id="name-envd" name="name-envd-ooo"></div>
                     <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-envd-ooo"></div>
                     <div><div>Email</div><input id="email-envd" type="text" name="email-envd-ooo"></div>
@@ -49,7 +49,7 @@
                 <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
             </div>
             <div class="modal-body">
-                <form action="handler.php" method="get">
+                <form action="handler-free.php" method="get">
                     <div><div>Имя</div><input id="name-envd" type="text" name="name-not-know-ooo"></div>
                     <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-not-know-ooo"></div>
                     <div><div>Email</div><input id="email-envd" type="text" name="email-not-know-ooo"></div>

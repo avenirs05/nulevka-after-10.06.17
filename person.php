@@ -30,7 +30,7 @@
                     <h4 class="modal-title" id="myModalLabel">Представление нулевых деклараций по единому налогу на вмененный доход главой 26.3 НК РФ не предусмотрено (Определение ВАС РФ от 26.02.2014 г. № ВАС-1903/14). Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
                 </div>
                 <div class="modal-body">
-                    <form method="get" action="handler.php">
+                    <form method="get" action="handler-free.php">
                         <div><div>Имя</div><input id="name-envd" type="text" name="name-envd-ip"></div>
                         <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-envd-ip"></div>
                         <div><div>Email</div><input id="email-envd" type="text" name="email-envd-ip"></div>
@@ -49,7 +49,7 @@
                     <h4 class="modal-title" id="myModalLabel">В соответствии со ст. 346.52. Налогового кодекса РФ налоговая декларация по налогу, уплачиваемому в связи с применением патентной системы налогообложения, в налоговые органы не представляется. Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
                 </div>
                 <div class="modal-body">
-                    <form method="get" action="handler.php">
+                    <form method="get" action="handler-free.php">
                         <div><div>Имя</div><input id="name-envd" type="text" name="name-patent-ip"></div>
                         <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-patent-ip"></div>
                         <div><div>Email</div><input id="email-envd" type="text" name="email-patent-ip"></div>
@@ -68,7 +68,7 @@
                     <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
                 </div>
                 <div class="modal-body">
-                    <form method="get" action="handler.php">
+                    <form method="get" action="handler-free.php">
                         <div><div>Имя</div><input id="name-envd" type="text" name="name-not-know-ip"></div>
                         <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-not-know-ip"></div>
                         <div><div>Email</div><input id="email-envd" type="text" name="email-not-know-ip"></div>
