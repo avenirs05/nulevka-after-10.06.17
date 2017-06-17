@@ -193,12 +193,22 @@ a {
 	color: #ffffff;
 }
 
-.for-whom h2, .why-us h2 {
+.for-whom h2 {
+	font-size: 36px;
 	font-weight: 700;
 	font-family: 'Open Sans Condensed', sans-serif;
 	letter-spacing: 2px;
 	margin-bottom: 20px;
 	margin-top: 25px;
+}
+
+.why-us h2 {
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	margin-top: 35px;
 }
 
 .why-us {
@@ -210,11 +220,11 @@ a {
 .glyphicon-time,
 .glyphicon-bell,
 .glyphicon-usd {
-	font-size: 18px;
-	margin-right: 5px;
+	font-size: 50px;
+	margin-right: 20px;
 }
 
-.for-whom p, 
+ 
 .why-us p,
 .advantages-wrapper {
 	padding-left: 65px;
@@ -223,17 +233,95 @@ a {
 	font-family: Open Sans;	
 }
 
+.for-whom p {
+/*	text-align: justify;*/
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 20px;
+	font-family: Open Sans;	
+
+}
+
+.for-whom img {
+	float: left;
+	margin-left: 65px;
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+
+.for-whom p:last-child {
+	margin-bottom: 35px;
+}
+
+
 .advantage-item {
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+	position: relative;
 }
 
 .why-us #only-for-companies {
 	font-size: 14px;
+	margin-bottom: 30px;
 }
 
-/*.advantage-item-text {
-	margin-left: 5px;
-}*/
+.advantage-item-text {
+	position: absolute;
+	top: 20%;
+}
+
+.how-it-works {
+	background-color: #F5F5F5;
+}
+
+.how-it-works h2 {
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	margin-top: 25px;
+}
+
+.how-it-works-wrapper {
+	padding-left: 65px;
+	padding-right: 65px;
+}
+
+.for-ooo {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 48%;
+	float: left;
+	margin-bottom: 40px;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
+}
+
+.for-ip {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 48%;
+	float: right;
+	margin-bottom: 40px;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
+}
+
+.for-ooo h4, .for-ip h4 {
+	font-family: Open Sans;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.for-ooo p, .for-ip p {	
+	font-family: Open Sans;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
 
 
 
