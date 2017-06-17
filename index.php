@@ -21,6 +21,11 @@
     <script src="events-company.js"></script>
     <script src="events-person.js"></script>
     <script src="events-general.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </head>
 <body>
 
@@ -104,17 +109,17 @@
             <div class="how-it-works-wrapper">
                 <div class="for-ooo">
                     <h4 class="text-center">Для юридических лиц</h4>
-                    <p>1. Отправьте нам заявку на сдачу «нулевки»</p> 
-                    <p>2. Оплатите выбранные услуги любым удобным способом</p> 
-                    <p>3. Подпишите и отправьте нам любым способом доверенность, которую вы получите на E-mail</p> 
-                    <p>4. Получите отчет о сдаче вашей «нулевки» в течение 24 часов!</p>         
+                    <p>1. Отправьте <a href="company.php" target="_blank">заявку</a> на сдачу «нулевки».</p> 
+                    <p>2. Оплатите выбранные услуги любым удобным способом. <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
+                    <p>3. Подпишите и отправьте нам любым способом доверенность, которую вы получите на E-mail. <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title="Email, WhatsApp, Viber, Telegram"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
+                    <p>4. Получите отчет о сдаче вашей «нулевки» в течение 24 часов! <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title='ФЗ "Об электронной подписи", ФЗ "О бухгалтерском учете", Налоговый кодекс РФ (ст. 80)'><span class="glyphicon glyphicon-question-sign"></span></a></p>         
                 </div>
                 <div class="for-ip">
-                    <h4 class="text-center">Для индивидуальных предпринимателей</h4> 
-                    <p>1. Отправьте нам заявку на составление «нулевки»</p> 
-                    <p>2. Оплатите выбранные услуги любым удобным способом</p> 
-                    <p>3. Получите составленную отчетность на свой e-mail в течение 24 часов</p> 
-                    <p>4. Подпишите и подайте в налоговую в соответствии с прилагаемой инструкцией</p>         
+                    <h4 class="text-center">Для ИП</h4> 
+                    <p>1. Отправьте <a href="person.php" target="_blank">заявку</a> на составление «нулевки».</p> 
+                    <p>2. Оплатите выбранные услуги любым удобным способом. <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p>
+                    <p>3. Получите составленную отчетность на свой e-mail в течение 24 часов.</p> 
+                    <p>4. Подпишите и подайте в налоговую в соответствии с прилагаемой инструкцией.</p>         
                 </div>
             </div>
         </div>

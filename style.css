@@ -295,6 +295,7 @@ a {
 	float: left;
 	margin-bottom: 40px;
 	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
+	/*min-height: 410px;*/
 }
 
 .for-ip {
@@ -305,6 +306,7 @@ a {
 	float: right;
 	margin-bottom: 40px;
 	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
+	/*min-height: 410px;*/
 }
 
 .for-ooo h4, .for-ip h4 {
@@ -321,6 +323,10 @@ a {
 	margin-right: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
+}
+
+.glyphicon-question-sign {
+
 }
 
 
