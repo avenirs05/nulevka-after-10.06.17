@@ -182,5 +182,4 @@ if (isset($_POST['submit-go-to-pay-ip'])) {
 
 ?>
 
-</body>
-</html>
+<?php require_once 'footer.php'; ?>

@@ -173,29 +173,9 @@
     </div>
 </div>
 
+<?php require_once 'footer.php'; ?>
 
 
 
 
 
-
-
-
-
-
-<!-- <script>
-	jQuery(function () {
-
-    	var location = window.location.href;		
- 		jQuery('.menu a').each(function () {				
-        	var link = jQuery(this).attr('href');			
-        	if (location == link) { 				
-            	jQuery(this).addClass('change-color');      
-            }
-    	});
-			
-	});
-</script> -->
-
-</body>
-</html>
