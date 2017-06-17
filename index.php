@@ -126,6 +126,36 @@
     </div>
 </div>
 
+<div class="container-fluid how-much">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">Сколько это стоит?</h2>       
+            <div class="price-wrapper">
+                <div id="price-ip-usn" class="price-item text-center">
+                    <div class="header-price">ИП на УСН</div>
+                    <div>Подготовка годовой налоговой декларации без отправки в ИФНС</div>
+                    <div class="price-digits">299 руб.</div>
+                </div>
+                <div id="price-ip-osn" class="price-item text-center">
+                    <div class="header-price">ИП на ОСН</div>
+                    <div>Подготовка годовой налоговой декларации без отправки в ИФНС</div>
+                    <div class="price-digits">499 руб.</div>
+                </div>
+                <div id="price-ooo-usn" class="price-item text-center">
+                    <div class="header-price">ООО на УСН</div>
+                    <div>Подготовка и отправка в ИФНС квартальной отчетности</div>
+                    <div class="price-digits">от 999 руб.</div>
+                </div>
+                <div class="price-item text-center">
+                    <div class="header-price">ООО на ОСН</div>
+                    <div>Подготовка и отправка в ИФНС квартальной отчетности</div>
+                    <div class="price-digits">от 1 499 руб.</div>
+                </div>                
+            </div>
+            <div id="look-all-price"><a href="price.php" target="_blank">Посмотреть полный прайс-лист</a></div>
+        </div>
+    </div>
+</div>
 
 
 

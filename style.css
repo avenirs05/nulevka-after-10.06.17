@@ -325,12 +325,55 @@ a {
 	margin-left: 20px;
 }
 
-.glyphicon-question-sign {
-
+.how-much h2 {
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	margin-top: 25px;
 }
 
+.price-wrapper {
+	padding-left: 65px;
+	padding-right: 65px;
+	display: flex;
+	justify-content: space-around;
+	font-family: Open Sans;
+	margin-bottom: 15px;
+	
+}
 
+.header-price {
+	font-weight: bold;	
+}
 
+.price-item {
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 18px;
+	background-color: #F5F5F5;
+}
+
+.price-digits {
+	font-weight: bold;
+}
+
+#price-ip-usn,
+#price-ip-osn,
+#price-ooo-usn {
+	border-right: none;
+}
+
+.how-much a {
+	padding-left: 65px;
+	font-family: Open Sans;
+	font-size: 18px;
+}
+
+#look-all-price {
+	margin-bottom: 30px;
+}
 
 /*Страницы Company и Person*/
 #label-choice-tax-system {
