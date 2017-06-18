@@ -26,6 +26,7 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45030163 = new Ya.Metrika({ id:45030163, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45030163" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 
@@ -72,7 +73,14 @@
             <h3>Нулевая отчетность вашей фирмы попадает в налоговую в течение 24 часов</h3>
         </div> 
     </div>
-    <div class="row adv-ipad">
+    <div class="row">
+        <div class="col-md-12 btns-wrapper text-center">
+            <a href="company.php" target="_blank"><button>Сделать нулевку для ООО</button></a>
+            <a href="person.php" target="_blank"><button>Сделать нулевку для ИП</button></a>
+            <a href="http://mybuh.online/" target="_blank"><button id="btn-not-null-mob">Сдать не нулевку</button></a>       
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-12">
             <ul>
                 <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Все регионы России</span></li>
@@ -81,29 +89,33 @@
                 <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Около 2 000 довольных клиентов</span></li>  
             </ul>            
         </div> 
-<!--         <div class="col-md-12">
-            <div>
-                <a href="company.php" target="_blank"><button class="btn-inside-ipad-1">Сделать нулевку для ООО</button></a>
-                <a href="person.php" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-2">Сделать нулевку для ИП</button></a>
-                <a href="http://mybuh.online/" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-3">Сдать не нулевку</button></a>
-            </div>         
-        </div> -->
     </div>
 </div>
 
-<div class="container-fluid for-whom">
+<div class="container-fluid for-whom visible-md-block visible-lg-block">
     <div class="row">
         <div class="col-md-12">
             <h2 class="text-center">Для кого наш сервис</h2>
                 <img src="imgs/crowd-for-whom.jpg" width="400" alt="">            
-                <p>•  Для юридических лиц и индивидуальных предпринимателей, которые только начинают свой бизнес и еще не имеют поступлений на расчетный счет или в кассу.</p>
+                <p>• Для юридических лиц и индивидуальных предпринимателей, которые только начинают свой бизнес и еще не имеют поступлений на расчетный счет или в кассу.</p>
                 <p>• Для компаний и ИП, которые временно приостановили свою деятельность, но планируют ее возобновить в будущем</p>
                 <p>• Для бухгалтеров, которые в отчетный период не успевают сдавать отчетность по всем своим организациям</p>          
         </div>
     </div>
 </div>
 
-<div class="container-fluid why-us">
+<div class="container-fluid for-whom-mob visible-xs-block visible-sm-block">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">Для кого наш сервис</h2>     
+                <p>• Для юридических лиц и индивидуальных предпринимателей, которые только начинают свой бизнес и еще не имеют поступлений на расчетный счет или в кассу.</p>
+                <p>• Для компаний и ИП, которые временно приостановили свою деятельность, но планируют ее возобновить в будущем</p>
+                <p>• Для бухгалтеров, которые в отчетный период не успевают сдавать отчетность по всем своим организациям</p>          
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid why-us visible-md-block visible-lg-block">
     <div class="row">
         <div class="col-md-12">
             <h2 class="text-center">Почему нулевую отчетность нужно отправлять через нас?</h2>            
@@ -132,7 +144,36 @@
     </div>
 </div>
 
-<div class="container-fluid how-it-works">
+<div class="container-fluid why-us-mob visible-xs-block visible-sm-block">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">Почему нулевую отчетность нужно отправлять через нас?</h2>            
+            <div class="advantages-wrapper-mob">
+                <div class="advantage-item-mob text-center">
+                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    <span  class="advantage-item-text-mob">Это займет не более 120 секунд вашего времени</span> 
+                </div>
+                <div class="advantage-item-mob text-center">
+                    <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> 
+                    <span class="advantage-item-text-mob">Не нужно платить зарплату бухгалтеру</span>
+                </div>
+                <div class="advantage-item-mob text-center">
+                    <span class="glyphicon glyphicon-plane" aria-hidden="true"></span> 
+                    <span class="advantage-item-text-mob">«Нулевка» попадет в налоговую за 24 часа*</span>
+                </div>
+                <div class="advantage-item-mob text-center">
+                    <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                    <span class="advantage-item-text-mob">Мы напомним вам о сдаче отчетности в следующем квартале</span>
+                </div>
+                <div id="only-for-companies-mob">
+                    <span>*применимо только для юридических лиц</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid how-it-works visible-md-block visible-lg-block">
     <div class="row">
         <div class="col-md-12" id="how-it-works-link">
             <h2 class="text-center">Как это работает?</h2>       
@@ -146,6 +187,30 @@
                 </div>
                 <div class="for-ip">
                     <h4 class="text-center">Для ИП</h4> 
+                    <p>1. Отправьте <a href="person.php" target="_blank">заявку</a> на составление «нулевки»</p>
+                    <p>2. Оплатите выбранные услуги любым удобным способом <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p>
+                    <p>3. Получите составленную отчетность на свой e-mail в течение 24 часов</p> 
+                    <p>4. Подпишите и подайте в налоговую в соответствии с прилагаемой инструкцией.</p>         
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid how-it-works-mob visible-xs-block visible-sm-block">
+    <div class="row">
+        <div class="col-md-12" id="how-it-works-link-mob">
+            <h2 class="text-center">Как это работает?</h2>       
+            <div class="how-it-works-wrapper-mob">
+                <div class="for-ooo-mob">
+                    <h4 class="text-center">Для юридических лиц</h4>
+                    <p>1. Отправьте <a href="company.php" target="_blank">заявку</a> на сдачу «нулевки»</p> 
+                    <p>2. Оплатите выбранные услуги любым удобным способом <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
+                    <p>3. Подпишите и отправьте нам любым способом доверенность, которую вы получите на E-mail <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title="Email, WhatsApp, Viber, Telegram"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
+                    <p>4. Получите отчет о сдаче вашей «нулевки» в течение 24 часов!</p>         
+                </div>
+                <div class="for-ip-mob">
+                    <h4 class="text-center">Для ИП</h4> 
                     <p>1. Отправьте <a href="person.php" target="_blank">заявку</a> на составление «нулевки»</p> 
                     <p>2. Оплатите выбранные услуги любым удобным способом <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p>
                     <p>3. Получите составленную отчетность на свой e-mail в течение 24 часов</p> 
@@ -156,7 +221,7 @@
     </div>
 </div>
 
-<div class="container-fluid how-much">
+<div class="container-fluid how-much visible-md-block visible-lg-block">
     <div class="row">
         <div id="price-link" class="col-md-12 price-wrapper">
             <h2 class="text-center">Сколько это стоит?</h2>
@@ -185,6 +250,43 @@
     </div>
 </div>
 
+<div class="container-fluid how-much-mob visible-xs-block visible-sm-block">
+    <div class="row">
+        <div id="price-link-mob" class="col-md-12 price-wrapper-mob">
+            <h2 class="text-center">Сколько это стоит?</h2>
+            <table class="table table-bordered">               
+                <tr>
+                    <th class="text-center">ИП на УСН</th>
+                    <th class="text-center">ИП на ОСН</th>
+                </tr>
+                <tr>
+                    <td class="text-center">Подготовка годовой налоговой декларации без отправки в ИФНС</td>
+                    <td class="text-center">Подготовка годовой налоговой декларации без отправки в ИФНС</td>
+                </tr>
+                <tr>
+                    <td class="text-center cell-price">299 руб.</td>
+                    <td class="text-center cell-price">499 руб.</td>
+                </tr>
+            </table> 
+            <table class="table table-bordered">               
+                <tr>
+                    <th class="text-center">ООО на УСН</th>
+                    <th class="text-center">ООО на ОСН</th>
+                </tr>
+                <tr>
+                    <td class="text-center">Подготовка и отправка в ИФНС квартальной отчетности</td>
+                    <td class="text-center">Подготовка и отправка в ИФНС квартальной отчетности</td>
+                </tr>
+                <tr>
+                    <td class="text-center cell-price">от 999 руб.</td>
+                    <td class="text-center cell-price">от 1 499 руб.</td>
+                </tr>
+            </table>      
+            <div id="look-all-price-mob" class="text-center"><a href="price.php" target="_blank">Посмотреть полный прайс-лист</a></div>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid for-accountants">
     <div class="row">
         <div class="col-md-12" id="for-accountants-link">
@@ -195,7 +297,8 @@
             <p>Минимальная сумма одного заказа, по которому выплачивается вознаграждение – 1499 рублей.</p>
             <p>Минимальное количество заказов – 3</p>
             <div class="btn-wrapper text-center">
-                <button id="btn-get-bonus">Получить бонус</button>
+                <button id="btn-get-bonus" class="visible-md-block visible-lg-block">Получить бонус</button>
+                <button id="btn-get-bonus-mob" class="visible-xs-block visible-sm-block">Получить бонус</button>
             </div>
         </div>
     </div>

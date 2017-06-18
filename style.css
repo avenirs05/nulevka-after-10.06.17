@@ -106,6 +106,10 @@ a {
 	height: 100vh;
 }
 
+.main-screen-mob {
+	background-color: #F5F5F5;
+}
+
 .main-screen .adv-ipad {
 	background-color: #F5F5F5;
 }
@@ -149,7 +153,6 @@ a {
 .main-screen-mob h3 {
 	font-size: 24px;
 	font-family: 'Open Sans Condensed', sans-serif;
-	/*font-weight: 600;*/
 	margin-top: 0px;
 	letter-spacing: 2px;
 }
@@ -173,13 +176,14 @@ a {
 }
 
 .main-screen-mob ul {
-	margin-top: 20px;
+	margin-bottom: 30px;
 	font-size: 18px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
 	margin-top: 0px;
 	list-style-type: none;
 	display: inline-block;
+
 	/*padding-left: 65px;*/
 }
 
@@ -197,6 +201,41 @@ a {
 .main-screen-mob li {
 	margin-top: 15px;
 	font-size: 20px;
+}
+
+.main-screen-mob .btns-wrapper {
+	margin-top: 20px;
+}
+
+.main-screen-mob button {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 5px;
+	background-color: #E7382B;
+	color: #ffffff;
+	border: none;
+	width: 290px;
+	margin-bottom: 20px;
+}
+
+.main-screen-mob button:active {
+	background-color: #339933;
+}
+
+#btn-not-null-mob {
+	background-color: #ffffff;
+	color: black;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+#btn-not-null-mob:active {
+	background-color: #E7382B;
+	color: #fff;
 }
 
 .main-screen li {
@@ -262,6 +301,15 @@ a {
 	margin-top: 25px;
 }
 
+.for-whom-mob h2 {
+	font-size: 28px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+
 .why-us h2 {
 	font-size: 36px;
 	font-weight: 700;
@@ -269,6 +317,26 @@ a {
 	letter-spacing: 2px;
 	margin-bottom: 30px;
 	margin-top: 35px;
+}
+
+.why-us-mob {
+	background-color: #028090;
+	color: #ffffff;
+}
+
+.why-us-mob h2 {
+	font-size: 28px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 35px;
+	margin-top: 30px;
+}
+
+.why-us-mob p,
+.advantages-wrapper-mob {
+	font-size: 18px;
+	font-family: Open Sans;	
 }
 
 .why-us {
@@ -282,6 +350,19 @@ a {
 .glyphicon-usd {
 	font-size: 50px;
 	margin-right: 20px;
+}
+
+.why-us-mob .glyphicon-plane,
+.why-us-mob .glyphicon-time,
+.why-us-mob .glyphicon-bell,
+.why-us-mob .glyphicon-usd {
+	display: block;
+	margin-bottom: 5px;
+	margin-right: 0px;
+}
+
+.advantage-item-mob {
+	margin-bottom: 40px;
 }
 
  
@@ -300,6 +381,11 @@ a {
 	font-family: Open Sans;	
 }
 
+.for-whom-mob p {
+	font-size: 18px;
+	font-family: Open Sans;	
+}
+
 .for-whom img {
 	float: left;
 	margin-left: 65px;
@@ -311,15 +397,24 @@ a {
 	margin-bottom: 35px;
 }
 
+.for-whom-mob p:last-child {
+	margin-bottom: 20px;
+}
 
 .advantage-item {
 	margin-bottom: 30px;
 	position: relative;
 }
 
-.why-us #only-for-companies {
+#only-for-companies {
 	font-size: 14px;
 	margin-bottom: 30px;
+}
+
+#only-for-companies-mob {
+	font-size: 12px;
+	margin-bottom: 20px;
+	margin-top: -20px;
 }
 
 .advantage-item-text {
@@ -331,8 +426,21 @@ a {
 	background-color: #F5F5F5;
 }
 
+.how-it-works-mob {
+	background-color: #F5F5F5;
+}
+
 .how-it-works h2 {
 	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	margin-top: 25px;
+}
+
+.how-it-works-mob h2 {
+	font-size: 28px;
 	font-weight: 700;
 	font-family: 'Open Sans Condensed', sans-serif;
 	letter-spacing: 2px;
@@ -346,6 +454,8 @@ a {
 }
 
 .for-ooo {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 	background-color: #ffffff;
 	border: 1px solid #000000;
 	border-radius: 4px;
@@ -353,7 +463,18 @@ a {
 	float: left;
 	margin-bottom: 40px;
 	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
-	/*min-height: 410px;*/
+}
+
+.for-ooo-mob {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 100%;
+	float: left;
+	margin-bottom: 40px;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
 }
 
 .for-ip {
@@ -362,6 +483,16 @@ a {
 	border-radius: 4px;
 	width: 48%;
 	float: right;
+	margin-bottom: 40px;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
+}
+
+.for-ip-mob {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 100%;
+	float: left;
 	margin-bottom: 40px;
 	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
 }
@@ -382,8 +513,33 @@ a {
 	margin-left: 20px;
 }
 
+.for-ooo-mob h4, .for-ip-mob h4 {
+	font-family: Open Sans;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.for-ooo-mob p, .for-ip-mob p {	
+	font-family: Open Sans;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
 .how-much h2 {
 	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	margin-top: 25px;
+}
+
+.how-much-mob h2 {
+	font-size: 28px;
 	font-weight: 700;
 	font-family: 'Open Sans Condensed', sans-serif;
 	letter-spacing: 2px;
@@ -399,6 +555,12 @@ a {
 }
 
 .price-wrapper table {
+	font-family: Open Sans;
+	font-size: 18px;
+	background-color: #F5F5F5;
+}
+
+.price-wrapper-mob table {
 	font-family: Open Sans;
 	font-size: 18px;
 	background-color: #F5F5F5;
@@ -429,6 +591,13 @@ a {
 #look-all-price {
 	margin-top: 30px;
 	margin-bottom: 18px;
+}
+
+#look-all-price-mob {
+	margin-top: 20px;
+	margin-bottom: 22px;
+	font-family: Open Sans;
+	font-size: 18px;
 }
 
 /*Страницы Company и Person*/
@@ -491,7 +660,7 @@ input[type="checkbox"] {
 	padding-left: 10px;
 	padding-right: 10px;
 	background-color: #E7382B;
-	border: 2px solid #ffffff;
+	border: 1px solid #ffffff;
 	border-radius: 3px;
 	padding-bottom: 5px;
 	padding-top: 5px;
@@ -835,6 +1004,27 @@ input[type="checkbox"] {
 	margin-right: auto;*/
 }
 
+#modal-for-accountants-mob .modal-body input[type="text"] {
+	width: 100%;
+	height: 35px;
+}
+
+#modal-for-accountants-mob .modal-body input[type="submit"] {
+	width: 100%;
+}
+
+#modal-for-accountants-mob .modal-content {
+	width: 100%;
+/*	margin-left: auto;
+	margin-right: auto;*/
+}
+
+#modal-for-accountants-mob .modal-dialog {
+	width: 300px;
+/*	margin-left: auto;
+	margin-right: auto;*/
+}
+
 .modal-body form > div {
 	margin-top: 20px;
 }
@@ -991,7 +1181,18 @@ input[type="checkbox"] {
 
 
 @media screen and (max-device-width: 991px) {
-
+	.for-accountants p {
+		padding-left: 0px;
+		padding-right: 0px;
+		font-size: 18px;
+	}
+	.for-accountants h2 {
+		font-size: 28px;
+	}
+	.footer-wrapper {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 
 @media screen and (max-device-width: 767px) {

@@ -74,6 +74,25 @@
     </div>
 </div>
 
+<div class="modal fade" id="modal-for-accountants-mob" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Для получения бонуса заполните данные ниже</h4>
+            </div>
+            <div class="modal-body">
+                <form action="handler-free.php" method="get">
+                    <div><div>Названия Ваших фирм</div><input id="names-of-companies" type="text" name="names-of-companies"></div>
+                    <div><div>Имя</div><input id="name-of-buh" type="text" name="name-of-buh"></div>
+                    <div><div>Телефон</div><input id="phone-of-buh" type="text" name="phone-of-buh"></div>
+                    <input type="submit" value="Отправить" name="submit-get-bonus">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid header visible-md-block visible-lg-block">
     <div class="row">
         <div class="col-md-12">
