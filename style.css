@@ -980,10 +980,10 @@ input[type="checkbox"] {
 /*Начало. Переопределенные стили Bootstrap.*/
 
 .modal-backdrop.in {
-	opacity: .7;
+	opacity: .8;
 }
 
-.modal-dialog {
+/*.modal-dialog {
 	width: 450px;
 }
 
@@ -993,6 +993,20 @@ input[type="checkbox"] {
 
 .modal-body input[type="text"] {
 	width: 416px;
+	height: 35px;
+	font-size: 18px;
+}*/
+
+.modal-dialog {
+	width: 320px;
+}
+
+.modal-content {
+	background-color: #F1F1F1;
+}
+
+.modal-body input[type="text"] {
+	width: 287px;
 	height: 35px;
 	font-size: 18px;
 }
@@ -1052,7 +1066,7 @@ input[type="checkbox"] {
 .modal-body input[type="submit"] {
 	background-color: #E7382B;
 	color: #ffffff;
-	width: 418px;
+	width: 100%;
 	height: 60px;
 	border: medium none;
 	border-radius: 2px;
@@ -1207,6 +1221,43 @@ input[type="checkbox"] {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+	.questions-wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#div-from-customer {
+		width: 290px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 1px;
+	}
+	#div-from-customer-ip {
+		width: 290px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 1px;
+	}
+	#div-from-customer input[type="text"] {
+		width: 270px;
+	}
+	#div-from-customer input[type="submit"] {
+		width: 165px;
+		margin-right: 0;
+	}
+	#div-from-customer-ip input[type="text"] {
+		width: 270px;
+	}
+	#div-from-customer-ip input[type="submit"] {
+		width: 165px;
+		margin-right: 0;
+	}
+	#form-tax-system button {
+		width: 90px;
+	}
+	#form-yandex {
+		width: 290px;
+	}
+
 }
 
 @media screen and (max-device-width: 767px) {

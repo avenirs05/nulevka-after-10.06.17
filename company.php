@@ -66,7 +66,7 @@
 
 <div class="container-fluid questions-wrapper">
 <div class="row">
-<div class="col-md-12 visible-md-block visible-lg-block">
+<div class="col-md-12">
 
 <form id="form-tax-system" action="handler.php" method="post" novalidate>
     <div id="div-tax-system">

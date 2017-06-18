@@ -27,7 +27,7 @@
 
 <div class="container-fluid questions-wrapper">
     <div class="row">
-        <div class="col-md-12 visible-md-block visible-lg-block">
+        <div class="col-md-12">
         <form id="form-yandex" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml"> 
             <input type="hidden" name="receiver" value="410015223277202"> 
             <input type="hidden" name="quickpay-form" value="small"> 
