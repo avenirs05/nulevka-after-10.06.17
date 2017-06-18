@@ -381,7 +381,7 @@ a {
 .for-whom p {
 	padding-left: 100px;
 	padding-right: 100px;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: Open Sans;	
 }
 
@@ -888,11 +888,6 @@ input[type="checkbox"] {
 	padding-left: 70px;
 	padding-right: 70px;
 }
-
-
-
-
-
 
 
 /*Форма От Клиента Если Общая или Упрощ. - ООО */
