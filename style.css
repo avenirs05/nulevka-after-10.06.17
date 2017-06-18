@@ -11,6 +11,10 @@ a {
 	text-decoration: none;	
 }
 
+.bold {
+	font-weight: bold;
+}
+
 /*.colors {
 	синий: #028090;
 	красный: #E7382B;
@@ -612,6 +616,19 @@ a {
 	margin-top: 20px; 
 }
 
+.price-page {
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.price-page h3 {
+	margin-top: 0px;
+}
+
+.price-page-h4 {
+	margin-top: 50px;
+}
+
 input[type="radio"] {
 	margin-right: 7px;
 }
@@ -805,6 +822,11 @@ input[type="checkbox"] {
 .btn-wrapper-mob {
 	margin-top: 20px;
 	margin-bottom: 30px;
+}
+
+#btn-get-bonus {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #btn-get-bonus-mob {
@@ -1256,6 +1278,10 @@ input[type="checkbox"] {
 	}
 	#form-yandex {
 		width: 290px;
+	}
+	.price-page {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 }

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/imgs/fav.png" type="image/png">
     <link href="style.css" rel="stylesheet">
 
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -245,7 +246,11 @@
                     <td class="text-center cell-price">от 1 499 руб.</td>
                 </tr>
             </table>       
-            <div id="look-all-price" class="text-center"><a href="price.php" target="_blank">Посмотреть полный прайс-лист</a></div>
+            <div id="look-all-price" class="text-center">
+                <a href="company.php" target="_blank">Рассчитать стоимость для ООО</a><br><br>
+                <a href="person.php" target="_blank">Рассчитать стоимость для ИП</a><br><br>
+                <a href="price.php" target="_blank">Посмотреть полный прайс-лист</a>
+            </div>
         </div>
     </div>
 </div>
@@ -282,7 +287,11 @@
                     <td class="text-center cell-price">от 1 499 руб.</td>
                 </tr>
             </table>      
-            <div id="look-all-price-mob" class="text-center"><a href="price.php" target="_blank">Посмотреть полный прайс-лист</a></div>
+            <div id="look-all-price-mob" class="text-center">
+                <a href="company.php" target="_blank">Рассчитать стоимость для ООО</a><br><br>
+                <a href="person.php" target="_blank">Рассчитать стоимость для ИП</a><br><br>
+                <a href="price.php" target="_blank">Посмотреть полный прайс-лист</a>
+            </div>
         </div>
     </div>
 </div>
