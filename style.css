@@ -621,6 +621,11 @@ a {
 	padding-right: 70px;
 }
 
+.privacy-policy {
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
 .price-page h3 {
 	margin-top: 0px;
 }
@@ -874,6 +879,16 @@ input[type="checkbox"] {
 	margin-top: 30px;
 }
 
+.order-wrapper {
+	margin-top: 20px;
+	text-align: right;
+}
+
+.public-offer {
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
 
 
 
@@ -1004,20 +1019,6 @@ input[type="checkbox"] {
 .modal-backdrop.in {
 	opacity: .8;
 }
-
-/*.modal-dialog {
-	width: 450px;
-}
-
-.modal-content {
-	background-color: #F1F1F1;
-}
-
-.modal-body input[type="text"] {
-	width: 416px;
-	height: 35px;
-	font-size: 18px;
-}*/
 
 .modal-dialog {
 	width: 320px;
@@ -1280,6 +1281,14 @@ input[type="checkbox"] {
 		width: 290px;
 	}
 	.price-page {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.privacy-policy {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.public-offer {
 		padding-left: 10px;
 		padding-right: 10px;
 	}

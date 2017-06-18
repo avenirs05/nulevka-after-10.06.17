@@ -10,7 +10,7 @@
                         <div><a href="#"></a></div>
                     </div>
                     <div class="col-md-3">
-                        <div><a href="user-agreement.php" target="_blank">Пользовательское соглашение</a></div>
+                        <div><a href="public-offer.php" target="_blank">Публичная оферта</a></div>
                         <div><a href="price.php" target="_blank">Прайс-лист</a></div>
                         <div><a href="#"></a></div>
                         <div><a href="#"></a></div> 

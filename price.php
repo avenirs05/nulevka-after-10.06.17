@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta name="format-detection" content="telephone=no" />
 
-    <title>Оплата</title>
+    <title>Прайс-лист</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
@@ -65,7 +65,7 @@
                     <td class="text-center">2 499 руб.</td>
                 </tr>
                 <tr>
-                    <td>ООО на ОСНО, не имеющее приходно-расходных операций по р/с, единственный учредитель и директор в одном лице
+                    <td>ООО на ОСНО, не имеющее приходно-расходных операций по р/с, единственный учредитель и директор не в одном лице
                     </td>
                     <td class="text-center">1-3 квартал</td>
                     <td>
@@ -77,7 +77,7 @@
                     <td class="text-center">1 999 руб.</td>
                 </tr>
                 <tr>
-                    <td>ООО на ОСНО, не имеющее приходно-расходных операций по р/с, единственный учредитель и директор в одном лице</td>
+                    <td>ООО на ОСНО, не имеющее приходно-расходных операций по р/с, единственный учредитель и директор не в одном лице</td>
                     <td class="text-center">4 квартал (год)</td>
                     <td>
                         • Единая(упрощенная) налоговая декларация<br>
@@ -280,7 +280,8 @@
                     </td>
                     <td class="text-center">4 квартал (год)</td>
                     <td>
-                        Налоговая декларация по НДФЛ 
+                        • Налоговая декларация по НДС<br>
+                        • Налоговая декларация по НДФЛ<br> 
                     </td>
                     <td class="text-center">499 руб.</td>
                 </tr>
@@ -323,4 +324,5 @@
     </div>
 </div>
 
+<?php require_once 'footer.php'; ?>
 
