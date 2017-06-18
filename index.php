@@ -296,8 +296,10 @@
             <p>Передавая нам в работу от 3-х юридических лиц, вы получите на свой телефон по 100 рублей за каждый заказ.</p>
             <p>Минимальная сумма одного заказа, по которому выплачивается вознаграждение – 1499 рублей.</p>
             <p>Минимальное количество заказов – 3</p>
-            <div class="btn-wrapper text-center">
+            <div class="btn-wrapper visible-md-block visible-lg-block">
                 <button id="btn-get-bonus" class="visible-md-block visible-lg-block">Получить бонус</button>
+            </div>
+            <div class="btn-wrapper-mob">
                 <button id="btn-get-bonus-mob" class="visible-xs-block visible-sm-block">Получить бонус</button>
             </div>
         </div>

@@ -796,6 +796,20 @@ input[type="checkbox"] {
 .btn-wrapper {
 	margin-top: 20px;
 	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 65px;
+	padding-right: 65px;
+}
+
+.btn-wrapper-mob {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#btn-get-bonus-mob {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .thank-you {
