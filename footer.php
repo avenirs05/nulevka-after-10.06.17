@@ -6,18 +6,18 @@
                     <div class="col-md-3">
                         <div><a href="#">Политика конфиденциальности</a></div>
                         <div><a href="#">Для бухгалтеров</a></div>
-                        <div><a href="#">Прайс</a></div>
+                        <div><a href="#"></a></div>
                         <div><a href="#"></a></div>
                     </div>
                     <div class="col-md-3">
                         <div><a href="#">Пользовательское соглашение</a></div>
-                        <div><a href="#">Наша команда</a></div>
+                        <div><a href="#">Прайс</a></div>
                         <div><a href="#"></a></div>
                         <div><a href="#"></a></div> 
                     </div>
                     <div class="col-md-3">
                         <div><a href="#">Сдача ненулевой отчётности</a></div>
-                        <div><a href="#">Очетность НО и ОПФ</a></div>
+                        <div><a href="#">Состав очетности НО и ОПФ</a></div>
                         <div><a href="#"></a></div>
                         <div><a href="#"></a></div>
                     </div>

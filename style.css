@@ -332,13 +332,15 @@ a {
 }
 
 .price-wrapper {
-	padding-left: 65px;
-	padding-right: 65px;
-	display: flex;
-	justify-content: space-around;
+	padding-left: 80px;
+	padding-right: 80px;
 	font-family: Open Sans;
-	margin-bottom: 15px;
-	
+	margin-bottom: 15px;	
+}
+
+.price-wrapper table {
+	font-family: Open Sans;
+	font-size: 18px;
 }
 
 .header-price {
@@ -347,23 +349,11 @@ a {
 	padding: 5px 0px;
 }
 
-.price-item {
-	border: 1px solid black;
-	font-size: 18px;
-	background-color: #F5F5F5;
+.cell-price {
+	background-color: #E7382B;
+	color: #ffffff;
 }
 
-.div-text-price {
-	padding: 10px;
-}
-
-.price-digits {
-	font-weight: bold;
-	padding-bottom: 10px;
-	background-color: rgb(231, 56, 43);
-	color: rgb(255, 255, 255);
-	padding-top: 10px;
-}
 
 #price-ip-usn,
 #price-ip-osn,
@@ -379,7 +369,7 @@ a {
 
 #look-all-price {
 	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 18px;
 }
 
 /*Страницы Company и Person*/
@@ -600,6 +590,7 @@ input[type="checkbox"] {
 .copyright {
 	font-size: 12px;
 	font-family: Open Sans;
+	margin-top: 30px;
 }
 
 
