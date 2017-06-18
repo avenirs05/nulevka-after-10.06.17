@@ -61,6 +61,36 @@
     </div>
 </div>
 
+<div class="container-fluid main-screen-mob visible-xs-block visible-sm-block">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Составление и сдача нулевой отчетности в 3 клика!</h1>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Нулевая отчетность вашей фирмы попадает в налоговую в течение 24 часов</h3>
+        </div> 
+    </div>
+    <div class="row adv-ipad">
+        <div class="col-md-12">
+            <ul>
+                <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Все регионы России</span></li>
+                <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Займет не более 120 секунд</span></li>
+                <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Не нужно платить зарплату бухгалтеру</span></li>
+                <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Около 2 000 довольных клиентов</span></li>  
+            </ul>            
+        </div> 
+<!--         <div class="col-md-12">
+            <div>
+                <a href="company.php" target="_blank"><button class="btn-inside-ipad-1">Сделать нулевку для ООО</button></a>
+                <a href="person.php" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-2">Сделать нулевку для ИП</button></a>
+                <a href="http://mybuh.online/" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-3">Сдать не нулевку</button></a>
+            </div>         
+        </div> -->
+    </div>
+</div>
+
 <div class="container-fluid for-whom">
     <div class="row">
         <div class="col-md-12">
@@ -104,7 +134,7 @@
 
 <div class="container-fluid how-it-works">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" id="how-it-works-link">
             <h2 class="text-center">Как это работает?</h2>       
             <div class="how-it-works-wrapper">
                 <div class="for-ooo">
@@ -128,7 +158,7 @@
 
 <div class="container-fluid how-much">
     <div class="row">
-        <div class="col-md-12 price-wrapper">
+        <div id="price-link" class="col-md-12 price-wrapper">
             <h2 class="text-center">Сколько это стоит?</h2>
             <table class="table table-bordered">               
                 <tr>
@@ -157,7 +187,7 @@
 
 <div class="container-fluid for-accountants">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" id="for-accountants-link">
             <h2 class="text-center">Для бухгалтеров</h2>         
             <p>У вас много работы и не хочется возиться с нулевками?</p>
             <p>Переложите это на нас и заработайте!</p>
