@@ -4,20 +4,20 @@
             <div class="container-fluid footer">
                 <div class="row">
                     <div class="col-md-3">
-                        <div><a href="#">Политика конфиденциальности</a></div>
-                        <div><a href="#">Для бухгалтеров</a></div>
+                        <div><a href="privacy-policy.php" target="_blank">Политика конфиденциальности</a></div>
+                        <div><a href="#" id="a-free-consult-footer" onclick="return false;">Бесплатная консультация</a></div>
                         <div><a href="#"></a></div>
                         <div><a href="#"></a></div>
                     </div>
                     <div class="col-md-3">
-                        <div><a href="#">Пользовательское соглашение</a></div>
-                        <div><a href="#">Прайс</a></div>
+                        <div><a href="user-agreement.php" target="_blank">Пользовательское соглашение</a></div>
+                        <div><a href="price.php" target="_blank">Прайс-лист</a></div>
                         <div><a href="#"></a></div>
                         <div><a href="#"></a></div> 
                     </div>
                     <div class="col-md-3">
-                        <div><a href="#">Сдача ненулевой отчётности</a></div>
-                        <div><a href="#">Состав очетности НО и ОПФ</a></div>
+                        <div><a href="http://mybuh.online/" target="_blank">Сдача ненулевой отчётности</a></div>
+                        <div><a href="what-when-send.php" target="_blank">Что когда сдавать?</a></div>
                         <div><a href="#"></a></div>
                         <div><a href="#"></a></div>
                     </div>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
-                        <div class="copyright text-center"><span>&copy; Nulevka.online</span></div>
+                        <div class="copyright text-center"><span>&copy; Nulevka.online, 2017</span></div>
                     </div>
                 </div>
             </div>

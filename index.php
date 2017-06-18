@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta name="format-detection" content="telephone=no" />
 	
-    <title>Nulevka.online</title>
+    <title>Сдача нулевой отчетности</title>
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
@@ -55,7 +55,7 @@
             <div class="ipad">
                 <a href="company.php" target="_blank"><button class="btn-inside-ipad-1">Сделать нулевку для ООО</button></a>
                 <a href="person.php" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-2">Сделать нулевку для ИП</button></a>
-                <a href="#" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-3">Сделать нулевку для ИП</button></a>
+                <a href="http://mybuh.online/" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-3">Сдать не нулевку</button></a>
             </div>         
         </div>
     </div>
@@ -138,8 +138,8 @@
                     <th class="text-center">ООО на ОСН</th>
                 </tr>
                 <tr>
-                    <td class="text-center">Подготовка годовой налоговой декларации без отправки в ИФН</td>
-                    <td class="text-center">Подготовка годовой налоговой декларации без отправки в ИФН</td>
+                    <td class="text-center">Подготовка годовой налоговой декларации без отправки в ИФНС</td>
+                    <td class="text-center">Подготовка годовой налоговой декларации без отправки в ИФНС</td>
                     <td class="text-center">Подготовка и отправка в ИФНС квартальной отчетности</td>
                     <td class="text-center">Подготовка и отправка в ИФНС квартальной отчетности</td>
                 </tr>
@@ -171,9 +171,5 @@
     </div>
 </div>
 
+
 <?php require_once 'footer.php'; ?>
-
-
-
-
-
