@@ -677,11 +677,11 @@ input[type="checkbox"] {
 #btn-free-consult-mob {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	font-size: 11px;
+	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #E7382B;
+	background-color: #339933;
 	border: 1px solid #ffffff;
 	border-radius: 3px;
 	padding-bottom: 5px;
@@ -689,6 +689,10 @@ input[type="checkbox"] {
 	float: right;
 	padding-bottom: 8px;
 	padding-top: 8px;
+}
+
+#btn-free-consult-mob:active {
+	background-color: #E7382B;
 }
 
 #form-tax-system button:hover {
@@ -1179,7 +1183,8 @@ input[type="checkbox"] {
 
 @media screen and (max-device-width: 1365px) {
 	.main-screen h3 {
-		letter-spacing: normal;
+		font-size: 24px;
+		letter-spacing: 1px;
 	}
 
 	.main-screen ul {
@@ -1189,6 +1194,20 @@ input[type="checkbox"] {
 		width: 25px;
 		height: 36px;
 	}	
+	.main-screen .btn-inside-ipad-1 {
+		left: 32%;
+	}
+	.main-screen .btn-inside-ipad-1 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.main-screen h1 {
+		font-size: 36px;
+	}
+	.main-screen-mob button {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 
 
@@ -1344,7 +1363,9 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-device-width: 767px) {
-
+	#btn-free-consult-mob {
+		font-size: 11px;
+	}
 }
 
 
