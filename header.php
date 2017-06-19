@@ -111,7 +111,7 @@
 <div class="container-fluid visible-xs-block visible-sm-block header-mob">
     <div class="row">
         <div class="col-md-12">
-            <a href="index"><div class="logo-wrapper-mob"></div></a>
+            <a href="index.php"><div class="logo-wrapper-mob"></div></a>
             <div class="right-side">
                 <button id="btn-free-consult-mob">Бесплатная консультация</button>
             </div> 
