@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">    
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/imgs/fav.png" type="image/png">
     <link href="style.css" rel="stylesheet">
     
     <script src="js/jquery-3.1.1.min.js"></script>
