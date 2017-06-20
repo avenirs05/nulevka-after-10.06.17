@@ -47,10 +47,10 @@
     <div class="row adv-ipad">
         <div class="col-md-5">
             <ul>
-                <li><img src="imgs/bullit-47x67.png" alt=""><span>Все регионы России</span></li>
-                <li><img src="imgs/bullit-47x67.png" alt=""><span>Займет не более 120 секунд</span></li>
-                <li><img src="imgs/bullit-47x67.png" alt=""><span>Не нужно платить зарплату бухгалтеру</span></li>
-                <li><img src="imgs/bullit-47x67.png" alt=""><span>Около 2 000 довольных клиентов</span></li>  
+                <li><img src="imgs/bullit.png" alt=""><span>Все регионы России</span></li>
+                <li><img src="imgs/bullit.png" alt=""><span>Займет не более 120 секунд</span></li>
+                <li><img src="imgs/bullit.png" alt=""><span>Не нужно платить зарплату бухгалтеру</span></li>
+                <li><img src="imgs/bullit.png" alt=""><span>Около 2 000 довольных клиентов</span></li>  
             </ul>            
         </div> 
         <div class="col-md-7">
@@ -84,10 +84,10 @@
     <div class="row">
         <div class="col-md-12">
             <ul>
-                <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Все регионы России</span></li>
-                <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Займет не более 120 секунд</span></li>
-                <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Не нужно платить зарплату бухгалтеру</span></li>
-                <li><img src="imgs/bullit-47x67.png" width="18" alt=""><span>Около 2 000 довольных клиентов</span></li>  
+                <li><img src="imgs/bullit.png" width="18" alt=""><span>Все регионы России</span></li>
+                <li><img src="imgs/bullit.png" width="18" alt=""><span>Займет не более 120 секунд</span></li>
+                <li><img src="imgs/bullit.png" width="18" alt=""><span>Не нужно платить зарплату бухгалтеру</span></li>
+                <li><img src="imgs/bullit.png" width="18" alt=""><span>Около 2 000 довольных клиентов</span></li>  
             </ul>            
         </div> 
     </div>

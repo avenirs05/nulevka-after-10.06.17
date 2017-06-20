@@ -565,6 +565,10 @@ a {
 	background-color: #F5F5F5;
 }
 
+.price-wrapper table td {
+	width: 25%;
+}
+
 .price-wrapper-mob table {
 	font-family: Open Sans;
 	font-size: 18px;
