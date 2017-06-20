@@ -455,6 +455,33 @@ a {
 .how-it-works-wrapper {
 	padding-left: 65px;
 	padding-right: 65px;
+	margin-bottom: 40px;
+	display: flex;
+}
+
+.for-ooo {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 48%;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
+	margin-right: auto;
+}
+
+.for-ip {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 48%;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
+	margin-left: auto;
+}
+
+/*.how-it-works-wrapper {
+	padding-left: 65px;
+	padding-right: 65px;
 }
 
 .for-ooo {
@@ -469,6 +496,17 @@ a {
 	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
 }
 
+.for-ip {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 48%;
+	float: right;
+	margin-bottom: 40px;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
+}*/
+
+
 .for-ooo-mob {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -481,15 +519,6 @@ a {
 	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
 }
 
-.for-ip {
-	background-color: #ffffff;
-	border: 1px solid #000000;
-	border-radius: 4px;
-	width: 48%;
-	float: right;
-	margin-bottom: 40px;
-	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
-}
 
 .for-ip-mob {
 	background-color: #ffffff;
