@@ -77,7 +77,7 @@ a {
 
 .header .right-side {
 	float: right;
-	margin-top: 5px;
+/*	margin-top: 5px;*/
 	display: flex;
 }
 
@@ -478,34 +478,6 @@ a {
 	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
 	margin-left: auto;
 }
-
-/*.how-it-works-wrapper {
-	padding-left: 65px;
-	padding-right: 65px;
-}
-
-.for-ooo {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	background-color: #ffffff;
-	border: 1px solid #000000;
-	border-radius: 4px;
-	width: 48%;
-	float: left;
-	margin-bottom: 40px;
-	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
-}
-
-.for-ip {
-	background-color: #ffffff;
-	border: 1px solid #000000;
-	border-radius: 4px;
-	width: 48%;
-	float: right;
-	margin-bottom: 40px;
-	box-shadow: 6px 6px 8px rgba(0,0,0,0.76);
-}*/
-
 
 .for-ooo-mob {
 	font-family: 'Open Sans', sans-serif;
@@ -1244,6 +1216,9 @@ input[type="checkbox"] {
 	.header .phone-digits {
 		font-size: 41px;
 	} 
+	.header .glyphicon-earphone {
+		font-size: 30px;
+	}
 	.header button {	
 		font-size: 22px;
 		padding-left: 20px;
@@ -1270,6 +1245,9 @@ input[type="checkbox"] {
 @media screen and (min-device-width: 1920px) {
 	.header .phone-digits {
 		font-size: 46px;
+	}
+	.header .glyphicon-earphone {
+		font-size: 35px;
 	}
 	.header button {	
 		font-size: 26px;
