@@ -183,7 +183,7 @@
                     <h4 class="text-center">Для юридических лиц</h4>
                     <p>1. Отправьте <a href="company.php" target="_blank">заявку</a> на сдачу «нулевки»</p> 
                     <p>2. Оплатите услуги любым удобным способом <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
-                    <p>3. Подпишите и отправьте нам любым способом доверенность, которую вы получите на E-mail <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title="Email, WhatsApp, Viber, Telegram"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
+                    <p>3. Подпишите и отправьте нам любым способом доверенность, которую вы получите на E-mail <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title="E-mail, WhatsApp, Viber, Telegram"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
                     <p>4. Получите отчет о сдаче вашей «нулевки» в течение 24 часов!</p>         
                 </div>
                 <div class="for-ip">
@@ -191,7 +191,7 @@
                     <p>1. Отправьте <a href="person.php" target="_blank">заявку</a> на составление «нулевки»</p>
                     <p>2. Оплатите услуги любым удобным способом <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p>
                     <p>3. Получите составленную отчетность на свой e-mail в течение 24 часов</p> 
-                    <p>4. Подпишите и подайте в налоговую в соответствии с инструкцией <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Инструкцию вы получите на email вместе с подготовленной отчетностью"><span class="glyphicon glyphicon-question-sign"></span></a></p>         
+                    <p>4. Подпишите и подайте в налоговую в соответствии с инструкцией <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Инструкцию вы получите на e-mail вместе с подготовленной отчетностью"><span class="glyphicon glyphicon-question-sign"></span></a></p>         
                 </div>
             </div>
         </div>
@@ -207,7 +207,7 @@
                     <h4 class="text-center">Для юридических лиц</h4>
                     <p>1. Отправьте <a href="company.php" target="_blank">заявку</a> на сдачу «нулевки»</p> 
                     <p>2. Оплатите услуги любым удобным способом <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
-                    <p>3. Подпишите и отправьте нам любым способом доверенность, которую вы получите на E-mail <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title="Email, WhatsApp, Viber, Telegram"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
+                    <p>3. Подпишите и отправьте нам любым способом доверенность, которую вы получите на E-mail <a onclick="return false;" href="#" data-toggle="tooltip" data-placement="right" title="E-mail, WhatsApp, Viber, Telegram"><span class="glyphicon glyphicon-question-sign"></span></a></p> 
                     <p>4. Получите отчет о сдаче вашей «нулевки» в течение 24 часов!</p>         
                 </div>
                 <div class="for-ip-mob">
@@ -215,7 +215,7 @@
                     <p>1. Отправьте <a href="person.php" target="_blank">заявку</a> на составление «нулевки»</p> 
                     <p>2. Оплатите услуги любым удобным способом <a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Банковской картой, Яндекс-деньги, С баланса мобильного, Qiwi"><span class="glyphicon glyphicon-question-sign"></span></a></p>
                     <p>3. Получите составленную отчетность на свой e-mail в течение 24 часов</p> 
-                    <p>4. Подпишите и подайте в налоговую в соответствии с инструкцией<a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Инструкцию вы получите на email вместе с подготовленной отчетностью"><span class="glyphicon glyphicon-question-sign"></span></a></p>        
+                    <p>4. Подпишите и подайте в налоговую в соответствии с инструкцией<a onclick="return false;" href="#"  data-toggle="tooltip" data-placement="right" title="Инструкцию вы получите на e-mail вместе с подготовленной отчетностью"><span class="glyphicon glyphicon-question-sign"></span></a></p>        
                 </div>
             </div>
         </div>

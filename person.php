@@ -36,7 +36,7 @@
                     <form method="get" action="handler-free.php">
                         <div><div>Имя</div><input id="name-envd" type="text" name="name-envd-ip"></div>
                         <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-envd-ip"></div>
-                        <div><div>Email</div><input id="email-envd" type="text" name="email-envd-ip"></div>
+                        <div><div>E-mail</div><input id="email-envd" type="text" name="email-envd-ip"></div>
                         <input type="submit" value="Отправить" name="submit-envd-ip">
                     </form>
                 </div>
@@ -55,7 +55,7 @@
                     <form method="get" action="handler-free.php">
                         <div><div>Имя</div><input id="name-envd" type="text" name="name-patent-ip"></div>
                         <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-patent-ip"></div>
-                        <div><div>Email</div><input id="email-envd" type="text" name="email-patent-ip"></div>
+                        <div><div>E-mail</div><input id="email-envd" type="text" name="email-patent-ip"></div>
                         <input type="submit" value="Отправить" name="submit-patent-ip">
                     </form>
                 </div>
@@ -74,7 +74,7 @@
                     <form method="get" action="handler-free.php">
                         <div><div>Имя</div><input id="name-envd" type="text" name="name-not-know-ip"></div>
                         <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-not-know-ip"></div>
-                        <div><div>Email</div><input id="email-envd" type="text" name="email-not-know-ip"></div>
+                        <div><div>E-mail</div><input id="email-envd" type="text" name="email-not-know-ip"></div>
                         <input type="submit" value="Отправить" name="submit-not-know-ip">
                     </form>
                 </div>
@@ -166,9 +166,9 @@
     <div id="div-from-customer-ip" style="display: none;">
         <input id="total-amount" type="hidden" name="total-amount" value="">
         <div><div>ФИО</div><input id="fio-ip" type="text" name="fio-ip"></div>
-        <div><div>Инн</div><input id="inn" type="text" name="inn"></div>
+        <div><div>ИНН</div><input id="inn" type="text" name="inn"></div>
         <div><div>Телефон</div><input id="phone-ip" type="text" name="phone-ip"></div>
-        <div><div>Email</div><input id="email-ip" type="text" name="email-ip"></div>
+        <div><div>E-mail</div><input id="email-ip" type="text" name="email-ip"></div>
         <div><div>Паспорт серия</div><input id="pasp-ser-ip" type="text" name="pasp-ser-ip"></div>
         <div><div>Паспорт №</div><input id="pasp-num-ip" type="text" name="pasp-num-ip"></div>
         <div><div>Дата выдачи</div><input id="pasp-date-issue-ip" type="text" name="pasp-date-issue-ip"></div>

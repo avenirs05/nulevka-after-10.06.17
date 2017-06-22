@@ -36,7 +36,7 @@
                 <form action="handler-free.php" method="get">
                     <div><div>Имя</div><input type="text" id="name-envd" name="name-envd-ooo"></div>
                     <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-envd-ooo"></div>
-                    <div><div>Email</div><input id="email-envd" type="text" name="email-envd-ooo"></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-envd-ooo"></div>
                     <input type="submit" value="Отправить" name="submit-envd-ooo">
                 </form>
             </div>
@@ -55,7 +55,7 @@
                 <form action="handler-free.php" method="get">
                     <div><div>Имя</div><input id="name-envd" type="text" name="name-not-know-ooo"></div>
                     <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-not-know-ooo"></div>
-                    <div><div>Email</div><input id="email-envd" type="text" name="email-not-know-ooo"></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-not-know-ooo"></div>
                     <input type="submit" value="Отправить" name="submit-not-know-ooo">
                 </form>
             </div>
@@ -183,9 +183,9 @@
         <div style="display: none;"><div>Количество работников</div><input id="cnt-workers" type="text" name="cnt-workers-ooo"></div>
         <div style="display: none;"><div>СНИЛС директора</div><input id="snils-dir" type="text" name="snils-dir-ooo"></div>
         <div><div>Название компании</div><input id="company-name" type="text" name="name-ooo"></div>
-        <div><div>Инн</div><input id="inn" type="text" name="inn"></div>
+        <div><div>ИНН</div><input id="inn" type="text" name="inn"></div>
         <div><div>Телефон</div><input id="phone" type="text" name="phone-ooo"></div>
-        <div><div>Email</div><input id="email" type="text" name="email-ooo"></div>
+        <div><div>E-mail</div><input id="email" type="text" name="email-ooo"></div>
         <button id="btn-back-will-send" onclick="return false;">Назад</button>
         <input id="submit-go-to-pay-ooo" type="submit" value="Перейти к оплате" name="submit-go-to-pay-ooo">
     </div>

@@ -9,7 +9,7 @@
                 <form action="handler-free.php" method="get">
                     <div><div>Имя</div><input id="name-envd" type="text" name="name-free-consult"></div>
                     <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-free-consult"></div>
-                    <div><div>Email</div><input id="email-envd" type="text" name="email-free-consult"></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-free-consult"></div>
                     <input type="submit" value="Отправить" name="submit-free-consult">
                 </form>
             </div>
@@ -28,7 +28,7 @@
                 <form action="handler-free.php" method="get">
                     <div><div>Имя</div><input id="name-envd" type="text" name="name-free-consult"></div>
                     <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-free-consult"></div>
-                    <div><div>Email</div><input id="email-envd" type="text" name="email-free-consult"></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-free-consult"></div>
                     <input type="submit" value="Отправить" name="submit-free-consult">
                 </form>
             </div>
@@ -47,7 +47,7 @@
                 <form action="handler-free.php" method="get">
                     <div><div>Имя</div><input id="name-envd" type="text" name="name-free-consult"></div>
                     <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-free-consult"></div>
-                    <div><div>Email</div><input id="email-envd" type="text" name="email-free-consult"></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-free-consult"></div>
                     <input type="submit" value="Отправить" name="submit-free-consult">
                 </form>
             </div>
