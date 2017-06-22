@@ -973,7 +973,7 @@ input[type="checkbox"] {
 	font-weight: bold;
 }
 #div-from-customer-ip input[type="submit"] {
-	background-color: #E7382B;
+	background-color: #339933;
 	color: #ffffff;
 	width: 216px;
 	height: 40px;
@@ -985,7 +985,7 @@ input[type="checkbox"] {
 	margin-top: 25px;
 }
 #div-from-customer-ip input[type="submit"]:hover {
-	background-color: #339933;
+	background-color: #E7382B;
 }
 #div-from-customer-ip button {
 	margin-top: 25px;
