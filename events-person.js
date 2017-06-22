@@ -37,6 +37,7 @@ $(function () {
     });
 
     $("#btn-next-tax-system-ip").click(function() {
+
         if ( $('#simple-ip').prop('checked') ) {
             $('#div-tax-system').hide();
             insertNalogDecl();
@@ -57,6 +58,7 @@ $(function () {
                 insertDeclNdflIfIpIfQuartIs4();
                 $('#div-tax-system').hide();
                 $('#div-will-send').show();
+                $('#span-we-will-send').text('Мы Вам подготовим и отправим на e-mail');  
                 $('#span-we-will-send').show();                
                 $('#div-from-customer-ip').show();
 
@@ -71,6 +73,7 @@ $(function () {
                 showInputsWillSend('#decl-nds');
                 $('#div-tax-system').hide();                
                 $('#div-will-send').show();
+                $('#span-we-will-send').text('Мы Вам подготовим и отправим на e-mail');
                 $('#span-we-will-send').show();                
                 $('#div-from-customer-ip').show();
                 $('#pasp-ser-ip').parent().hide();

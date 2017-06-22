@@ -22,7 +22,7 @@ function insertNalogDecl () {
           $('#year-2015-ip-simple').prop('checked') || 
           $('#year-2014-ip-simple').prop('checked') ) )  
     {
-        $('#div-from-customer-ip').before('<div id="will-prepare-email"><span>Мы подготовим Вам и отправим на email:</span></div>');
+        $('#div-from-customer-ip').before('<div id="will-prepare-email"><span>Мы Вам подготовим и отправим на e-mail:</span></div>');
         if ( $('#year-2016-ip-simple').prop('checked') ) {
             $('#div-from-customer-ip').before('<div class="nalog-decl"><label><input id="decl-year-2016-ip-simple" type="checkbox" name="decl-year-2016-ip-simple" checked>Налоговая декларация за 2016 год</label></div>');
         }

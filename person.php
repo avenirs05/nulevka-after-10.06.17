@@ -30,7 +30,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Представление нулевых деклараций по единому налогу на вмененный доход главой 26.3 НК РФ не предусмотрено (Определение ВАС РФ от 26.02.2014 г. № ВАС-1903/14). Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
+                    <h4 class="modal-title" id="myModalLabel">Представление нулевых деклараций по единому налогу на вмененный доход главой 26.3 НК РФ не предусмотрено (Определение ВАС РФ от 26.02.2014 г. № ВАС-1903/14). Заполните данные ниже и мы Вас проконсультируем по этому вопросу.</h4>
                 </div>
                 <div class="modal-body">
                     <form method="get" action="handler-free.php">
@@ -68,7 +68,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
+                    <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы Вас бесплатно проконсультируем</h4>
                 </div>
                 <div class="modal-body">
                     <form method="get" action="handler-free.php">
@@ -133,7 +133,7 @@
     </div>
     
     <div id="div-final-sum" style="display: none;">
-        <span id="final-sum-text" style="display: none;">Итоговая сумма составляет 
+        <span id="final-sum-text" style="display: none;">Стоимость заказа составляет 
             <span id="final-sum-digits">299</span> руб. 
         </span>
         <span id="discount-text" style="display: none;">Скидка составляет 
@@ -142,7 +142,7 @@
     </div>
 
     <div id="div-will-send" style="display: none">
-        <span id="span-we-will-send">Мы за Вас подготовим:</span>
+        <span id="span-we-will-send">Мы Вам подготовим и отправим на e-mail:</span>
         <div style="display: none;">
             <label for='decl-nds'><input id='decl-nds' type='checkbox' name='decl-nds' checked><strong>Налоговая декларация по НДС</strong></label>
         </div>

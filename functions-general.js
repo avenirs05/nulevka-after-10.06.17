@@ -86,8 +86,8 @@ function diffHeaderWeWillSend () {
                singleQrt = inputs.eq(i).parent('label').text();
             }
         }
-        $("#span-we-will-send").text( 'Мы подготовим за Вас' + ' за ' + singleQrt);
-    } else $("#span-we-will-send").text( 'Мы подготовим за Вас:');
+        $("#span-we-will-send").text( 'Мы за Вас подготовим и сдадим' + ' за ' + singleQrt);
+    } else $("#span-we-will-send").text( 'Мы за Вас подготовим и сдадим:');
 }  
 
 function calculateFinalSum () {

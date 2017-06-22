@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
+                <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы свяжемся с Вами в течение часа</h4>
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
@@ -22,7 +22,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
+                <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы свяжемся с Вами в течение часа</h4>
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
@@ -41,7 +41,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
+                <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы свяжемся с Вами в течение часа</h4>
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">

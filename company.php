@@ -30,7 +30,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Представление нулевых деклараций по единому налогу на вмененный доход главой 26.3 НК РФ не предусмотрено (Определение ВАС РФ от 26.02.2014 г. № ВАС-1903/14). Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
+                <h4 class="modal-title" id="myModalLabel">Представление нулевых деклараций по единому налогу на вмененный доход главой 26.3 НК РФ не предусмотрено (Определение ВАС РФ от 26.02.2014 г. № ВАС-1903/14). Заполните данные ниже и мы Вас проконсультируем по этому вопросу.</h4>
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
@@ -49,7 +49,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
+                <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы Вас бесплатно проконсультируем</h4>
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
@@ -147,7 +147,7 @@
     </div>
 
     <div id="div-final-sum" style="display: none;">
-        <span id="final-sum-text" style="display: none;">Итоговая сумма составляет 
+        <span id="final-sum-text" style="display: none;">Стоимость заказа составляет 
             <span id="final-sum-digits">1 499</span> руб. 
         </span>
         <span id="discount-text" style="display: none;">Скидка составляет 

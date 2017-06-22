@@ -50,14 +50,14 @@
                 <li><img src="imgs/bullit.png" alt=""><span>Все регионы России</span></li>
                 <li><img src="imgs/bullit.png" alt=""><span>Займет не более 120 секунд</span></li>
                 <li><img src="imgs/bullit.png" alt=""><span>Не нужно платить зарплату бухгалтеру</span></li>
-                <li><img src="imgs/bullit.png" alt=""><span>Около 2 000 довольных клиентов</span></li>  
+                <li><img src="imgs/bullit.png" alt=""><span>Более 2000 сданных «нулевок»</span></li>  
             </ul>            
         </div> 
         <div class="col-md-7">
             <div class="ipad">
-                <a href="company.php" target="_blank"><button class="btn-inside-ipad-1">Сделать нулевку для ООО</button></a>
-                <a href="person.php" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-2">Сделать нулевку для ИП</button></a>
-                <a href="http://mybuh.online/" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-3">Сдать не нулевку</button></a>
+                <a href="company.php" target="_blank"><button class="btn-inside-ipad-1">Сдать нулевку по ООО</button></a>
+                <a href="person.php" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-2">Составить нулевку для ИП</button></a>
+                <a href="http://mybuh.online/" target="_blank"><button class="btn-inside-ipad-1 btn-inside-ipad-3">У меня не нулевка!</button></a>
             </div>         
         </div>
     </div>
@@ -76,9 +76,9 @@
     </div>
     <div class="row">
         <div class="col-md-12 btns-wrapper text-center">
-            <a href="company.php" target="_blank"><button>Сделать нулевку для ООО</button></a>
-            <a href="person.php" target="_blank"><button>Сделать нулевку для ИП</button></a>
-            <a href="http://mybuh.online/" target="_blank"><button id="btn-not-null-mob">Сдать не нулевку</button></a>       
+            <a href="company.php" target="_blank"><button>Сдать нулевку по ООО</button></a>
+            <a href="person.php" target="_blank"><button>Составить нулевку для ИП</button></a>
+            <a href="http://mybuh.online/" target="_blank"><button id="btn-not-null-mob">У меня не нулевка!</button></a>       
         </div>
     </div>
     <div class="row">
@@ -87,7 +87,7 @@
                 <li><img src="imgs/bullit.png" width="18" alt=""><span>Все регионы России</span></li>
                 <li><img src="imgs/bullit.png" width="18" alt=""><span>Займет не более 120 секунд</span></li>
                 <li><img src="imgs/bullit.png" width="18" alt=""><span>Не нужно платить зарплату бухгалтеру</span></li>
-                <li><img src="imgs/bullit.png" width="18" alt=""><span>Около 2 000 довольных клиентов</span></li>  
+                <li><img src="imgs/bullit.png" width="18" alt=""><span>Более 2000 сданных «нулевок»</span></li>  
             </ul>            
         </div> 
     </div>
@@ -119,11 +119,11 @@
 <div class="container-fluid why-us visible-md-block visible-lg-block">
     <div class="row">
         <div class="col-md-12">
-            <h2 class="text-center">Почему нулевую отчетность нужно отправлять через нас?</h2>            
+            <h2 class="text-center">Почему нулевую отчетность нужно сдавать через нас?</h2>            
             <div class="advantages-wrapper">
                 <div class="advantage-item">
                     <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                    <span  class="advantage-item-text">Это займет не более 120 секунд вашего времени</span> 
+                    <span  class="advantage-item-text">Это займет не более 2 минут вашего времени</span> 
                 </div>
                 <div class="advantage-item">
                     <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> 
@@ -138,7 +138,7 @@
                     <span class="advantage-item-text">Мы напомним вам о сдаче отчетности в следующем квартале</span>
                 </div>
                 <div id="only-for-companies">
-                    <span>*применимо только для юридических лиц</span>
+                    <span>*для юридических лиц</span>
                 </div>
             </div>
         </div>
@@ -148,11 +148,11 @@
 <div class="container-fluid why-us-mob visible-xs-block visible-sm-block">
     <div class="row">
         <div class="col-md-12">
-            <h2 class="text-center">Почему нулевую отчетность нужно отправлять через нас?</h2>            
+            <h2 class="text-center">Почему нулевую отчетность нужно сдавать через нас?</h2>            
             <div class="advantages-wrapper-mob">
                 <div class="advantage-item-mob text-center">
                     <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                    <span  class="advantage-item-text-mob">Это займет не более 120 секунд вашего времени</span> 
+                    <span  class="advantage-item-text-mob">Это займет не более 2 минут вашего времени</span> 
                 </div>
                 <div class="advantage-item-mob text-center">
                     <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> 
@@ -167,7 +167,7 @@
                     <span class="advantage-item-text-mob">Мы напомним вам о сдаче отчетности в следующем квартале</span>
                 </div>
                 <div id="only-for-companies-mob">
-                    <span>*применимо только для юридических лиц</span>
+                    <span>*только для юридических лиц</span>
                 </div>
             </div>
         </div>
@@ -302,7 +302,7 @@
             <h2 class="text-center">Для бухгалтеров</h2>         
             <p>У вас много работы и не хочется возиться с нулевками?</p>
             <p>Переложите это на нас и заработайте!</p>
-            <p>Передавая нам в работу от 3-х юридических лиц, вы получите на свой телефон по 100 рублей за каждый заказ.</p>
+            <p>Передавая нам в работу от 3-х юридических лиц, вы получите вознаграждение по 100 рублей за каждый заказ.</p>
             <p>Минимальная сумма одного заказа, по которому выплачивается вознаграждение – 1499 рублей.</p>
             <p>Минимальное количество заказов – 3</p>
             <div class="btn-wrapper visible-md-block visible-lg-block">
@@ -314,6 +314,5 @@
         </div>
     </div>
 </div>
-
 
 <?php require_once 'footer.php'; ?>
