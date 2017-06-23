@@ -25,6 +25,11 @@
 </head>
 <body>
 
+<?php 
+    $path = "clickfrogru_udp_tcp.php";
+    include_once($path);
+?>
+
     <div class="modal fade" id="modal-envd-ip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -88,6 +93,7 @@
 <div class="row">
 <div class="col-md-12">
 
+<!-- Свойство novalidate в форме установлено -->
 <form id="form-tax-system" action="handler.php" method="post" novalidate>
     <div id="div-tax-system">
         <span id="span-choice-tax-system" class="question" >Выберите систему налогообложения:</span><br>
@@ -183,7 +189,7 @@
                 <span class="title-input">Имя:</span>
                 <input type="text" name="name" placeholder="Введите имя">
                 <span class="title-input">Телефон: <span class="red">*</span></span>
-                <input type="text" name="phone" placeholder="Введите номер телефона" required>
+                <input type="text" name="phone" placeholder="Введите номер телефона">
                 <input type="submit" value="Отправить">
         </form>
     </div>
@@ -192,6 +198,8 @@
 </div>
 </div>
 </div>
+
+<div id="clickfrog_counter_container" style="width:0px;height:0px;overflow:hidden;"></div><script type="text/javascript">(function(d, w) {var clickfrog = function() {if(!d.getElementById('clickfrog_js_container')) {var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.src = "//stat.clickfrog.ru/c.js?r="+Math.random();sc.id = 'clickfrog_js_container';var c = document.getElementById('clickfrog_counter_container');c.parentNode.insertBefore(sc, c);}};if(w.opera == "[object Opera]"){d.addEventListener("DOMContentLoaded",clickfrog,false);}else {clickfrog();}})(document, window);</script><noscript><div style="width:0px;height:0px;overflow:hidden;"><img src="//stat.clickfrog.ru/no_script.php?img" style="width:0px; height:0px;" alt=""/></div></noscript><script type="text/javascript">var clickfrogru_uidh='83b9bb40dc0b3675e271f4459ed1e693';</script>
 
 </body>
 </html>
