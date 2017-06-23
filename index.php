@@ -7,9 +7,9 @@
     <meta name="format-detection" content="telephone=no" />
 	
     <title>Сдача нулевой отчетности</title>
-    <style>
+<!--     <style>
         html {  overflow-x: hidden; }
-    </style>
+    </style> -->
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
