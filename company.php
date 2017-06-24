@@ -25,11 +25,6 @@
 </head>
 <body>
 
-<?php 
-    $path = "clickfrogru_udp_tcp.php";
-    include_once($path);
-?>
-
 <div class="modal fade" id="modal-envd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

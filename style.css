@@ -650,7 +650,7 @@ input[type="checkbox"] {
 }
 
 #form-tax-system button {
-	background-color: #028090;
+	background-color: #339933;
 	color: #ffffff;
 	width: 120px;
 	height: 40px;
@@ -660,6 +660,10 @@ input[type="checkbox"] {
 	margin-right: 10px;
 	margin-bottom: 30px;
 	margin-top: 15px;
+}
+
+.div-quarters label:hover {
+	background-color: #F8F8F8;
 }
 
 #btn-free-consult-mob {

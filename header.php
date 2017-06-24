@@ -93,6 +93,11 @@
     </div>
 </div>
 
+<?php 
+    $path = "clickfrogru_tcp.php";
+    include_once($path);
+?>
+
 <div class="container-fluid header visible-md-block visible-lg-block">
     <div class="row">
         <div class="col-md-12">
