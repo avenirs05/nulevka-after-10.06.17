@@ -185,4 +185,4 @@ if (isset($_POST['submit-go-to-pay-ip'])) {
 
 ?>
 
-<?php require_once 'footer.php'; ?>
+<!-- <?php require_once 'footer.php'; ?> -->

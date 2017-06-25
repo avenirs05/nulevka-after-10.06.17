@@ -34,9 +34,9 @@
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
-                    <div><div>Имя</div><input type="text" id="name-envd" name="name-envd-ooo"></div>
-                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-envd-ooo"></div>
-                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-envd-ooo"></div>
+                    <div><div>Имя</div><input type="text" id="name-envd" name="name-envd-ooo" required></div>
+                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-envd-ooo" required></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-envd-ooo" required></div>
                     <input type="submit" value="Отправить" name="submit-envd-ooo">
                 </form>
             </div>
@@ -53,9 +53,9 @@
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
-                    <div><div>Имя</div><input id="name-envd" type="text" name="name-not-know-ooo"></div>
-                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-not-know-ooo"></div>
-                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-not-know-ooo"></div>
+                    <div><div>Имя</div><input id="name-envd" type="text" name="name-not-know-ooo" required></div>
+                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-not-know-ooo" required></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-not-know-ooo" required></div>
                     <input type="submit" value="Отправить" name="submit-not-know-ooo">
                 </form>
             </div>
