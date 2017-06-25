@@ -120,6 +120,7 @@
             <a href="index.php"><div class="logo-wrapper-mob"></div></a>
             <div class="right-side">
                 <span class="call-free-mob"></span>
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;
                 <span class="phone-digits">+7 499 685 12 89</span> 
                 <!-- <button id="btn-free-consult-mob">Бесплатная консультация</button> -->
             </div> 
