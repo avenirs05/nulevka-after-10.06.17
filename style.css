@@ -61,9 +61,18 @@ a {
 	float: left;
 }
 
+/*Раскомментировать как будет звонок бесплатный 8-800! */
 .header .right-side {
 	float: right;
 	display: flex;
+	position: relative;
+/*	margin-top: 15px;*/
+}
+
+.header-mob .right-side {
+	float: right;
+	display: flex;
+	position: relative;
 }
 
 .header button {	
@@ -88,6 +97,18 @@ a {
 
 .header .glyphicon-earphone {
 	font-size: 25px;
+}
+
+.call-free {
+	position: absolute;
+	top: -30%;
+	right: 0%;
+}
+
+.call-free-mob {
+	position: absolute;
+	top: 5%;
+	right: 0%;
 }
 
 .main-screen {
@@ -681,6 +702,19 @@ input[type="checkbox"] {
 	float: right;
 	padding-bottom: 8px;
 	padding-top: 8px;
+}
+
+
+/*Сделать margin-top: 15px; если будет звонок бесплатный*/
+.header-mob .phone-digits  {
+	margin-top: 10px;
+	font-size: 22px;
+	letter-spacing: 1px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	border-radius: 3px;
+	padding-top: 5px;
+	float: right;
 }
 
 #btn-free-consult-mob:active {

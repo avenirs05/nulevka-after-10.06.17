@@ -55,7 +55,7 @@
                 <li><img src="imgs/bullit.png" alt=""><span>Все регионы России</span></li>
                 <li><img src="imgs/bullit.png" alt=""><span>Займет не более 120 секунд</span></li>
                 <li><img src="imgs/bullit.png" alt=""><span>Не нужно платить зарплату бухгалтеру</span></li>
-                <li><img src="imgs/bullit.png" alt=""><span>Более 2000 сданных «нулевок»</span></li>  
+                <li><img src="imgs/bullit.png" alt=""><span>Более 2 000 сданных «нулевок»</span></li>  
             </ul>            
         </div> 
         <div class="col-md-7">
