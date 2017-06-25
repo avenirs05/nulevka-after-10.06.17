@@ -28,6 +28,11 @@
         });
     </script>
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45030163 = new Ya.Metrika({ id:45030163, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45030163" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+    (function(){ var widget_id = '2WsMo5ROvu';var d=document;var w=window;function l(){
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- {/literal} END JIVOSITE CODE -->
 </head>
 <body>
 <?php 
@@ -308,7 +313,7 @@
             <p>У вас много работы и не хочется возиться с нулевками?</p>
             <p>Переложите это на нас и заработайте!</p>
             <p>Передавая нам в работу от 3-х юридических лиц, вы получите вознаграждение по 100 рублей за каждый заказ.</p>
-            <p>Минимальная сумма одного заказа, по которому выплачивается вознаграждение – 1499 рублей.</p>
+            <p>Минимальная сумма одного заказа, по которому выплачивается вознаграждение – 1 499 рублей.</p>
             <p>Минимальное количество заказов – 3</p>
             <div class="btn-wrapper visible-md-block visible-lg-block">
                 <button id="btn-get-bonus" class="visible-md-block visible-lg-block">Получить бонус</button>
