@@ -36,7 +36,8 @@
     <div class="row">
         <div class="col-md-12">
             <div class="thank-you text-center">
-                <span>Спасибо за заявку! С вами свяжутся в ближайшее время!</span>
+                <span>Спасибо за заявку! С вами свяжутся в ближайшее время!</span><br>
+                <span>Вернуться на <a href="index.php">Главную.</a></span>
             </div>
         </div>
     </div>

@@ -7,9 +7,9 @@
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
-                    <div><div>Имя</div><input id="name-envd" type="text" name="name-free-consult" required></div>
-                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-free-consult" required></div>
-                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-free-consult" required></div>
+                    <div><div>Имя<span class="red">*</span></div><input id="name-envd" type="text" name="name-free-consult" required></div>
+                    <div><div>Телефон<span class="red">*</span></div><input id="phone-envd" type="text" name="phone-free-consult" required></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-free-consult"></div>
                     <input type="submit" value="Отправить" name="submit-free-consult">
                 </form>
             </div>
@@ -26,9 +26,9 @@
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
-                    <div><div>Имя</div><input id="name-envd" type="text" name="name-free-consult" required></div>
-                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-free-consult" required></div>
-                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-free-consult" required></div>
+                    <div><div>Имя<span class="red">*</span></div><input id="name-envd" type="text" name="name-free-consult" required></div>
+                    <div><div>Телефон<span class="red">*</span></div><input id="phone-envd" type="text" name="phone-free-consult" required></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-free-consult"></div>
                     <input type="submit" value="Отправить" name="submit-free-consult">
                 </form>
             </div>
@@ -45,9 +45,9 @@
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
-                    <div><div>Имя</div><input id="name-envd" type="text" name="name-free-consult" required></div>
-                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-free-consult" required></div>
-                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-free-consult" required></div>
+                    <div><div>Имя<span class="red">*</span></div><input id="name-envd" type="text" name="name-free-consult" required></div>
+                    <div><div>Телефон<span class="red">*</span></div><input id="phone-envd" type="text" name="phone-free-consult" required></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-free-consult"></div>
                     <input type="submit" value="Отправить" name="submit-free-consult">
                 </form>
             </div>
@@ -64,9 +64,9 @@
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
-                    <div><div>Названия Ваших фирм</div><input id="names-of-companies" type="text" name="names-of-companies" required></div>
-                    <div><div>Имя</div><input id="name-of-buh" type="text" name="name-of-buh" required></div>
-                    <div><div>Телефон</div><input id="phone-of-buh" type="text" name="phone-of-buh" required></div>
+                    <div><div>Названия Ваших фирм</div><input id="names-of-companies" type="text" name="names-of-companies"></div>
+                    <div><div>Имя<span class="red">*</span></div><input id="name-of-buh" type="text" name="name-of-buh" required></div>
+                    <div><div>Телефон<span class="red">*</span></div><input id="phone-of-buh" type="text" name="phone-of-buh" required></div>
                     <input type="submit" value="Отправить" name="submit-get-bonus">
                 </form>
             </div>
@@ -83,9 +83,9 @@
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
-                    <div><div>Названия Ваших фирм</div><input id="names-of-companies" type="text" name="names-of-companies" required></div>
-                    <div><div>Имя</div><input id="name-of-buh" type="text" name="name-of-buh" required></div>
-                    <div><div>Телефон</div><input id="phone-of-buh" type="text" name="phone-of-buh" required></div>
+                    <div><div>Названия Ваших фирм</div><input id="names-of-companies" type="text" name="names-of-companies"></div>
+                    <div><div>Имя<span class="red">*</span></div><input id="name-of-buh" type="text" name="name-of-buh" required></div>
+                    <div><div>Телефон<span class="red">*</span></div><input id="phone-of-buh" type="text" name="phone-of-buh" required></div>
                     <input type="submit" value="Отправить" name="submit-get-bonus">
                 </form>
             </div>
@@ -107,7 +107,7 @@
                 <div class="cons-phone">
                     <span class="call-free"></span> 
                     <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;
-                    <span class="phone-digits">+7 499 685 12 89</span> 
+                    <span class="phone-digits">8 800 22 22 943</span> 
                 </div>
             </div> 
         </div>
@@ -121,7 +121,7 @@
             <div class="right-side">
                 <span class="call-free-mob"></span>
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;
-                <span class="phone-digits">+7 499 685 12 89</span> 
+                <span class="phone-digits">8 800 22 22 943</span> 
                 <!-- <button id="btn-free-consult-mob">Бесплатная консультация</button> -->
             </div> 
         </div>

@@ -40,9 +40,9 @@
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
-                    <div><div>Имя</div><input type="text" id="name-envd" name="name-envd-ooo" required></div>
-                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-envd-ooo" required></div>
-                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-envd-ooo" required></div>
+                    <div><div>Имя<span class="red">*</span></div><input type="text" id="name-envd" name="name-envd-ooo" required></div>
+                    <div><div>Телефон<span class="red">*</span></div><input id="phone-envd" type="text" name="phone-envd-ooo" required></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-envd-ooo"></div>
                     <input type="submit" value="Отправить" name="submit-envd-ooo">
                 </form>
             </div>
@@ -59,9 +59,9 @@
             </div>
             <div class="modal-body">
                 <form action="handler-free.php" method="get">
-                    <div><div>Имя</div><input id="name-envd" type="text" name="name-not-know-ooo" required></div>
-                    <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-not-know-ooo" required></div>
-                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-not-know-ooo" required></div>
+                    <div><div>Имя<span class="red">*</span></div><input id="name-envd" type="text" name="name-not-know-ooo" required></div>
+                    <div><div>Телефон<span class="red">*</span></div><input id="phone-envd" type="text" name="phone-not-know-ooo" required></div>
+                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-not-know-ooo"></div>
                     <input type="submit" value="Отправить" name="submit-not-know-ooo">
                 </form>
             </div>
@@ -85,7 +85,7 @@
             <div data-is-four="no" class="div-quarters"><label for="qrt-2-2017"><input id="qrt-2-2017" type="checkbox" name="qrt-2-2017" checked>2-й квартал 2017 года</label></div>            
             <a id="another-periods" href="#" onclick="return false;">Другие периоды</a><br>
             <div data-is-four="no" class="div-quarters" id="first-another-period"><label style="display: none;" for="qrt-1-2017"><input id="qrt-1-2017" type="checkbox" name="qrt-1-2017">1-й квартал 2017 года</label></div>
-            <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2016"><input id="qrt-4-2016" type="checkbox" name="qrt-4-2016">4-й квартал 2016 года</label></div>
+            <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2016"><input id="qrt-4-2016" type="checkbox" name="qrt-4-2016">4-й квартал 2016 года (годовая)</label></div>
             <p style="display: none" id="uk-question-0"><strong>Как внесен уставной капитал?</strong><br>
                 <label for="money-0"><input id="money-0" type="radio" name="deposit-uk-4-2016" value="money-0">Деньгами</label><br>
                 <label for="things-0"><input id="things-0" type="radio" name="deposit-uk-4-2016" value="things-0">Имуществом</label><br>
@@ -93,7 +93,7 @@
             <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-3-2016"><input id="qrt-3-2016" type="checkbox" name="qrt-3-2016">3-й квартал 2016 года</label></div>
             <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2016"><input id="qrt-2-2016" type="checkbox" name="qrt-2-2016">2-й квартал 2016 года</label></div>
             <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2016"><input id="qrt-1-2016" type="checkbox" name="qrt-1-2016">1-й квартал 2016 года</label></div>
-            <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2015"><input id="qrt-4-2015" type="checkbox" name="qrt-4-2015">4-й квартал 2015 года</label></div>
+            <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2015"><input id="qrt-4-2015" type="checkbox" name="qrt-4-2015">4-й квартал 2015 года (годовая)</label></div>
             <p style="display: none" id="uk-question-1"><strong>Как внесен УК?</strong><br>
                 <label for="money-1"><input id="money-1" type="radio" name="deposit-uk-4-2015" value="money-1">Деньгами</label><br>
                 <label for="things-1"><input id="things-1" type="radio" name="deposit-uk-4-2015" value="things-1">Имуществом</label><br>
@@ -101,7 +101,7 @@
             <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-3-2015"><input id="qrt-3-2015" type="checkbox" name="qrt-3-2015">3-й квартал 2015 года</label></div>
             <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2015"><input id="qrt-2-2015" type="checkbox" name="qrt-2-2015">2-й квартал 2015 года</label></div>
             <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2015"><input id="qrt-1-2015" type="checkbox" name="qrt-1-2015">1-й квартал 2015 года</label></div>
-            <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2014"><input id="qrt-4-2014" type="checkbox" name="qrt-4-2014">4-й квартал 2014 года</label></div>
+            <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2014"><input id="qrt-4-2014" type="checkbox" name="qrt-4-2014">4-й квартал 2014 года (годовая)</label></div>
             <p style="display: none" id="uk-question-2"><strong>Как внесен УК?</strong><br>
                 <label for="money-2"><input id="money-2" type="radio" name="deposit-uk-4-2014" value="money-2">Деньгами</label><br>
                 <label for="things-2"><input id="things-2" type="radio" name="deposit-uk-4-2014" value="things-2">Имуществом</label><br>
