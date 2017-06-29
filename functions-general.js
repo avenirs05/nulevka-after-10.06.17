@@ -170,10 +170,10 @@ function calculateFinalSum () {
         if ( $('#decl-year-2016-ip-simple').prop('checked') ) {
             res = res + 299;
         } 
-        if ( $('#decl-year-2016-ip-simple').prop('checked') ) {
+        if ( $('#decl-year-2015-ip-simple').prop('checked') ) {
             res = res + 299;
         } 
-        if ( $('#decl-year-2016-ip-simple').prop('checked') ) {
+        if ( $('#decl-year-2014-ip-simple').prop('checked') ) {
             res = res + 299;
         }         
     }
