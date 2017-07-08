@@ -1,32 +1,32 @@
 $(function () {
 
-    $("#general").change(function () {
-        $('.tax-answer-0').after( $('#choice-quarters') );
-        $('.tax-answer-0').show();
-        $('#choice-quarters').show();
-        $('#btn-next-tax-system').show();
-    });
+    // $("#general").change(function () {
+    //     $('.tax-answer-0').after( $('#choice-quarters') );
+    //     $('.tax-answer-0').show();
+    //     $('#choice-quarters').show();
+    //     $('#btn-next-tax-system').show();
+    // });
     
-    $("#simple").change(function () {
-        $('.tax-answer-1').after( $('#choice-quarters') );
-        $('.tax-answer-1').show();
-        $('#choice-quarters').show();
-        $('#btn-next-tax-system').show();
-    });
+    // $("#simple").change(function () {
+    //     $('.tax-answer-1').after( $('#choice-quarters') );
+    //     $('.tax-answer-1').show();
+    //     $('#choice-quarters').show();
+    //     $('#btn-next-tax-system').show();
+    // });
     
-    $("#envd").change(function () {
-        $('#choice-quarters').hide();
-        $('#modal-envd').modal('show');
-        $('#btn-next-tax-system').hide();
-    });    
+    // $("#envd").change(function () {
+    //     $('#choice-quarters').hide();
+    //     $('#modal-envd').modal('show');
+    //     $('#btn-next-tax-system').hide();
+    // });    
 
-    $("#not-know").change(function () {
-        $('#choice-quarters').hide();
-        $('#modal-not-know').modal('show')
-        $('#btn-next-tax-system').hide();
-    });
+    // $("#not-know").change(function () {
+    //     $('#choice-quarters').hide();
+    //     $('#modal-not-know').modal('show')
+    //     $('#btn-next-tax-system').hide();
+    // });
     
-    $("#qrt-4-2016, #qrt-4-2015, #qrt-4-2014").change(showAndHideUK);
+    // $("#qrt-4-2016, #qrt-4-2015, #qrt-4-2014").change(showAndHideUK);
     $("#szv-quest-no").change(function () {
         $('#choice-months').hide();
         $('.month').hide();
@@ -82,31 +82,31 @@ $(function () {
         }
     });
 
-    $("#btn-next-tax-system").click(function() {
-        if ( $('#general').prop('checked') ) {
-            $('#div-tranz').show();
-            $('#div-tax-system').hide();
-        }
-        if ( $('#simple').prop('checked') ) {
-            if ( $("#qrt-4-2016").prop('checked') || 
-                 $("#qrt-4-2015").prop('checked') || 
-                 $("#qrt-4-2014").prop('checked') ) 
-            {
-                $('#div-base').show();
-                $('#div-tax-system').hide();              
-            } 
-            else {
-                $('#div-tax-system').hide();
-                $('#div-one-face').show(); 
-            }
-        }
-    });
+    // $("#btn-next-tax-system").click(function() {
+    //     if ( $('#general').prop('checked') ) {
+    //         $('#div-tranz').show();
+    //         $('#div-tax-system').hide();
+    //     }
+    //     if ( $('#simple').prop('checked') ) {
+    //         if ( $("#qrt-4-2016").prop('checked') || 
+    //              $("#qrt-4-2015").prop('checked') || 
+    //              $("#qrt-4-2014").prop('checked') ) 
+    //         {
+    //             $('#div-base').show();
+    //             $('#div-tax-system').hide();              
+    //         } 
+    //         else {
+    //             $('#div-tax-system').hide();
+    //             $('#div-one-face').show(); 
+    //         }
+    //     }
+    // });
 
-    $("#btn-back-tranz").click(function() {
-        $('#div-tranz').hide();
-        $('#div-tax-system').show();
-        $('#btn-next-tax-system').show();
-    });
+    // $("#btn-back-tranz").click(function() {
+    //     $('#div-tranz').hide();
+    //     $('#div-tax-system').show();
+    //     $('#btn-next-tax-system').show();
+    // });
 
     $("#btn-back-base").click(function() {
         $('#div-base').hide();
@@ -131,22 +131,22 @@ $(function () {
         $('#div-base').hide();
     });
 
-    $("#tranz-yes").change(function() {
-         if (($('#tranz-yes')).prop('checked')) {
-              $('#btn-next-tranz').show();
-         } 
-    });
+    // $("#tranz-yes").change(function() {
+    //      if (($('#tranz-yes')).prop('checked')) {
+    //           $('#btn-next-tranz').show();
+    //      } 
+    // });
 
-    $("#tranz-no").change(function() {
-        if (($('#tranz-no')).prop('checked')) {
-            $('#btn-next-tranz').show();
-        } 
-    });
+    // $("#tranz-no").change(function() {
+    //     if (($('#tranz-no')).prop('checked')) {
+    //         $('#btn-next-tranz').show();
+    //     } 
+    // });
 
-    $("#btn-next-tranz").click(function() {
-        $('#div-one-face').show();
-        $('#div-tranz').hide();
-    });
+    // $("#btn-next-tranz").click(function() {
+    //     $('#div-one-face').show();
+    //     $('#div-tranz').hide();
+    // });
 
     $("#btn-back-one-face").click(function() {
         if ( $('#general').prop('checked') ) {
@@ -385,20 +385,20 @@ $(function () {
         $('#workers-cnt-4-2014').parent('label').parent('div').remove();        
     });
 
-    $("#another-periods").click(function() {
-        var anotherPeriodsColl = $('#another-periods').siblings('div').children('label').children('input:not(#qrt-2-2017)');     
-        for (var i = 0; i < $(anotherPeriodsColl).length; i++) {
-            var anotherPeriodsInput = anotherPeriodsColl.eq(i).parent();
-            if (anotherPeriodsInput.css('display') == "none") {
-               anotherPeriodsInput.show(); 
-            } 
-            else 
-                anotherPeriodsInput.hide();
-                $('#uk-question-0').hide();
-                $('#uk-question-1').hide();
-                $('#uk-question-2').hide();
-        }            
-    });
+    // $("#another-periods").click(function() {
+    //     var anotherPeriodsColl = $('#another-periods').siblings('div').children('label').children('input:not(#qrt-2-2017)');     
+    //     for (var i = 0; i < $(anotherPeriodsColl).length; i++) {
+    //         var anotherPeriodsInput = anotherPeriodsColl.eq(i).parent();
+    //         if (anotherPeriodsInput.css('display') == "none") {
+    //            anotherPeriodsInput.show(); 
+    //         } 
+    //         else 
+    //             anotherPeriodsInput.hide();
+    //             $('#uk-question-0').hide();
+    //             $('#uk-question-1').hide();
+    //             $('#uk-question-2').hide();
+    //     }            
+    // });
 
     $("#decl-nds").change(function() { showAndHideChildChecks (this); });
     $("#decl-profit").change(function() { showAndHideChildChecks (this); });
