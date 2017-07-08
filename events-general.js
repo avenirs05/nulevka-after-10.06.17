@@ -1,5 +1,7 @@
 $(function () {
 
+	$('[data-toggle="tooltip"]').tooltip();
+
 	$('#btn-free-consult').click(function() {
 		$('#modal-free-consult').modal('show');
 	});

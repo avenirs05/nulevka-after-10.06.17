@@ -30,64 +30,7 @@
     <!-- {/literal} END JIVOSITE CODE -->
 </head>
 <body>
-
-    <div class="modal fade" id="modal-envd-ip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Представление нулевых деклараций по единому налогу на вмененный доход главой 26.3 НК РФ не предусмотрено (Определение ВАС РФ от 26.02.2014 г. № ВАС-1903/14). Заполните данные ниже и мы Вас проконсультируем по этому вопросу.</h4>
-                </div>
-                <div class="modal-body">
-                    <form method="get" action="handler-free.php">
-                        <div><div>Имя</div><input id="name-envd" type="text" name="name-envd-ip"></div>
-                        <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-envd-ip"></div>
-                        <div><div>E-mail</div><input id="email-envd" type="text" name="email-envd-ip"></div>
-                        <input type="submit" value="Отправить" name="submit-envd-ip">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal-patent-ip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">В соответствии со ст. 346.52. Налогового кодекса РФ налоговая декларация по налогу, уплачиваемому в связи с применением патентной системы налогообложения, в налоговые органы не представляется. Заполните данные ниже и мы вас проконсультируем по этому вопросу.</h4>
-                </div>
-                <div class="modal-body">
-                    <form method="get" action="handler-free.php">
-                        <div><div>Имя</div><input id="name-envd" type="text" name="name-patent-ip"></div>
-                        <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-patent-ip"></div>
-                        <div><div>E-mail</div><input id="email-envd" type="text" name="email-patent-ip"></div>
-                        <input type="submit" value="Отправить" name="submit-patent-ip">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal-not-know-ip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы Вас бесплатно проконсультируем</h4>
-                </div>
-                <div class="modal-body">
-                    <form method="get" action="handler-free.php">
-                        <div><div>Имя</div><input id="name-envd" type="text" name="name-not-know-ip"></div>
-                        <div><div>Телефон</div><input id="phone-envd" type="text" name="phone-not-know-ip"></div>
-                        <div><div>E-mail</div><input id="email-envd" type="text" name="email-not-know-ip"></div>
-                        <input type="submit" value="Отправить" name="submit-not-know-ip">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<?php require_once 'modals.php'; ?>
 <?php require_once 'header.php'; ?> 
 
 <div class="container-fluid questions-wrapper">

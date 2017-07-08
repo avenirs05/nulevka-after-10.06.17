@@ -30,44 +30,9 @@
     <!-- {/literal} END JIVOSITE CODE -->
 </head>
 <body>
+<?php require_once 'modals.php'; ?>
 
-<div class="modal fade" id="modal-envd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Представление нулевых деклараций по единому налогу на вмененный доход главой 26.3 НК РФ не предусмотрено (Определение ВАС РФ от 26.02.2014 г. № ВАС-1903/14). Заполните данные ниже и мы Вас проконсультируем по этому вопросу.</h4>
-            </div>
-            <div class="modal-body">
-                <form action="handler-free.php" method="get">
-                    <div><div>Имя<span class="red">*</span></div><input type="text" id="name-envd" name="name-envd-ooo" required></div>
-                    <div><div>Телефон<span class="red">*</span></div><input id="phone-envd" type="text" name="phone-envd-ooo" required></div>
-                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-envd-ooo"></div>
-                    <input type="submit" value="Отправить" name="submit-envd-ooo">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="modal fade" id="modal-not-know" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Заполните данные ниже и мы Вас бесплатно проконсультируем</h4>
-            </div>
-            <div class="modal-body">
-                <form action="handler-free.php" method="get">
-                    <div><div>Имя<span class="red">*</span></div><input id="name-envd" type="text" name="name-not-know-ooo" required></div>
-                    <div><div>Телефон<span class="red">*</span></div><input id="phone-envd" type="text" name="phone-not-know-ooo" required></div>
-                    <div><div>E-mail</div><input id="email-envd" type="text" name="email-not-know-ooo"></div>
-                    <input type="submit" value="Отправить" name="submit-not-know-ooo">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 <?php require_once 'header.php'; ?>    
 
