@@ -16,26 +16,17 @@
     
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
     <script src="functions-company.js"></script>
     <script src="functions-general.js"></script>
     <script src="events-general.js"></script>
     <script src="events-company.js"></script>
-    
-    <script src="company-js/choose-tax-func.js"></script> 
-    <script src="company-js/one-face-func.js"></script> 
-    <script src="company-js/szv-func.js"></script>
-    <script src="company-js/tranz-func.js"></script>
-    <script src="company-js/will-send-func.js"></script>
-    <script src="company-js/tax-base-func.js"></script>
 
-    <script src="company-js/choose-tax-ev.js"></script>    
-    <script src="company-js/one-face-ev.js"></script>    
-    <script src="company-js/szv-ev.js"></script>    
-    <script src="company-js/tranz-ev.js"></script>    
-    <script src="company-js/will-send-ev.js"></script>    
-    <script src="company-js/tax-base-ev.js"></script>      
-    
+    <script src="company-js/choice-tax.js"></script>
+    <script src="company-js/tranz.js"></script>
+    <script src="company-js/one-face.js"></script>
+    <script src="company-js/szv.js"></script>
+    <script src="company-js/tax-base.js"></script>
+    <script src="company-js/will-send.js"></script>
     
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45030163 = new Ya.Metrika({ id:45030163, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45030163" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
@@ -47,6 +38,9 @@
 </head>
 <body>
 <?php require_once 'modals.php'; ?>
+
+
+
 <?php require_once 'header.php'; ?>    
 
 <div class="container-fluid questions-wrapper">

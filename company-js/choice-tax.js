@@ -1,37 +1,35 @@
 $(function () {
 
-	// Страница выбора системы налогообложения
-
-	// Выбираем систему налогообложения
+	// Выберите систему налогообложения
 	$("#general").change(function () {
 	    $('.tax-answer-0').after( $('#choice-quarters') );
 	    $('.tax-answer-0').show();
 	    $('#choice-quarters').show();
 	    $('#btn-next-tax-system').show();
-	});	
-
+	});
+	
 	$("#simple").change(function () {
 	    $('.tax-answer-1').after( $('#choice-quarters') );
 	    $('.tax-answer-1').show();
 	    $('#choice-quarters').show();
 	    $('#btn-next-tax-system').show();
-	});	
+	});
 	
 	$("#envd").change(function () {
 	    $('#choice-quarters').hide();
 	    $('#modal-envd').modal('show');
 	    $('#btn-next-tax-system').hide();
-	}); 
-	
+	});    
+
 	$("#not-know").change(function () {
 	    $('#choice-quarters').hide();
 	    $('#modal-not-know').modal('show')
 	    $('#btn-next-tax-system').hide();
 	});
-	// Выбираем систему налогообложения
 
 
-	// Выбрать период (если не 1-й в списке), выпадают/сворачиваются периоды.
+
+	// Другие периоды
 	$("#another-periods").click(function() {
 	    var anotherPeriodsColl = $('#another-periods').siblings('div')
 	    											  .children('label')
@@ -39,7 +37,7 @@ $(function () {
 	    for (var i = 0; i < $(anotherPeriodsColl).length; i++) {
 	        var anotherPeriodsInput = anotherPeriodsColl.eq(i).parent();
 	        if (anotherPeriodsInput.css('display') == "none") {
-	           anotherPeriodsInput.show(); 
+	            anotherPeriodsInput.show(); 
 	        } 
 	        else 
 	            anotherPeriodsInput.hide();
@@ -48,19 +46,17 @@ $(function () {
 	            $('#uk-question-2').hide();
 	    }            
 	});
-	// Выбрать период (если не 1-й в списке), выпадают/сворачиваются периоды
 
 
-	/* Если выбрана Общ. или Упрощ. с-ма и выбран 4-й квартал, 
-	   выпадает как внесен УК (деньги/имущ-во) */
+	// Если выбран 4-й квартал
 	$("#qrt-4-2016, #qrt-4-2015, #qrt-4-2014").change(showAndHideUK);
-
+	
 
 	// Кнопка Дальше
 	$("#btn-next-tax-system").click(function() {
 	    if ( $('#general').prop('checked') ) {
-	        $('#div-tranz').show();
-	        $('#div-tax-system').hide();
+	         $('#div-tranz').show();
+	         $('#div-tax-system').hide();
 	    }
 	    if ( $('#simple').prop('checked') ) {
 	        if ( $("#qrt-4-2016").prop('checked') || 
@@ -76,9 +72,5 @@ $(function () {
 	        }
 	    }
 	});
-	// Кнопка Дальше
-
-
-
 
 });
