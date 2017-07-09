@@ -82,31 +82,31 @@ $(function () {
         }
     });
 
-    $("#btn-next-tax-system").click(function() {
-        if ( $('#general').prop('checked') ) {
-            $('#div-tranz').show();
-            $('#div-tax-system').hide();
-        }
-        if ( $('#simple').prop('checked') ) {
-            if ( $("#qrt-4-2016").prop('checked') || 
-                 $("#qrt-4-2015").prop('checked') || 
-                 $("#qrt-4-2014").prop('checked') ) 
-            {
-                $('#div-base').show();
-                $('#div-tax-system').hide();              
-            } 
-            else {
-                $('#div-tax-system').hide();
-                $('#div-one-face').show(); 
-            }
-        }
-    });
+    // $("#btn-next-tax-system").click(function() {
+    //     if ( $('#general').prop('checked') ) {
+    //         $('#div-tranz').show();
+    //         $('#div-tax-system').hide();
+    //     }
+    //     if ( $('#simple').prop('checked') ) {
+    //         if ( $("#qrt-4-2016").prop('checked') || 
+    //              $("#qrt-4-2015").prop('checked') || 
+    //              $("#qrt-4-2014").prop('checked') ) 
+    //         {
+    //             $('#div-base').show();
+    //             $('#div-tax-system').hide();              
+    //         } 
+    //         else {
+    //             $('#div-tax-system').hide();
+    //             $('#div-one-face').show(); 
+    //         }
+    //     }
+    // });
 
-    $("#btn-back-tranz").click(function() {
-        $('#div-tranz').hide();
-        $('#div-tax-system').show();
-        $('#btn-next-tax-system').show();
-    });
+    // $("#btn-back-tranz").click(function() {
+    //     $('#div-tranz').hide();
+    //     $('#div-tax-system').show();
+    //     $('#btn-next-tax-system').show();
+    // });
 
     $("#btn-back-base").click(function() {
         $('#div-base').hide();
@@ -131,56 +131,56 @@ $(function () {
         $('#div-base').hide();
     });
 
-    $("#tranz-yes").change(function() {
-         if (($('#tranz-yes')).prop('checked')) {
-              $('#btn-next-tranz').show();
-         } 
-    });
+    // $("#tranz-yes").change(function() {
+    //      if (($('#tranz-yes')).prop('checked')) {
+    //           $('#btn-next-tranz').show();
+    //      } 
+    // });
 
-    $("#tranz-no").change(function() {
-        if (($('#tranz-no')).prop('checked')) {
-            $('#btn-next-tranz').show();
-        } 
-    });
+    // $("#tranz-no").change(function() {
+    //     if (($('#tranz-no')).prop('checked')) {
+    //         $('#btn-next-tranz').show();
+    //     } 
+    // });
 
-    $("#btn-next-tranz").click(function() {
-        $('#div-one-face').show();
-        $('#div-tranz').hide();
-    });
+    // $("#btn-next-tranz").click(function() {
+    //     $('#div-one-face').show();
+    //     $('#div-tranz').hide();
+    // });
 
-    $("#btn-back-one-face").click(function() {
-        if ( $('#general').prop('checked') ) {
-             $('#div-tranz').show();
-             $('#div-one-face').hide();
-        }
-        if ( $('#simple').prop('checked') ) {
-            if ( $("#qrt-4-2016").prop('checked') || 
-                 $("#qrt-4-2015").prop('checked') || 
-                 $("#qrt-4-2014").prop('checked') ) 
-            {
-                $('#div-one-face').hide();
-                $('#div-base').show();
-            } 
-            else 
-            {
-                $('#div-one-face').hide();
-                $('#div-tax-system').show();
-                $('#btn-next-tax-system').show();
-            }
-        }                
-    });
+    // $("#btn-back-one-face").click(function() {
+    //     if ( $('#general').prop('checked') ) {
+    //          $('#div-tranz').show();
+    //          $('#div-one-face').hide();
+    //     }
+    //     if ( $('#simple').prop('checked') ) {
+    //         if ( $("#qrt-4-2016").prop('checked') || 
+    //              $("#qrt-4-2015").prop('checked') || 
+    //              $("#qrt-4-2014").prop('checked') ) 
+    //         {
+    //             $('#div-one-face').hide();
+    //             $('#div-base').show();
+    //         } 
+    //         else 
+    //         {
+    //             $('#div-one-face').hide();
+    //             $('#div-tax-system').show();
+    //             $('#btn-next-tax-system').show();
+    //         }
+    //     }                
+    // });
 
-    $("#one-face-yes").change(function() {
-         if (($('#one-face-yes')).prop('checked')) {
-              $('#btn-next-one-face').show();
-         } 
-    });
+    // $("#one-face-yes").change(function() {
+    //      if (($('#one-face-yes')).prop('checked')) {
+    //           $('#btn-next-one-face').show();
+    //      } 
+    // });
 
-    $("#one-face-no").change(function() {
-        if (($('#one-face-no')).prop('checked')) {
-            $('#btn-next-one-face').show();
-        } 
-    });
+    // $("#one-face-no").change(function() {
+    //     if (($('#one-face-no')).prop('checked')) {
+    //         $('#btn-next-one-face').show();
+    //     } 
+    // });
 
     $("#szv-quest-yes").change(function() {
          if (($('#szv-quest-yes')).prop('checked')) {
@@ -196,18 +196,17 @@ $(function () {
         } 
     });
 
-    $("#btn-next-one-face").click(function() {
-        if ( $('#one-face-yes').prop('checked') ) {
-            $('#div-one-face').hide();
-            $('#btn-next-szv-quest').trigger('click');    
-        }
-        else {
-            $('#div-one-face').hide();
-            $('#div-szv-quest').show();       
-            showAndHideSzvMonths(); 
-        }
-
-    });
+    // $("#btn-next-one-face").click(function() {
+    //     if ( $('#one-face-yes').prop('checked') ) {
+    //         $('#div-one-face').hide();
+    //         $('#btn-next-szv-quest').trigger('click');    
+    //     }
+    //     else {
+    //         $('#div-one-face').hide();
+    //         $('#div-szv-quest').show();       
+    //         showAndHideSzvMonths(); 
+    //     }
+    // });
 
     $("#btn-back-szv-quest").click(function() {
         $('#div-szv-quest').hide();
