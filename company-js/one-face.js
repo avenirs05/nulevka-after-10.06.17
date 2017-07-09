@@ -44,7 +44,7 @@ $(function () {
 	$("#btn-next-one-face").click(function() {
 	    if ( $('#one-face-yes').prop('checked') ) {
 	         $('#div-one-face').hide();
-	         $('#btn-next-szv-quest').trigger('click');    
+	         $('#btn-next-szv-quest').trigger('click'); //Пропускаем вопрос про СЗВ 
 	    }
 	    else {
 	        $('#div-one-face').hide();

@@ -1,5 +1,3 @@
-var regExpInn = /^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/;
-
 var showAndHideUK = function () {
     if (($('#qrt-4-2016')).prop('checked')) {
          $('#uk-question-0').show();
@@ -117,7 +115,6 @@ function listOfMonths (label) {
 }
 
 
-
 var showAndHideSzvMonths = function () {
     if ( ($('div')).is('.month') ) {
         $('.month').show();
@@ -152,6 +149,7 @@ function hideAllInputsWillSend () {
     $('#decl-one').parent().parent().hide();
     $('#szv-m').parent().parent().hide();        
 }
+
 
 function showInputsWillSendSzv () {
     if ( ($('div')).is('.month') ) {
