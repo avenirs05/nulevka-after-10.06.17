@@ -33,7 +33,7 @@ $(function () {
 	$("#another-periods").click(function() {
 	    var anotherPeriodsColl = $('#another-periods').siblings('div')
 	    											  .children('label')
-	    											  .children('input:not(#qrt-2-2017)');     
+	    											  .children('input:not(#qrt-3-2017)');     
 	    for (var i = 0; i < $(anotherPeriodsColl).length; i++) {
 	        var anotherPeriodsInput = anotherPeriodsColl.eq(i).parent();
 	        if (anotherPeriodsInput.css('display') == "none") {

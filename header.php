@@ -24,7 +24,6 @@
                 <span class="call-free-mob"></span>
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;
                 <span class="phone-digits">8 800 22 22 943</span> 
-                <!-- <button id="btn-free-consult-mob">Бесплатная консультация</button> -->
             </div> 
         </div>
     </div>
