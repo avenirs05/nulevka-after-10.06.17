@@ -22,7 +22,7 @@
                         <div><a href="#"></a></div>
                     </div>
                     <div class="col-md-3">
-                        <div><span>8 800 22 22 943</span></div>
+                        <div><span>+7 989 622 08 19</span></div>
                         <div><span>info@nulevka.online</span></div>
                         <div><a href="#"></a></div>
                         <div><a href="#"></a></div>   

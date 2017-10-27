@@ -61,6 +61,10 @@ a {
 	float: left;
 }
 
+.messenger-img {
+	margin-top: 12px;
+}
+
 /*Раскомментировать как будет звонок бесплатный 8-800! */
 .header .right-side {
 	float: right;
@@ -109,6 +113,10 @@ a {
 	position: absolute;
 	top: 5%;
 	right: 0%;
+}
+
+messenger-img-mob {
+
 }
 
 .main-screen {
@@ -1346,11 +1354,30 @@ input[type="checkbox"] {
 	.what-when-send ul, li, span {
 		margin-bottom: 10px;
 	}
+	.right-side .messenger-img-mob {
+		height: 20px;
+		width: 20px;
+		margin-top: 22px;
+	}
 }
 
 @media screen and (max-device-width: 767px) {
 	#btn-free-consult-mob {
 		font-size: 11px;
+	}
+	.phone-digits {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-device-width: 359px) {
+	.header-mob .phone-digits {
+		font-size: 20px;
+	}
+	.right-side .messenger-img-mob {
+		margin-top: 21px;
+		height: 19px;
+		width: 19px;
 	}
 }
 
