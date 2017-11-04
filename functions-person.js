@@ -35,22 +35,41 @@ function insertNalogDecl () {
     }  
 }
 
+// function showHideBtnNextSimpleIp () {
+//     if ( $('#year-2016-ip-simple').prop('checked')) {
+//         $('#btn-next-tax-system-ip').show();
+//     } 
+//     if ( $('#year-2015-ip-simple').prop('checked')) {
+//         $('#btn-next-tax-system-ip').show();
+//     } 
+//     if ( $('#year-2014-ip-simple').prop('checked')) {
+//         $('#btn-next-tax-system-ip').show();
+//     } 
+
+//     if ( $('#year-2016-ip-simple').prop('checked') == false &&
+//          $('#year-2015-ip-simple').prop('checked') == false &&
+//          $('#year-2014-ip-simple').prop('checked') == false ) 
+//     {
+//         $('#btn-next-tax-system-ip').hide();
+//     }
+// }
+
 function showHideBtnNextSimpleIp () {
     if ( $('#year-2016-ip-simple').prop('checked')) {
-        $('#btn-next-tax-system-ip').show();
+        $('#btn-next-tax-system-ip-0').show();
     } 
     if ( $('#year-2015-ip-simple').prop('checked')) {
-        $('#btn-next-tax-system-ip').show();
+        $('#btn-next-tax-system-ip-0').show();
     } 
     if ( $('#year-2014-ip-simple').prop('checked')) {
-        $('#btn-next-tax-system-ip').show();
+        $('#btn-next-tax-system-ip-0').show();
     } 
 
     if ( $('#year-2016-ip-simple').prop('checked') == false &&
          $('#year-2015-ip-simple').prop('checked') == false &&
          $('#year-2014-ip-simple').prop('checked') == false ) 
     {
-        $('#btn-next-tax-system-ip').hide();
+        $('#btn-next-tax-system-ip-0').hide();
     }
 }
 

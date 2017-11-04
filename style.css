@@ -70,7 +70,7 @@ a {
 	float: right;
 	display: flex;
 	position: relative;
-/*	margin-top: 15px;*/
+	margin-top: 5px;
 }
 
 .header-mob .right-side {
@@ -678,7 +678,9 @@ input[type="checkbox"] {
 	font-size: 18px;
 }
 
-#form-tax-system button {
+#form-tax-system button,
+#btn-back-base,
+#btn-next-base {
 	background-color: #339933;
 	color: #ffffff;
 	width: 120px;
@@ -1313,7 +1315,9 @@ input[type="checkbox"] {
 		width: 165px;
 		margin-right: 0;
 	}
-	#form-tax-system button {
+	#form-tax-system button,
+	#btn-back-base,
+	#btn-next-base {
 		width: 90px;
 	}
 	#form-yandex {

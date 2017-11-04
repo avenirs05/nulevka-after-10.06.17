@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +34,8 @@
 <body>
 <?php require_once 'modals.php'; ?>
 <?php require_once 'header.php'; ?> 
+
+
 
 <div class="container-fluid questions-wrapper">
     <div class="row">
@@ -70,7 +74,8 @@
 
 <?php 
 require_once 'functions.php';
-// print_r($_POST);
+//echo($_POST['base']);
+
 
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -176,6 +181,7 @@ if (isset($_POST['submit-go-to-pay-ooo'])) {
     showSnilsDir() .
     showNameOfCompany() .
     showInnOfCompany() .
+    showOktmoOfCompany() .
     showPhoneOfCompany() .
     showEmailOfCompany() .
     '<span style="font-size: 20px;">Мы Вам подготовим:</span><br><br>' .
@@ -200,10 +206,12 @@ if (isset($_POST['submit-go-to-pay-ip'])) {
     $message = '<html><head><title></title></head><body>
     <b>Кто обращается:</b> ИП<br><br>' .
     isGeneralOrSimpleTaxSystemIp() .
+    showBaseIp() .
     findQuart() .
     findYearIfSimpleIP() .
     showNameOfIp() .
     showInnOfIp() .
+    showOktmoOfIp() .
     showPhoneOfIP() .
     showEmailOfIp() .
     showPaspSerOfIp() .

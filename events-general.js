@@ -22,4 +22,6 @@ $(function () {
 		$('#modal-for-accountants-mob').modal('show');
 	});
 
+	
+
 });

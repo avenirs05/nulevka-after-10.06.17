@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+<?php session_start(); ?>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -20,7 +21,10 @@
     <script src="functions-person.js"></script>
     <script src="events-general.js"></script>
     <script src="person-js/choice-tax.js"></script>
+    <script src="person-js/tax-base.js"></script>
     <script src="person-js/will-send.js"></script>
+
+
     
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45030163 = new Ya.Metrika({ id:45030163, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45030163" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
@@ -94,7 +98,9 @@
 
         <label class="tax-system-answer" for="not-know-ip"><input id="not-know-ip" type="radio" name="tax-system" value="not-know-ip">Я не знаю</label><br>
         <div style="display: none" class="tax-answer-4"></div><br>
+        
 
+        <button id="btn-next-tax-system-ip-0" style="display: none;" onclick="return false;">Дальше</button>
         <button id="btn-next-tax-system-ip" style="display: none;" onclick="return false;">Дальше</button>
     </div>
     
@@ -133,31 +139,45 @@
         <input id="total-amount" type="hidden" name="total-amount" value="">
         <div><div>ФИО</div><input id="fio-ip" type="text" name="fio-ip"></div>
         <div><div>ИНН</div><input id="inn" type="text" name="inn"></div>
+        <div><div>ОКТМО</div><input id="oktmo" type="text" name="oktmo-ip"></div>
         <div><div>Телефон</div><input id="phone-ip" type="text" name="phone-ip"></div>
         <div><div>E-mail</div><input id="email-ip" type="text" name="email-ip"></div>
         <div><div>Паспорт серия</div><input id="pasp-ser-ip" type="text" name="pasp-ser-ip"></div>
         <div><div>Паспорт №</div><input id="pasp-num-ip" type="text" name="pasp-num-ip"></div>
         <div><div>Дата выдачи</div><input id="pasp-date-issue-ip" type="text" name="pasp-date-issue-ip"></div>
         <div><div>Кем выдан</div><input id="pasp-who-issue-ip" type="text" name="pasp-who-issue-ip"></div>
-        <div><div>Код подразделения</div><input id="pasp-kp-ip" type="text" name="pasp-kp-ip"></div>        
+        <div><div>Код подразделения</div><input id="pasp-kp-ip" type="text" name="pasp-kp-ip"></div>       
+
         <button id="btn-back-will-send-ip" onclick="return false;">Назад</button>
         <input id="submit-go-to-pay-ip" type="submit" value="Перейти к оплате" name="submit-go-to-pay-ip">
     </div>
 
+    <div id="div-base" style="display: none">
+        <span class="question">Какая у Вас база налогообложения?</span><br>
+        <label id="label-base-inc" for="base-inc"><input id="base-inc" type="radio" name="base" value="base-inc">Доходы</label><br>
+        <label id="label-base-inc-spent" for="base-inc-spent"><input id="base-inc-spent" type="radio" name="base" value="base-inc-spent">Доходы минус расходы</label><br>
+        <button id="btn-back-base" onclick="return false;" style="background-color: #339933;">Назад</button> 
+        <button id="btn-next-base" style="display: none; " onclick="return false;">Дальше</button> 
+    </div>
+
     <div id="dialog-callback" title="" style="display: none;">
         <form action="">
-                <span class="title-input">Имя:</span>
-                <input type="text" name="name" placeholder="Введите имя">
-                <span class="title-input">Телефон: <span class="red">*</span></span>
-                <input type="text" name="phone" placeholder="Введите номер телефона">
-                <input type="submit" value="Отправить">
+            <span class="title-input">Имя:</span>
+            <input type="text" name="name" placeholder="Введите имя">
+            <span class="title-input">Телефон: <span class="red">*</span></span>
+            <input type="text" name="phone" placeholder="Введите номер телефона">
+            <input type="submit" value="Отправить">
         </form>
     </div>
+
+
 
 </form>
 </div>
 </div>
 </div>
+
+
 
 <div id="clickfrog_counter_container" style="width:0px;height:0px;overflow:hidden;"></div><script type="text/javascript">(function(d, w) {var clickfrog = function() {if(!d.getElementById('clickfrog_js_container')) {var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.src = "//stat.clickfrog.ru/c.js?r="+Math.random();sc.id = 'clickfrog_js_container';var c = document.getElementById('clickfrog_counter_container');c.parentNode.insertBefore(sc, c);}};if(w.opera == "[object Opera]"){d.addEventListener("DOMContentLoaded",clickfrog,false);}else {clickfrog();}})(document, window);</script><noscript><div style="width:0px;height:0px;overflow:hidden;"><img src="//stat.clickfrog.ru/no_script.php?img" style="width:0px; height:0px;" alt=""/></div></noscript><script type="text/javascript">var clickfrogru_uidh='83b9bb40dc0b3675e271f4459ed1e693';</script>
 

@@ -94,6 +94,17 @@ function showBase () {
     } 
 }
 
+function showBaseIp () {
+    if (isset($_POST['base'])) {
+        if ($_POST['base'] == 'base-inc') { 
+            return '<b>База налогообложения: </b>Доходы<br><br>';
+        }
+        if ($_POST['base'] == 'base-inc-spent') { 
+            return '<b>База налогообложения: </b>Доходы - Расходы<br><br>'; 
+        }  
+    } else return "-";
+}
+
 function showOneFace () {
     if (isset($_POST['one-face'])) {
         if ($_POST['one-face'] == 'one-face-yes') { 
@@ -144,6 +155,20 @@ function showNameOfIp () {
     } 
 }
 
+function showOktmoOfCompany () {
+    if (isset($_POST['oktmo'])) {
+        return '<b>ОКТМО: </b>' . $_POST['oktmo'] . 
+               '<br><br>'; 
+    } 
+}
+
+function showOktmoOfIP () {
+    if (isset($_POST['oktmo-ip'])) {
+        return '<b>ОКТМО: </b>' . $_POST['oktmo-ip'] . 
+               '<br><br>'; 
+    } 
+}
+
 function showInnOfCompany () {
     if (isset($_POST['inn'])) {
         return '<b>ИНН: </b>' . $_POST['inn'] . 
@@ -160,10 +185,11 @@ function showInnOfIp () {
 
 function showPhoneOfCompany () {
     if (isset($_POST['phone-ooo'])) {
-        return '<b>Телефон: </b>' . $_POST['phone-ooo'] . 
+        return '<b>ИНН: </b>' . $_POST['phone-ooo'] . 
                '<br><br>'; 
     } 
 }
+
 
 function showPhoneOfIP () {
     if (isset($_POST['phone-ip'])) {
