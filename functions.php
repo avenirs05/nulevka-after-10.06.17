@@ -185,7 +185,7 @@ function showInnOfIp () {
 
 function showPhoneOfCompany () {
     if (isset($_POST['phone-ooo'])) {
-        return '<b>ИНН: </b>' . $_POST['phone-ooo'] . 
+        return '<b>Телефон: </b>' . $_POST['phone-ooo'] . 
                '<br><br>'; 
     } 
 }
