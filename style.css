@@ -765,21 +765,27 @@ input[type="checkbox"] {
 }
 
 .nalog-decl label,
+#label-decl-usn-4-2017, 
 #label-decl-usn-4-2016, 
 #label-decl-usn-4-2015,
 #label-decl-usn-4-2014,
+#label-buh-rep-ifns-4-2017,
 #label-buh-rep-ifns-4-2016,
 #label-buh-rep-ifns-4-2015,
 #label-buh-rep-ifns-4-2014,
+#label-workers-cnt-4-2017,
 #label-workers-cnt-4-2016,
 #label-workers-cnt-4-2015,
 #label-workers-cnt-4-2014,
+#label-buh-rep-stat-4-2017,
 #label-buh-rep-stat-4-2016,
 #label-buh-rep-stat-4-2015,
 #label-buh-rep-stat-4-2014,
+#label-decl-ndfl-ip-4-2017,
 #label-decl-ndfl-ip-4-2016,
 #label-decl-ndfl-ip-4-2015,
 #label-decl-ndfl-ip-4-2014,
+#label-year-2017-ip-simple,
 #label-year-2016-ip-simple,
 #label-year-2015-ip-simple,
 #label-year-2014-ip-simple {
@@ -799,7 +805,8 @@ input[type="checkbox"] {
 
 #uk-question-0,
 #uk-question-1,
-#uk-question-2 {
+#uk-question-2,
+#uk-question-3 {
 	margin-left: 80px;
 }
 

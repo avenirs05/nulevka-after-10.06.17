@@ -11,7 +11,7 @@ var showAndHideUK = function () {
          $('#uk-question-2').show();
     } else $('#uk-question-2').hide();
     
-    if (($('#qrt-4-2014')).prop('checked')) {
+    if ( ($('#qrt-4-2014')).prop('checked') ) {
          $('#uk-question-3').show();
     } else $('#uk-question-3').hide();
 }
@@ -247,7 +247,14 @@ function showAndHideChildChecksSzv (reportId) {
 } 
 
 function insertDeclUsnIfQuartIs4 () {
-    if ( $('#simple').prop('checked') && ( $('#qrt-4-2014').prop('checked') || $('#qrt-4-2015').prop('checked') || $('#qrt-4-2016').prop('checked') ) )  {
+    if ( $('#simple').prop('checked') && ( 
+            $('#qrt-4-2014').prop('checked') || 
+            $('#qrt-4-2015').prop('checked') || 
+            $('#qrt-4-2016').prop('checked') || 
+            $('#qrt-4-2017').prop('checked') ) )  {
+        if ( $('#qrt-4-2017').prop('checked') ) {
+            $('#div-from-customer').before('<div><label id="label-decl-usn-4-2017" for="decl-usn-4-2017"><input id="decl-usn-4-2017" type="checkbox" name="decl-usn-4-2017" checked>Налоговая декларация по УСН за 2017 год</label></div>');
+        }
         if ( $('#qrt-4-2016').prop('checked') ) {
             $('#div-from-customer').before('<div><label id="label-decl-usn-4-2016" for="decl-usn-4-2016"><input id="decl-usn-4-2016" type="checkbox" name="decl-usn-4-2016" checked>Налоговая декларация по УСН за 2016 год</label></div>');
         }
@@ -261,6 +268,9 @@ function insertDeclUsnIfQuartIs4 () {
 }
 
 function insertDiffReportsIfQuartIs4 () {
+    if ( $('#qrt-4-2017').prop('checked') ) {
+        $('#div-from-customer').before('<div><label id="label-buh-rep-ifns-4-2017" for="buh-rep-ifns-4-2017"><input id="buh-rep-ifns-4-2017" type="checkbox" name="buh-rep-ifns-4-2017" checked>Бухгалтерская(финансовая) отчетность за 2017 год в ИФНС</label></div><div><label id="label-buh-rep-stat-4-2017" for="buh-rep-stat-4-2017"><input id="buh-rep-stat-4-2017" type="checkbox" name="buh-rep-stat-4-2017" checked>Бухгалтерская(финансовая) отчетность за 2017 год в Росстат</label></div><div><label id="label-workers-cnt-4-2017" for="workers-cnt-4-2017"><input id="workers-cnt-4-2017" type="checkbox" name="workers-cnt-4-2017" checked>Сведения о среднесписочной численности работников за 2017 год</label></div>');
+    }
     if ( $('#qrt-4-2016').prop('checked') ) {
         $('#div-from-customer').before('<div><label id="label-buh-rep-ifns-4-2016" for="buh-rep-ifns-4-2016"><input id="buh-rep-ifns-4-2016" type="checkbox" name="buh-rep-ifns-4-2016" checked>Бухгалтерская(финансовая) отчетность за 2016 год в ИФНС</label></div><div><label id="label-buh-rep-stat-4-2016" for="buh-rep-stat-4-2016"><input id="buh-rep-stat-4-2016" type="checkbox" name="buh-rep-stat-4-2016" checked>Бухгалтерская(финансовая) отчетность за 2016 год в Росстат</label></div><div><label id="label-workers-cnt-4-2016" for="workers-cnt-4-2016"><input id="workers-cnt-4-2016" type="checkbox" name="workers-cnt-4-2016" checked>Сведения о среднесписочной численности работников за 2016 год</label></div>');
     }

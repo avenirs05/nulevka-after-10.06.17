@@ -116,7 +116,8 @@ $(function () {
 	    insertDeclUsnIfQuartIs4 ();
 	    insertDiffReportsIfQuartIs4 ();
 
-	    if ( $('#qrt-4-2016').prop('checked') || 
+	    if ( $('#qrt-4-2017').prop('checked') || 
+	    	   $('#qrt-4-2016').prop('checked') || 
 	         $('#qrt-4-2015').prop('checked') ||
 	         $('#qrt-4-2014').prop('checked') ) 
 	    {
