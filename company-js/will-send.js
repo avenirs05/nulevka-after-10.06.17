@@ -74,18 +74,22 @@ $(function () {
 	           $('.month').remove();
 	    }
 
+	    $('#decl-usn-4-2017').parent('label').parent('div').remove();
 	    $('#decl-usn-4-2016').parent('label').parent('div').remove();
 	    $('#decl-usn-4-2015').parent('label').parent('div').remove();
 	    $('#decl-usn-4-2014').parent('label').parent('div').remove();
 
+	    $('#buh-rep-ifns-4-2017').parent('label').parent('div').remove();
 	    $('#buh-rep-ifns-4-2016').parent('label').parent('div').remove();
 	    $('#buh-rep-ifns-4-2015').parent('label').parent('div').remove();
 	    $('#buh-rep-ifns-4-2014').parent('label').parent('div').remove();
 
+	    $('#buh-rep-stat-4-2017').parent('label').parent('div').remove();
 	    $('#buh-rep-stat-4-2016').parent('label').parent('div').remove();
 	    $('#buh-rep-stat-4-2015').parent('label').parent('div').remove();
 	    $('#buh-rep-stat-4-2014').parent('label').parent('div').remove();        
 
+	    $('#workers-cnt-4-2017').parent('label').parent('div').remove();
 	    $('#workers-cnt-4-2016').parent('label').parent('div').remove();
 	    $('#workers-cnt-4-2015').parent('label').parent('div').remove();
 	    $('#workers-cnt-4-2014').parent('label').parent('div').remove();        

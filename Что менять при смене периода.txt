@@ -78,6 +78,19 @@ company-js/szv.js
 			...
 		});
 		
+company-js/will-send.js 
+-------------
+		$("#btn-back-will-send").click(function() {
+			... 
+			$('#decl-usn-4-2017').parent('label').parent('div').remove();
+			...
+			$('#buh-rep-ifns-4-2017').parent('label').parent('div').remove();
+			...
+			$('#buh-rep-stat-4-2017').parent('label').parent('div').remove();
+			...
+			$('#workers-cnt-4-2017').parent('label').parent('div').remove();
+		}
+		
 
 
 
