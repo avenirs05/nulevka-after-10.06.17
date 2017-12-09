@@ -48,7 +48,7 @@
 
 <?php 
 require_once 'functions.php';
-// print_r($_POST);
+
 
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";

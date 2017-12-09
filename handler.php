@@ -32,6 +32,7 @@
     <!-- {/literal} END JIVOSITE CODE -->
 </head>
 <body>
+<?php //print_r($_POST); ?>
 <?php require_once 'modals.php'; ?>
 <?php require_once 'header.php'; ?> 
 

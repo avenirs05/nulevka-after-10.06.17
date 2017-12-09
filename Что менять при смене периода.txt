@@ -1,3 +1,6 @@
+ООО
+---------
+
 company.php
 ------------
 	<div id="div-tax-system">
@@ -90,6 +93,66 @@ company-js/will-send.js
 			...
 			$('#workers-cnt-4-2017').parent('label').parent('div').remove();
 		}
+		
+		
+
+ИП
+---------
+
+	person.php
+	-----------
+	<div id="choice-years">
+	...
+	
+	
+	person.js/choice-tax.js
+	------------------------
+		// Выберите систему налогообложения
+		$("#simple-ip").change(function () { ... });
+		
+		// Если Упрощенка и выбран хотя бы 1 год, появляется/исчезает кнопка Дальше
+		$('#year-2017-ip-simple').change(...);
+		
+	person.js/tax-base.js
+	------------------------
+		$("#btn-next-base, #btn-next-tax-system-ip").click(function() { 
+			 if ( $('#general-ip').prop('checked') ) { ... }
+		}
+		
+	functions-general.js 
+	------------------------
+		// function calculateFinalSum () {
+			...
+		  if ( $('#simple-ip').prop('checked') ) {  
+			...
+		  }  
+		}
+		
+	functions-person.php	
+	-----------------
+	function insertDeclNdflIfIpIfQuartIs4 () { ... }
+	
+	function insertNalogDecl () { }
+ 
+	function showHideBtnNextSimpleIp () {}
+	
+	
+	functions.php
+	-----------------
+		function findQuart () {...}
+		function findYearIfSimpleIP () {...}
+		function findUK () { ... }
+		function willSendDeclNds () 
+		function willSendDeclProfit ()
+		function willSendCountIns ()
+		function willSendCountFss ()
+		function willSendDeclOne ()
+		function willSendCountFss ()
+		function willSendSzv ()
+		function willSendBuhRepIfns ()
+	
+	
+
 		
 
 

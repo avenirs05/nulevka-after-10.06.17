@@ -51,9 +51,9 @@
         <div id="choice-years" style="display: none">
             <i><a id="years-simple" href="#" onclick="return false;">Выберите период</a></i><br>
             <div id="div-years">
-                <div><label for="year-2016-ip-simple"><input id="year-2016-ip-simple" type="checkbox" name="year-2016-ip-simple">2016 год</label></div>
-                <div><label for="year-2015-ip-simple"><input id="year-2015-ip-simple" type="checkbox" name="year-2015-ip-simple">2015 год</label></div>      
-                <div><label for="year-2014-ip-simple"><input id="year-2014-ip-simple" type="checkbox" name="year-2014-ip-simple">2014 год</label></div>
+                <div><label for="year-2017-ip-simple"><input id="year-2017-ip-simple" type="checkbox" name="year-2017-ip-simple">2017 год</label></div>
+                <div><label for="year-2016-ip-simple"><input id="year-2016-ip-simple" type="checkbox" name="year-2016-ip-simple">2016 год</label></div>      
+                <div><label for="year-2015-ip-simple"><input id="year-2015-ip-simple" type="checkbox" name="year-2015-ip-simple">2015 год</label></div>
             </div> 
         </div>    
         <label class="tax-system-answer" for="general-ip"><input id="general-ip" type="radio" name="tax-system" value="general-ip">Общая</label><br>        
@@ -61,33 +61,33 @@
         
         <div id="choice-quarters" style="display: none"><i><span>Выберите период</span></i><br>
             
-            <div data-is-four="no" class="div-quarters"><label for="qrt-3-2017"><input id="qrt-3-2017" type="checkbox" name="qrt-3-2017" checked>3-й квартал 2017 года</label></div>            
+            <div data-is-four="yes" class="div-quarters"><label for="qrt-4-2017"><input id="qrt-4-2017" type="checkbox" name="qrt-4-2017" checked>4-й квартал 2017 года (годовая)</label></div>            
             
             <a id="another-periods" href="#" onclick="return false;">Другие периоды</a><br>
             
-            <div data-is-four="no" class="div-quarters" id="first-another-period"><label style="display: none;" for="qrt-2-2017"><input id="qrt-2-2017" type="checkbox" name="qrt-2-2017">2-й квартал 2017 года</label></div>
+            <div data-is-four="no" class="div-quarters" id="first-another-period"><label style="display: none;" for="qrt-3-2017"><input id="qrt-3-2017" type="checkbox" name="qrt-3-2017">3-й квартал 2017 года</label></div>
             
-            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2017"><input id="qrt-1-2017" type="checkbox" name="qrt-1-2017">1-й квартал 2017 года</label></div>   
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2017"><input id="qrt-2-2017" type="checkbox" name="qrt-2-2017">2-й квартал 2017 года</label></div>   
+            
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2017"><input id="qrt-1-2017" type="checkbox" name="qrt-1-2017">1-й квартал 2017 года</label></div>
             
             <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2016"><input id="qrt-4-2016" type="checkbox" name="qrt-4-2016">4-й квартал 2016 года (годовая)</label></div>
             
             <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-3-2016"><input id="qrt-3-2016" type="checkbox" name="qrt-3-2016">3-й квартал 2016 года</label></div>
             
-            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2016"><input id="qrt-2-2016" type="checkbox" name="qrt-2-2016">2-й квартал 2016 года</label></div>
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2016"><input id="qrt-2-2016" type="checkbox" name="qrt-2-2016">2-й квартал 2016 года</label></div>     
             
-            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2016"><input id="qrt-1-2016" type="checkbox" name="qrt-1-2016">1-й квартал 2016 года</label></div>     
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2016"><input id="qrt-1-2016" type="checkbox" name="qrt-1-2016">1-й квартал 2016 года</label></div>
             
             <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2015"><input id="qrt-4-2015" type="checkbox" name="qrt-4-2015">4-й квартал 2015 года (годовая)</label></div>
             
             <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-3-2015"><input id="qrt-3-2015" type="checkbox" name="qrt-3-2015">3-й квартал 2015 года</label></div>
             
-            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2015"><input id="qrt-2-2015" type="checkbox" name="qrt-2-2015">2-й квартал 2015 года</label></div>
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-2-2015"><input id="qrt-2-2015" type="checkbox" name="qrt-2-2015">2-й квартал 2015 года</label></div>       
             
-            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2015"><input id="qrt-1-2015" type="checkbox" name="qrt-1-2015">1-й квартал 2015 года</label></div>       
+            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-1-2014"><input id="qrt-1-2014" type="checkbox" name="qrt-1-2015">1-й квартал 2015 года</label></div>
             
             <div data-is-four="yes" class="div-quarters"><label style="display: none;" for="qrt-4-2014"><input id="qrt-4-2014" type="checkbox" name="qrt-4-2014">4-й квартал 2014 года (годовая)</label></div>
-            
-            <div data-is-four="no" class="div-quarters"><label style="display: none;" for="qrt-3-2014"><input id="qrt-3-2014" type="checkbox" name="qrt-3-2014">3-й квартал 2014 года</label></div>
         </div>  
       
         <label class="tax-system-answer" for="envd-ip"><input id="envd-ip" type="radio" name="tax-system" value="envd-ip">ЕНВД<br></label><br>

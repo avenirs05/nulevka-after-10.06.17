@@ -23,6 +23,7 @@ function findQuart () {
         return null;
     }
     $str = '<b>Периоды:</b><br>';
+    if (isset($_POST['qrt-4-2017'])) { $str = $str . '4-й квартал 2017 года' . '<br>'; }
     if (isset($_POST['qrt-3-2017'])) { $str = $str . '3-й квартал 2017 года' . '<br>'; }
     if (isset($_POST['qrt-2-2017'])) { $str = $str . '2-й квартал 2017 года' . '<br>'; }
     if (isset($_POST['qrt-1-2017'])) { $str = $str . '1-й квартал 2017 года' . '<br>'; }
@@ -30,12 +31,11 @@ function findQuart () {
     if (isset($_POST['qrt-3-2016'])) { $str = $str . '3-й квартал 2016 года' . '<br>'; }
     if (isset($_POST['qrt-2-2016'])) { $str = $str . '2-й квартал 2016 года' . '<br>'; }
     if (isset($_POST['qrt-1-2016'])) { $str = $str . '1-й квартал 2016 года' . '<br>'; }
-    if (isset($_POST['qrt-4-2015'])) { $str = $str . '4-й квартал 2015 года' . '<br>'; }
-    if (isset($_POST['qrt-3-2015'])) { $str = $str . '3-й квартал 2015 года' . '<br>'; } 
+    if (isset($_POST['qrt-4-2015'])) { $str = $str . '4-й квартал 2015 года' . '<br>'; } 
+    if (isset($_POST['qrt-3-2015'])) { $str = $str . '3-й квартал 2015 года' . '<br>'; }
     if (isset($_POST['qrt-2-2015'])) { $str = $str . '2-й квартал 2015 года' . '<br>'; }
-    if (isset($_POST['qrt-1-2015'])) { $str = $str . '1-й квартал 2015 года' . '<br>'; }
-    if (isset($_POST['qrt-4-2014'])) { $str = $str . '4-й квартал 2014 года' . '<br>'; } 
-    if (isset($_POST['qrt-3-2014'])) { $str = $str . '3-й квартал 2014 года' . '<br>'; }
+    if (isset($_POST['qrt-1-2015'])) { $str = $str . '1-й квартал 2015 года' . '<br>'; } 
+    if (isset($_POST['qrt-4-2014'])) { $str = $str . '4-й квартал 2014 года' . '<br>'; }
     
     return $str . '<br>';   
 }
@@ -45,27 +45,32 @@ function findYearIfSimpleIP () {
         return null;
     }
     $str = '<b>Периоды:</b><br>';
+    if (isset($_POST['year-2017-ip-simple'])) { $str = $str . '2017 год' . '<br>'; }
     if (isset($_POST['year-2016-ip-simple'])) { $str = $str . '2016 год' . '<br>'; }
     if (isset($_POST['year-2015-ip-simple'])) { $str = $str . '2015 год' . '<br>'; }
-    if (isset($_POST['year-2014-ip-simple'])) { $str = $str . '2014 год' . '<br>'; }
     
     return $str . '<br>';   
 }
 
 function findUK () {
     $str = '';
+    if (isset($_POST['deposit-uk-4-2017'])) {
+        if ($_POST['deposit-uk-4-2017'] == 'money-0') {
+            $str .= 'УК: Деньги-4-2017<br>';
+        } else $str .= 'УК: Имущество-4-2017<br>';
+    }
     if (isset($_POST['deposit-uk-4-2016'])) {
-        if ($_POST['deposit-uk-4-2016'] == 'money-0') {
+        if ($_POST['deposit-uk-4-2016'] == 'money-1') {
             $str .= 'УК: Деньги-4-2016<br>';
         } else $str .= 'УК: Имущество-4-2016<br>';
     }
     if (isset($_POST['deposit-uk-4-2015'])) {
-        if ($_POST['deposit-uk-4-2015'] == 'money-1') {
+        if ($_POST['deposit-uk-4-2015'] == 'money-2') {
             $str .= 'УК: Деньги-4-2015<br>';
         } else $str .= 'УК: Имущество-4-2015<br>';
     }
     if (isset($_POST['deposit-uk-4-2014'])) {
-        if ($_POST['deposit-uk-4-2014'] == 'money-2') {
+        if ($_POST['deposit-uk-4-2014'] == 'money-3') {
             $str .= 'УК: Деньги-4-2014<br>';
         } else $str .= 'УК: Имущество-4-2014<br>';
     }
@@ -252,6 +257,7 @@ function willSendDeclOne () {
     $str = "";    
     if ( isset($_POST['decl-one']) && $_POST['tranz'] == 'tranz-no') {
         $str .= '<b>Единая Упрощенная Декларация: </b>' . '<br><br>';    
+        if (isset($_POST['decl-one-final-4-17'])) { $str .= '4-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-one-final-3-17'])) { $str .= '3-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-one-final-2-17'])) { $str .= '2-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-one-final-1-17'])) { $str .= '1-й квартал 2017 года' . '<br>'; }
@@ -264,7 +270,6 @@ function willSendDeclOne () {
         if (isset($_POST['decl-one-final-2-15'])) { $str .= '2-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['decl-one-final-1-15'])) { $str .= '1-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['decl-one-final-4-14'])) { $str .= '4-й квартал 2014 года' . '<br>'; }
-        if (isset($_POST['decl-one-final-3-14'])) { $str .= '3-й квартал 2014 года' . '<br>'; }
     
         return $str . '<br>' . '<br>';
     }
@@ -274,6 +279,7 @@ function willSendDeclNds () {
     $str = "";
     if (isset($_POST['decl-nds']) && $_POST['tranz'] == 'tranz-yes') {
         $str .= '<b>Налоговая декларация по НДС: </b>' . '<br><br>';
+        if (isset($_POST['decl-nds-final-4-17'])) { $str .= '4-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-3-17'])) { $str .= '3-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-2-17'])) { $str .= '2-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-1-17'])) { $str .= '1-й квартал 2017 года' . '<br>'; }
@@ -286,7 +292,6 @@ function willSendDeclNds () {
         if (isset($_POST['decl-nds-final-2-15'])) { $str .= '2-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-1-15'])) { $str .= '1-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-4-14'])) { $str .= '4-й квартал 2014 года' . '<br>'; }
-        if (isset($_POST['decl-nds-final-3-14'])) { $str .= '3-й квартал 2014 года' . '<br>'; }
         
         return $str . '<br>' . '<br>';
     };
@@ -296,6 +301,7 @@ function willSendDeclProfit () {
     $str = "";
     if (isset($_POST['decl-profit']) && $_POST['tranz'] == 'tranz-yes') {
         $str .= '<b>Налоговая декларация по налогу на прибыль: </b>' . '<br><br>';
+        if (isset($_POST['decl-profit-final-4-17'])) { $str .= '4-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-profit-final-3-17'])) { $str .= '3-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-profit-final-2-17'])) { $str .= '2-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-profit-final-1-17'])) { $str .= '1-й квартал 2017 года' . '<br>'; }
@@ -308,7 +314,6 @@ function willSendDeclProfit () {
         if (isset($_POST['decl-profit-final-2-15'])) { $str .= '2-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['decl-profit-final-1-15'])) { $str .= '1-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['decl-profit-final-4-14'])) { $str .= '4-й квартал 2014 года' . '<br>'; }
-        if (isset($_POST['decl-profit-final-3-14'])) { $str .= '3-й квартал 2014 года' . '<br>'; }
 
         return $str . '<br>' . '<br>';
     };
@@ -318,6 +323,7 @@ function willSendCountIns () {
     $str = "";
     if (isset($_POST['count-ins'])) {
         $str .= '<b>Расчет по страховым взносам: </b>' . '<br><br>';
+        if (isset($_POST['count-ins-final-4-17'])) { $str .= '4-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['count-ins-final-3-17'])) { $str .= '3-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['count-ins-final-2-17'])) { $str .= '2-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['count-ins-final-1-17'])) { $str .= '1-й квартал 2017 года' . '<br>'; }
@@ -330,7 +336,6 @@ function willSendCountIns () {
         if (isset($_POST['count-ins-final-2-15'])) { $str .= '2-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['count-ins-final-1-15'])) { $str .= '1-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['count-ins-final-4-14'])) { $str .= '4-й квартал 2014 года' . '<br>'; }
-        if (isset($_POST['count-ins-final-3-14'])) { $str .= '3-й квартал 2014 года' . '<br>'; }
 
         return $str . '<br>' . '<br>';
     }
@@ -340,6 +345,7 @@ function willSendCountFss () {
     $str = "";
     if (isset($_POST['count-fss'])) {
         $str .= '<b>Расчетная ведомость в ФСС: </b>' . '<br><br>';
+        if (isset($_POST['count-fss-final-4-17'])) { $str .= '4-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['count-fss-final-3-17'])) { $str .= '3-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['count-fss-final-2-17'])) { $str .= '2-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['count-fss-final-1-17'])) { $str .= '1-й квартал 2017 года' . '<br>'; }
@@ -352,7 +358,6 @@ function willSendCountFss () {
         if (isset($_POST['count-fss-final-2-15'])) { $str .= '2-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['count-fss-final-1-15'])) { $str .= '1-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['count-fss-final-4-14'])) { $str .= '4-й квартал 2014 года' . '<br>'; }
-        if (isset($_POST['count-fss-final-3-14'])) { $str .= '3-й квартал 2014 года' . '<br>'; }
         
         return $str . '<br>' . '<br>';
     };
@@ -362,6 +367,10 @@ function willSendSzv () {
     $str = "";
     if (isset($_POST['szv-m']) && $_POST['one-face'] == 'one-face-no') {
         $str .= '<b>СЗВ-М: </b>' . '<br><br>';
+
+        if (isset($_POST['final-szv-oct-2017'])) { $str .= 'Октябрь 2017 года<br>'; }
+        if (isset($_POST['final-szv-nov-2017'])) { $str .= 'Ноябрь 2017 года<br>'; }
+        if (isset($_POST['final-szv-dec-2017'])) { $str .= 'Декабрь 2017 года<br><br>'; }
 
         if (isset($_POST['final-szv-jul-2017'])) { $str .= 'Июль 2017 года<br>'; }
         if (isset($_POST['final-szv-aug-2017'])) { $str .= 'Август 2017 года<br>'; }
@@ -410,10 +419,6 @@ function willSendSzv () {
         if (isset($_POST['final-szv-oct-2014'])) { $str .= 'Октябрь 2014 года<br>'; }
         if (isset($_POST['final-szv-nov-2014'])) { $str .= 'Ноябрь 2014 года<br>'; }
         if (isset($_POST['final-szv-dec-2014'])) { $str .= 'Декабрь 2014 года<br><br>'; }
-
-        if (isset($_POST['final-szv-jul-2014'])) { $str .= 'Июль 2014 года<br>'; }
-        if (isset($_POST['final-szv-aug-2014'])) { $str .= 'Август 2014 года<br>'; }
-        if (isset($_POST['final-szv-sep-2014'])) { $str .= 'Сентябрь 2014 года<br><br>'; }
         
         return $str . '<br>' . '<br>';
     }
@@ -421,14 +426,14 @@ function willSendSzv () {
 
 function willSendBuhRepIfns () {
     $str = ""; 
+    if (isset($_POST['buh-rep-ifns-4-2017'])) { 
+        $str .= '<b>Бухгалтерская(финансовая) отчетность в ИФНС за</b> 2017 год' . '<br>'; 
+    }
     if (isset($_POST['buh-rep-ifns-4-2016'])) { 
         $str .= '<b>Бухгалтерская(финансовая) отчетность в ИФНС за</b> 2016 год' . '<br>'; 
     }
     if (isset($_POST['buh-rep-ifns-4-2015'])) { 
         $str .= '<b>Бухгалтерская(финансовая) отчетность в ИФНС за</b> 2015 год' . '<br>'; 
-    }
-    if (isset($_POST['buh-rep-ifns-4-2014'])) { 
-        $str .= '<b>Бухгалтерская(финансовая) отчетность в ИФНС за</b> 2014 год' . '<br>'; 
     }
 
     return $str . '<br>' . '<br>';
@@ -436,29 +441,29 @@ function willSendBuhRepIfns () {
 
 function willSendBuhRepStat () {
     $str = ""; 
+    if (isset($_POST['buh-rep-stat-4-2017'])) { 
+        $str .= '<b>Бухгалтерская(финансовая) отчетность в Росстат за</b> 2017 год' . '<br>'; 
+    }
     if (isset($_POST['buh-rep-stat-4-2016'])) { 
         $str .= '<b>Бухгалтерская(финансовая) отчетность в Росстат за</b> 2016 год' . '<br>'; 
     }
     if (isset($_POST['buh-rep-stat-4-2015'])) { 
         $str .= '<b>Бухгалтерская(финансовая) отчетность в Росстат за</b> 2015 год' . '<br>'; 
     }
-    if (isset($_POST['buh-rep-stat-4-2014'])) { 
-        $str .= '<b>Бухгалтерская(финансовая) отчетность в Росстат за</b> 2014 год' . '<br>'; 
-    }
 
     return $str . '<br>' . '<br>';
 }
 
-function willSendWorkersCnt() {
+function willSendWorkersCnt () {
     $str = "";
+    if (isset($_POST['workers-cnt-4-2017'])) {
+        $str .= '<b>Сведения о среднесписочной численности работников за</b> 2017 год' . '<br>';
+    }
     if (isset($_POST['workers-cnt-4-2016'])) {
         $str .= '<b>Сведения о среднесписочной численности работников за</b> 2016 год' . '<br>';
     }
     if (isset($_POST['workers-cnt-4-2015'])) {
         $str .= '<b>Сведения о среднесписочной численности работников за</b> 2015 год' . '<br>';
-    }
-    if (isset($_POST['workers-cnt-4-2014'])) {
-        $str .= '<b>Сведения о среднесписочной численности работников за</b> 2014 год' . '<br>';
     }
 
     return $str . '<br>' . '<br>';
@@ -466,14 +471,14 @@ function willSendWorkersCnt() {
 
 function willSendDeclUsn () {
     $str = "";
+    if (isset($_POST['decl-usn-4-2017'])) {
+        $str .= '<b>Налоговая декларация по УСН(годовая) за</b> 2017 год' . '<br>';
+    }
     if (isset($_POST['decl-usn-4-2016'])) {
         $str .= '<b>Налоговая декларация по УСН(годовая) за</b> 2016 год' . '<br>';
     }
     if (isset($_POST['decl-usn-4-2015'])) {
         $str .= '<b>Налоговая декларация по УСН(годовая) за</b> 2015 год' . '<br>';
-    }
-    if (isset($_POST['decl-usn-4-2014'])) {
-        $str .= '<b>Налоговая декларация по УСН(годовая) за</b> 2014 год' . '<br>';
     }
 
     return $str . '<br>' . '<br>';
@@ -483,6 +488,7 @@ function willSendDeclNdsIp () {
     $str = "";
     if (isset($_POST['decl-nds']) && $_POST['tax-system'] == 'general-ip') {
         $str .= '<b>Налоговая декларация по НДС: </b>' . '<br><br>';
+        if (isset($_POST['decl-nds-final-4-17'])) { $str .= '4-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-3-17'])) { $str .= '3-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-2-17'])) { $str .= '2-й квартал 2017 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-1-17'])) { $str .= '1-й квартал 2017 года' . '<br>'; }
@@ -495,7 +501,6 @@ function willSendDeclNdsIp () {
         if (isset($_POST['decl-nds-final-2-15'])) { $str .= '2-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-1-15'])) { $str .= '1-й квартал 2015 года' . '<br>'; }
         if (isset($_POST['decl-nds-final-4-14'])) { $str .= '4-й квартал 2014 года' . '<br>'; }
-        if (isset($_POST['decl-nds-final-3-14'])) { $str .= '3-й квартал 2014 года' . '<br>'; }
         
         return $str . '<br>' . '<br>';
     };
@@ -504,9 +509,9 @@ function willSendDeclNdsIp () {
 function willSendDeclNdflIp () {
     $str = "";
     if ($_POST['tax-system'] == 'general-ip') {
+        if (isset($_POST['decl-ndfl-ip-4-2017'])) { $str .= '<b>Налоговая декларация 3-НДФЛ за 2017 год</b>' . '<br>'; }
         if (isset($_POST['decl-ndfl-ip-4-2016'])) { $str .= '<b>Налоговая декларация 3-НДФЛ за 2016 год</b>' . '<br>'; }
         if (isset($_POST['decl-ndfl-ip-4-2015'])) { $str .= '<b>Налоговая декларация 3-НДФЛ за 2015 год</b>' . '<br>'; }
-        if (isset($_POST['decl-ndfl-ip-4-2014'])) { $str .= '<b>Налоговая декларация 3-НДФЛ за 2014 год</b>' . '<br>'; }
         
         return $str . '<br>' . '<br>';
     };
@@ -515,9 +520,9 @@ function willSendDeclNdflIp () {
 function willSendDeclYearIp () {
     $str = "";
     if ($_POST['tax-system'] == 'simple-ip') {
+        if (isset($_POST['decl-year-2017-ip-simple'])) { $str .= '<b>Налоговая декларация за 2017 год</b>' . '<br>'; }
         if (isset($_POST['decl-year-2016-ip-simple'])) { $str .= '<b>Налоговая декларация за 2016 год</b>' . '<br>'; }
         if (isset($_POST['decl-year-2015-ip-simple'])) { $str .= '<b>Налоговая декларация за 2015 год</b>' . '<br>'; }
-        if (isset($_POST['decl-year-2014-ip-simple'])) { $str .= '<b>Налоговая декларация за 2014 год</b>' . '<br>'; }
         
         return $str . '<br>' . '<br>';
     }

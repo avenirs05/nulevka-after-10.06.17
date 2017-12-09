@@ -6,16 +6,15 @@ $(function () {
 	    $('#btn-next-tax-system-ip').hide();
 	    $('.tax-answer-1').show();
 	    $('#choice-years').show();
+	    if ( $('#year-2017-ip-simple').prop('checked') ) {
+	    	$('#btn-next-tax-system-ip-0').show();
+	    } 
 	    if ( $('#year-2016-ip-simple').prop('checked') ) {
 	    	$('#btn-next-tax-system-ip-0').show();
 	    } 
 	    if ( $('#year-2015-ip-simple').prop('checked') ) {
 	    	$('#btn-next-tax-system-ip-0').show();
 	    } 
-	    if ( $('#year-2014-ip-simple').prop('checked') ) {
-	    	$('#btn-next-tax-system-ip-0').show();
-	    } 
-
 	});
 
 	$("#general-ip").change(function () {
@@ -49,9 +48,9 @@ $(function () {
 
 
 	// Если Упрощенка и выбран хотя бы 1 год, появляется/исчезает кнопка Дальше
+	$('#year-2017-ip-simple').change(showHideBtnNextSimpleIp);
 	$('#year-2016-ip-simple').change(showHideBtnNextSimpleIp);
 	$('#year-2015-ip-simple').change(showHideBtnNextSimpleIp);
-	$('#year-2014-ip-simple').change(showHideBtnNextSimpleIp);
 
 
 	// Если Упрощенка, появляются/исчезают периоды (годы)
@@ -64,7 +63,10 @@ $(function () {
 
 	// Другие периоды, появляются/исчезают, если Общая система
 	$("#another-periods").click(function () {
-	    var anotherPeriodsColl = $('#another-periods').siblings('div').children('label').children('input:not(#qrt-3-2017)');     
+	    var anotherPeriodsColl = $('#another-periods')
+	    													.siblings('div')
+	    													.children('label')
+	    													.children('input:not(#qrt-4-2017)');     
 	    for (var i = 0; i < $(anotherPeriodsColl).length; i++) {
 	        var anotherPeriodsInput = anotherPeriodsColl.eq(i).parent();
 	        if (anotherPeriodsInput.css('display') == "none") {
