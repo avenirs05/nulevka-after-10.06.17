@@ -31,25 +31,26 @@ $(function () {
 
 	// Другие периоды
 	$("#another-periods").click(function() {
-	    var anotherPeriodsColl = $('#another-periods').siblings('div')
+	    var anotherPeriodsColl = $('#another-periods')
+	    												.siblings('div')
 	    											  .children('label')
-	    											  .children('input:not(#qrt-3-2017)');     
+	    											  .children('input:not(#qrt-4-2017)');     
 	    for (var i = 0; i < $(anotherPeriodsColl).length; i++) {
 	        var anotherPeriodsInput = anotherPeriodsColl.eq(i).parent();
 	        if (anotherPeriodsInput.css('display') == "none") {
 	            anotherPeriodsInput.show(); 
-	        } 
+	        } 	        
 	        else 
 	            anotherPeriodsInput.hide();
-	            $('#uk-question-0').hide();
 	            $('#uk-question-1').hide();
 	            $('#uk-question-2').hide();
+	            $('#uk-question-3').hide();
 	    }            
 	});
 
 
 	// Если выбран 4-й квартал
-	$("#qrt-4-2016, #qrt-4-2015, #qrt-4-2014").change(showAndHideUK);
+	$("#qrt-4-2017, #qrt-4-2016, #qrt-4-2015, #qrt-4-2014").change(showAndHideUK);
 	
 
 	// Кнопка Дальше
@@ -59,7 +60,8 @@ $(function () {
 	         $('#div-tax-system').hide();
 	    }
 	    if ( $('#simple').prop('checked') ) {
-	        if ( $("#qrt-4-2016").prop('checked') || 
+	        if ( $("#qrt-4-2017").prop('checked') || 
+	             $("#qrt-4-2016").prop('checked') || 
 	             $("#qrt-4-2015").prop('checked') || 
 	             $("#qrt-4-2014").prop('checked') ) 
 	        {

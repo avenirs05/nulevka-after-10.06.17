@@ -1,0 +1,54 @@
+company.php
+------------
+	<div id="div-tax-system">
+
+	
+company-js/choice-tax.js
+------------
+	// Другие периоды
+	$("#another-periods").click(function()...{
+			...
+			.children('input:not(#qrt-4-2017)'); // здесь меняем на самый ближайший период
+			...
+	});
+	
+	// Если выбран 4-й квартал
+	$("#qrt-4-2017, #qrt-4-2016, #qrt-4-2015, #qrt-4-2014").change(showAndHideUK);
+	
+	
+	// Кнопка Дальше
+	$("#btn-next-tax-system").click(function() {
+		...
+	    if ( $('#simple').prop('checked') ) {
+	        if ( $("#qrt-4-2017").prop('checked') || 
+	             $("#qrt-4-2016").prop('checked') || 
+	             $("#qrt-4-2015").prop('checked') || 
+	             $("#qrt-4-2014").prop('checked') ) 
+				...
+	    }
+	});
+	
+
+functions-company.js
+------------
+	var showAndHideUK = function () {
+		...
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
