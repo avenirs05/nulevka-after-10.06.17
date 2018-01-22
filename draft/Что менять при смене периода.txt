@@ -150,6 +150,12 @@ company-js/will-send.js
 		function willSendCountFss ()
 		function willSendSzv ()
 		function willSendBuhRepIfns ()
+		function willSendBuhRepStat () 
+		function willSendWorkersCnt()
+		function willSendDeclUsn ()
+		function willSendDeclNdsIp ()
+		function willSendDeclNdflIp () 
+		function willSendDeclYearIp ()
 	
 	
 

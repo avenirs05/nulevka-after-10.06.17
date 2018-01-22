@@ -11,6 +11,42 @@ a {
 	text-decoration: none;	
 }
 
+.quart-months-wrap {
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+#div-from-customer #btn-back-will-send {
+    background-color: #339933;
+    color: #ffffff;
+    width: 120px;
+    height: 40px;
+    border: medium none;
+    border-radius: 2px;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+#div-from-customer #btn-back-will-send:hover {
+    background-color: #E7382B;
+}
+
+.uk-wrap {
+	margin-left: 80px;
+}
+
+
+#tax-system-section > label {
+	font-size: 18px;
+	color: #23527c;
+}
+
+.display-none {
+	display: none;
+}
+
 .bold {
 	font-weight: bold;
 }
@@ -115,10 +151,6 @@ a {
 	right: 0%;
 }
 
-messenger-img-mob {
-
-}
-
 .main-screen {
 	background-color: #F5F5F5;
 	height: 100vh;
@@ -149,7 +181,7 @@ messenger-img-mob {
 	font-weight: 700;
 	font-family: 'Open Sans Condensed', sans-serif;
 	margin-top: 20px;
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 .main-screen-mob h1 {
@@ -157,7 +189,7 @@ messenger-img-mob {
 	font-weight: 700;
 	font-family: 'Open Sans Condensed', sans-serif;
 	margin-top: 20px;
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 .main-screen h3 {
@@ -630,7 +662,12 @@ messenger-img-mob {
 	padding-left: 70px;
 	padding-right: 70px;
 	font-size: 16px;
-	margin-top: 20px; 
+/*	margin-top: 20px;*/ 
+}
+
+p.question {
+	margin-top: 21px;
+	margin-bottom: 20px;
 }
 
 .price-page {
@@ -659,13 +696,30 @@ input[type="checkbox"] {
 	margin-right: 7px;
 }
 
-#another-periods, #years-simple {
+#another-quarters-text, #years-simple {
 	text-decoration: none;
 	border-bottom: 1px #028090 dashed;
+	cursor: pointer;
 }
 
 #first-another-period {
 	margin-top: 10px;
+}
+
+#another-quarters-text {
+	text-decoration: none;
+	border-bottom: 1px #028090 dashed;
+	color: rgb(2, 128, 144);
+	cursor: pointer;
+}
+
+#another-quarters-wrap {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}	
+
+#another-quarters-text:hover {
+	color: #330099;
 }
 
 .question {
@@ -673,9 +727,15 @@ input[type="checkbox"] {
 	font-size: 22px;
 }
 
-.tax-system-answer {
+.answer {
 	color: #23527C;
 	font-size: 18px;
+}
+
+#form-tax-system {
+/*	padding-left: 70px;
+	padding-right: 70px;*/
+	font-size: 16px;
 }
 
 #form-tax-system button,
@@ -689,8 +749,12 @@ input[type="checkbox"] {
 	border-radius: 2px;
 	font-size: 18px;
 	margin-right: 10px;
-	margin-bottom: 30px;
 	margin-top: 15px;
+}
+
+#form-tax-system #btn-next-tax-system {
+	display: block;
+	margin-top: 0;
 }
 
 .div-quarters label:hover {
@@ -735,17 +799,26 @@ input[type="checkbox"] {
 	background-color: #E7382B;
 }
 
-#label-tranz-yes, #label-one-face-yes, 
+#form-tax-system button.disabled-btn {
+	color: green;
+}
+
+#form-tax-system button.disabled-btn:hover {
+	background-color: #339933;
+}
+
+
+#label-trans-yes, #label-one-face-yes, 
 #label-base-inc, #label-szv-quest-yes  {
 	font-size: 18px;
 	margin-top: 15px;
-	color: #028090;
+	color: #23527c;
 }
 
-#label-tranz-no, #label-one-face-no,
+#label-trans-no, #label-one-face-no,
 #label-base-inc-spent, #label-szv-quest-no {
 	font-size: 18px;
-	color: #028090;
+	color: #23527c;
 }
 
 .month {
@@ -792,14 +865,16 @@ input[type="checkbox"] {
 	font-weight: bold;
 }
 
-#choice-quarters > i > span,
-#another-periods,
+#choice-quarters > i,
+#years-wrap span,
+#another-quarters-text,
 .div-quarters,
 .periods-will-send,
 .month > span,
 .month div label,
 #years-simple,
-#div-years {
+#div-years,
+.div-years {
 	margin-left: 40px;
 }
 
@@ -810,8 +885,8 @@ input[type="checkbox"] {
 	margin-left: 80px;
 }
 
-#div-final-sum {
-    background-color: rgb(51, 153, 51);
+#final-sum-wrap {
+    background-color: #028090;
     width: 410px;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -1148,6 +1223,7 @@ input[type="checkbox"] {
 
 /*Форма оплаты от Яндекса*/
 #form-yandex {
+	margin-top: 30px;
 	width: 390px;
 	border: 1px solid #E5E5E5;
 	padding: 20px;

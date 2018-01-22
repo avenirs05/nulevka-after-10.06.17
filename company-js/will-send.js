@@ -1,141 +1,88 @@
 $(function () {
 
-	// Галочки, снимаем, ставим (дочерние/родительские галочки) при отчетах
-	$("#decl-nds").change(function() { showAndHideChildChecks (this); });
-	$("#decl-profit").change(function() { showAndHideChildChecks (this); });
-	$("#count-ins").change(function() { showAndHideChildChecks (this); });
-	$("#count-fss").change(function() { showAndHideChildChecks (this); });
-	$("#decl-one").change(function() { showAndHideChildChecks (this); });
-	$("#szv-m").change(function() { showAndHideChildChecksSzv (this); });
-	$('#div-will-send').on("change", ".periods-will-send label input", showAndHideParentCheckbox);
-	// Галочки, снимаем, ставим (дочерние/родительские галочки) при отчетах
+		// Кнопка "Назад"
+		$('#btn-back-will-send').click(function() {
+				$('#decl-nds-wrap').hide();
+				$('#decl-profit-wrap').hide();
+				$('#decl-one-wrap').hide();
+				$('#decl-usn-wrap').hide();
+				$('#count-ins-wrap').hide();
+				$('#count-fss-wrap').hide();
+				$('#szv-m-wrap').hide();
+				$('#buh-rep-ifns-wrap').hide();
+				$('#buh-rep-stat-wrap').hide();
+				$('#workers-cnt-wrap').hide();				
+				$('#will-send-section').hide();
+
+				if ( $('#one-face-yes').prop('checked')  ) {
+							$('#one-face-section').show();
+				} else $('#szv-section').show();
 
 
-	// Кнопка Назад
-	$("#btn-back-will-send").click(function() {
-	    $('#div-final-sum').hide();
-	    $('#final-sum-text').hide();
-	    $('#final-sum-digits').text('');
-		$('#snils-dir').parent('div').hide();
-	    $('#cnt-workers').parent('div').hide();
-	    
-	    if ( ($('#szv-quest-no').prop('checked')) && 
-	    	 ($('#one-face-yes').prop('checked') == false) ) 
-	    {
-	        $('#div-will-send').hide();
-	        $('#div-from-customer').hide();
-	        $(".periods-will-send").remove();
-	        $('#div-szv-quest').show();  
-	        $('#span-we-will-send-2017').hide();  
-	        $('#div-szv-quest > span').show();
-	        $('#choice-months span').show();
-	        $('#div-szv-quest br').show();
-	        $('#szv-quest-yes').parent('label').show();
-	        $('#szv-quest-no').parent('label').show(); 
-	        $('#btn-back-szv-quest').show();
-	        $('#btn-next-szv-quest').show(); 
-	        $('#choice-months').hide();
-	        $('.month').remove();
-	    } 
+				// очистить массив выбранных кварталов в tax-system
+				checkedQuartersTaxSystem = []; 
+				checkedYearsTaxSystem = []; 
 
-	    if ( ($('#szv-quest-yes').prop('checked')) && 
-	    	 ($('#one-face-yes').prop('checked') == false) ) 
-	    {
-	        $('#div-will-send').hide();
-	        $('#div-from-customer').hide();
-	        $(".periods-will-send").remove();
-	        $('#div-szv-quest').show();  
-	        $('#span-we-will-send-2017').hide();  
-	        $('#div-szv-quest > span').show();
-	        $('#choice-months span').show();
-	        $('#div-szv-quest br').show();
-	        $('#szv-quest-yes').parent('label').show();
-	        $('#szv-quest-no').parent('label').show(); 
-	        $('#btn-back-szv-quest').show();
-	        $('#btn-next-szv-quest').show(); 
+				// удалить итоговые кварталы-элементы из will-send
+				$('.quarters-will-send').remove();
+				$('.years-will-send').remove();
+				$('.szv-wrap-final').remove();
 
-	        var inputs = $('.month').children('div').children('label').children('input');
-	        for (var i = 0; i < inputs.length; i++) {
-	            inputs.eq(i).parent('label').parent('div').parent('div').css('display', 'block');
-	            if ( inputs.eq(i).parent('label').parent('div').css('display') == 'none' ) {
-	                  inputs.eq(i).parent('label').parent('div').css('display', 'block');
-	                  inputs.eq(i).prop('checked', true);
-	            } else inputs.eq(i).prop('checked', false);              
-	        }
-	    }
-
-	    if ( $('#one-face-yes').prop('checked') ) {
-	           $('#div-will-send').hide();
-	           $('#div-from-customer').hide();
-	           $(".periods-will-send").remove();
-	           $('#div-one-face').show();  
-	           $('#span-we-will-send-2017').hide(); 
-	           $('#choice-months').hide();
-	           $('.month').remove();
-	    }
-
-	    $('#decl-usn-4-2017').parent('label').parent('div').remove();
-	    $('#decl-usn-4-2016').parent('label').parent('div').remove();
-	    $('#decl-usn-4-2015').parent('label').parent('div').remove();
-	    $('#decl-usn-4-2014').parent('label').parent('div').remove();
-
-	    $('#buh-rep-ifns-4-2017').parent('label').parent('div').remove();
-	    $('#buh-rep-ifns-4-2016').parent('label').parent('div').remove();
-	    $('#buh-rep-ifns-4-2015').parent('label').parent('div').remove();
-	    $('#buh-rep-ifns-4-2014').parent('label').parent('div').remove();
-
-	    $('#buh-rep-stat-4-2017').parent('label').parent('div').remove();
-	    $('#buh-rep-stat-4-2016').parent('label').parent('div').remove();
-	    $('#buh-rep-stat-4-2015').parent('label').parent('div').remove();
-	    $('#buh-rep-stat-4-2014').parent('label').parent('div').remove();        
-
-	    $('#workers-cnt-4-2017').parent('label').parent('div').remove();
-	    $('#workers-cnt-4-2016').parent('label').parent('div').remove();
-	    $('#workers-cnt-4-2015').parent('label').parent('div').remove();
-	    $('#workers-cnt-4-2014').parent('label').parent('div').remove();        
-	});
-	//Кнопка Назад
+				// скрыть поля from-customer некоторые
+				$('#cnt-workers').parent().hide();     
+				$('#snils-dir').parent().hide(); 
+		});
 
 
-	// Валидация поля ИНН в форме
-	var regExpInn = /^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/;
-
-	$('#inn').blur(function() {
-	    if ( $(this).val().match(regExpInn) == null ) {
-	        $(this).css('color', 'red');
-	    } else $(this).css('color', '#000000');
-	});
-
-	$('#inn').focus(function() {
-	    $(this).css('color', '#000000');
-	});
-	// Валидация поля ИНН в форме
+		// Отмечаются/убираются галочки у дочерних чекбоксов
+		$('#decl-nds').change(makeCheckedChildChecks);
+		$('#decl-profit').change(makeCheckedChildChecks);
+		$('#decl-one').change(makeCheckedChildChecks);
+		$('#count-ins').change(makeCheckedChildChecks);
+		$('#count-fss').change(makeCheckedChildChecks);
+		$('#szv-m').change(makeCheckedChildChecks);
+		smartCheckUncheck();
 
 
-	// Скидка в случае если снята галочка СЗВ на странице "мы сдадим"
-	$("#szv-m").change(function() { 
-	    if ( $('#szv-m').prop('checked')  == false ) {
-	        var oldSum = $('#final-sum-digits').text();
-	        $('#final-sum-digits').text(+ oldSum - 500);
-	    }
-	    if ( $('#szv-m').prop('checked') ) {
-	        var oldSum = $('#final-sum-digits').text();
-	        $('#final-sum-digits').text(+ oldSum + 500);
-	    }
-	});
+		// Инпут в сзв в will send - если отмечен хотя бы один, то заголовок сзв тоже становится отмеченным
+		$(document).on('change', '.month input', function() {
+				if ( $(this).prop('checked') ) {
+							 $('#szv-m').prop('checked', true);
+				}	
+
+				if ( $(this).prop('checked') == false) {
+				    for (var i = 0; i < $('.month input').length; i++) {
+			            if ( $('.month input').eq(i).prop('checked') ) {
+			                    break;
+			            }
+
+			            if (i == $('.month input').length - 1) {
+			                  $('#szv-m').prop('checked', false);
+			            }                                                               
+				    }           
+				}
+		});
 
 
-	// Передача итоговой суммы в форму Яндекс-кассы через скрытое поле
-	$('#submit-go-to-pay-ooo').click(function() {
-	    var divs = $('.month').children('div');
-	    for (var i = 0; i < divs.length; i++) {
-	        if ( divs.eq(i).css('display') == 'none' ) {
-	            divs.eq(i).children('label').children('input').prop('checked', false);
-	        }            
-	    }
-	    var totalAmount = $('#final-sum-digits').text();
-	    $("#total-amount").val(totalAmount);
-	}) 
-	// Передача итоговой суммы в форму Яндекс-кассы через скрытое поле
+		// Передача итоговой суммы в форму Яндекс-кассы через скрытое поле
+		$('#submit-go-to-pay-ooo').click(function() {
+		    var totalAmount = $('#final-sum-digits').text();
+		    totalAmount = unSeparateThousands(totalAmount);
+		    $("#total-amount").val(totalAmount);
+		}); 
+
+
+		// Валидация поля ИНН в форме
+		var regExpInn = /^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/;
+
+		$('#inn').blur(function() {
+		    if ( $(this).val().match(regExpInn) == null ) {
+		        $(this).css('color', 'red');
+		    } else $(this).css('color', '#000000');
+		});
+
+		$('#inn').focus(function() {
+		    $(this).css('color', '#000000');
+		});
 
 });

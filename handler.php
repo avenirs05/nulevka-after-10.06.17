@@ -18,9 +18,7 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="functions-company.js"></script>
-    <script src="functions-general.js"></script>
-    <script src="events-company.js"></script>
+    <script src="functions.js"></script>
     <script src="events-general.js"></script>
 
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45030163 = new Ya.Metrika({ id:45030163, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45030163" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
@@ -32,10 +30,10 @@
     <!-- {/literal} END JIVOSITE CODE -->
 </head>
 <body>
-<?php //print_r($_POST); ?>
+
 <?php require_once 'modals.php'; ?>
 <?php require_once 'header.php'; ?> 
-
+<?php require_once 'functions.php'; ?> 
 
 
 <div class="container-fluid questions-wrapper">
@@ -52,19 +50,19 @@
             <div class="way-of-payment">
                 <label>
                     <input type="radio" name="paymentType" value="AC" checked>
-                    <img src="/imgs/bank-card.png" alt=""><!-- <span>Банковской картой</span> -->
+                    <img src="/imgs/bank-card.png" alt="">
                 </label>
             </div>
             <div class="way-of-payment">
                 <label>
                     <input type="radio" name="paymentType" value="PC">
-                    <img src="/imgs/yandex-money.png" alt=""><!-- <span>Яндекс.Деньгами</span> -->
+                    <img src="/imgs/yandex-money.png" alt="">
                 </label>
             </div>
             <div class="way-of-payment">
                 <label>
                     <input type="radio" name="paymentType" value="MC">
-                    <img src="/imgs/mobile-payments.png" alt=""><!-- <span>С баланса мобильного</span> -->
+                    <img src="/imgs/mobile-payments.png" alt="">
                 </label> 
             </div>
             <input type="submit" value="Оплатить">
@@ -74,9 +72,8 @@
 </div>
 
 <?php 
-require_once 'functions.php';
-//echo($_POST['base']);
 
+//d($_POST);
 
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -127,7 +124,7 @@ if (isset($_GET['submit-not-know-ooo'])) {
             'Ip-адрес: ' . $_SERVER['REMOTE_ADDR'];
 
     mail($to, $subject, $message, $headers);
-    }
+}
 
 if (isset($_GET['submit-envd-ip'])) {
     $message = '<html><head><title></title></head><body>
@@ -168,13 +165,14 @@ if (isset($_GET['submit-not-know-ip'])) {
     mail($to, $subject, $message, $headers);
 }
 
+
 if (isset($_POST['submit-go-to-pay-ooo'])) {    
     $message = '<html><head><title></title></head><body>
     <b>Кто обращается:</b> ООО<br><br>' .
-    isGeneralOrSimpleTaxSystemCompany() .
+    isGeneralOrSimpleTaxSystem() .
     findQuart() .
     findUK() .
-    showQuestTranz() .
+    showQuestTrans() .
     showBase() .
     showOneFace() .
     showSzvQuest() .
@@ -192,10 +190,10 @@ if (isset($_POST['submit-go-to-pay-ooo'])) {
     willSendCountIns() .
     willSendCountFss() .
     willSendSzv() .
-    willSendBuhRepIfns() .
+    willSendBuhRepIfns() . 
     willSendBuhRepStat() .
-    willSendWorkersCnt() .
-    willSendDeclUsn() . 
+    willSendRepWorkersCnt() .
+    willSendDeclUsn() .
     showTotalAmount() .
     'Ip-адрес: ' . $_SERVER['REMOTE_ADDR'] .
     '</body></html>';
@@ -203,13 +201,15 @@ if (isset($_POST['submit-go-to-pay-ooo'])) {
     mail($to, $subject, $message, $headers);  
 }
 
+
 if (isset($_POST['submit-go-to-pay-ip'])) {   
     $message = '<html><head><title></title></head><body>
     <b>Кто обращается:</b> ИП<br><br>' .
-    isGeneralOrSimpleTaxSystemIp() .
-    showBaseIp() .
-    findQuart() .
-    findYearIfSimpleIP() .
+    isGeneralOrSimpleTaxSystem() .
+    showQuestTrans() .
+    showBase() .
+    findQuartIp() .
+    findYearIfSimpleIp() .
     showNameOfIp() .
     showInnOfIp() .
     showOktmoOfIp() .
@@ -219,17 +219,37 @@ if (isset($_POST['submit-go-to-pay-ip'])) {
     showPaspNumOfIp() .
     showPaspDateOfIssueOfIp() .
     showPaspWhoIssueOfIp() .
-    showPaspKpOfIp() . 
+    showPaspKpOfIp() .
     '<span style="font-size: 20px;">Мы Вам подготовим:</span><br><br>' .
-    willSendDeclNdsIp() .    
-    willSendDeclNdflIp() .
-    willSendDeclYearIp () . 
-    showTotalAmount() .
+    willSendDeclNds() .
+    willSendDeclNdfl() .
+    willSendDeclUsn() .
     'Ip-адрес: ' . $_SERVER['REMOTE_ADDR'] .
     '</body></html>';
     
     mail($to, $subject, $message, $headers);  
 }
+
+
+//ИП Test
+// echo isGeneralOrSimpleTaxSystem();
+// echo showBase();
+// echo showQuestTrans();
+// echo findQuartIp();
+// echo findYearIfSimpleIp();
+// echo showNameOfIp();
+// echo showInnOfIp();
+// echo showOktmoOfIp();
+// echo showPhoneOfIP();
+// echo showEmailOfIp();
+// echo showPaspSerOfIp();
+// echo showPaspNumOfIp();
+// echo showPaspDateOfIssueOfIp();
+// echo showPaspWhoIssueOfIp();
+// echo showPaspKpOfIp();
+// echo willSendDeclNds();
+// echo willSendDeclNdfl();
+// echo willSendDeclUsn();
 
 ?>
 

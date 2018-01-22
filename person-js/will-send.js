@@ -1,54 +1,48 @@
 $(function () {
 
-	// Галочки, снимаем, ставим (дочерние/родительские галочки) при отчетах
-	$("#decl-nds").change(function() { showAndHideChildChecks (this); });
-	$('#div-will-send').on("change", ".periods-will-send label input", showAndHideParentCheckbox);
+		$('#btn-back-will-send').click(function() {
+				$('#decl-nds-wrap').hide(); 
+				$('#decl-one-wrap').hide();
+				$('#decl-usn-wrap').hide();
+				$('#decl-ndfl-wrap').hide();
+
+				$('#will-send-section').hide();
+
+				if ( $('#general').prop('checked') )	{
+						$('#transactions-section').show();
+				} 
+
+				if ( $('#simple').prop('checked') )	{
+						$('#tax-base-section').show();
+				}
+
+				// очистить массив выбранных кварталов в tax-system
+				checkedQuartersTaxSystem = []; 
+				checkedYearsTaxSystem = []; 
 
 
-	// Кнопка Назад
-	$("#btn-back-will-send-ip").click(function() {
-	    $('#div-will-send').hide();
-	    $('#div-from-customer-ip').hide();
-	    $(".periods-will-send").remove();          
-	    $('#span-we-will-send').hide(); 
-	    $('label:contains("3-НДФЛ")').parent().remove();
-	    $('#div-tax-system').show();
-	    $("#will-prepare-email").remove();
-	    $('.nalog-decl').remove();
+				// удалить итоговые кварталы-элементы из will-send
+				$('.quarters-will-send').remove();
+				$('.years-will-send').remove();
 
-	    $('#div-final-sum').hide();
-	    $('#final-sum-text').hide();
-	    $('#final-sum-digits').text('');
-	});
+				// Отмечаются/убираются галочки у дочерних чекбоксов
+				$('#decl-nds').change(makeCheckedChildChecks);
+				$('#decl-one').change(makeCheckedChildChecks);
+				smartCheckUncheck(); 
 
+				// паспортные данные
+				$('#pasp-ser-ip').parent().hide();
+				$('#pasp-num-ip').parent().hide();
+				$('#pasp-date-issue-ip').parent().hide();
+				$('#pasp-who-issue-ip').parent().hide();
+				$('#pasp-kp-ip').parent().hide();
+		});
 
-	// Калькулятор
-	$("html").on('change', '.nalog-decl', function() {
-	    j = 0;        
-	    for (var i = 0; i < $('.nalog-decl').length; i++) {
-	        if ( $('.nalog-decl').eq(i).children('label').children('input').prop('checked') ) {
-	            j++;
-	        } 
-	    }
-	    if (j === 0) {
-	        $('#final-sum-digits').text('0');
-	    } 
-	    if (j === 1) {
-	        $('#final-sum-digits').text('299');
-	    } 
-	    if (j === 2) {
-	        $('#final-sum-digits').text('598');
-	    } 
-	    if (j === 3) {
-	        $('#final-sum-digits').text('897');
-	    } 
-	}); 
-
-
-	// Передача итоговой суммы в форму Яндекс-кассы через скрытое поле
-	$('#submit-go-to-pay-ip').click(function() {
-	    var totalAmount = $('#final-sum-digits').text();
-	    $('#total-amount').val(totalAmount);
-	})
+		// Передача итоговой суммы в форму Яндекс-кассы через скрытое поле
+		$('#submit-go-to-pay-ip').click(function() {
+		    var totalAmount = $('#final-sum-digits').text();
+		    totalAmount = unSeparateThousands(totalAmount);
+		    $('#total-amount').val(totalAmount);
+		});
 
 });
