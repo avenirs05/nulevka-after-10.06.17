@@ -68,7 +68,7 @@
     <div class="row">
         <div class="col-md-12 btns-wrapper text-center">
             <a href="company/company.php" target="_blank"><button>Сдать нулевку по ООО</button></a>
-            <a href="person.php" target="_blank"><button>Составить нулевку для ИП</button></a>
+            <a href="person/person.php" target="_blank"><button>Составить нулевку для ИП</button></a>
             <a href="http://mybuh.online/" target="_blank"><button id="btn-not-null-mob">У меня не нулевка!</button></a>       
         </div>
     </div>
