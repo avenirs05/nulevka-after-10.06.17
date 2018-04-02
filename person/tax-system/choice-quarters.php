@@ -2,10 +2,10 @@
     <i>Выберите период</i><br>
     <?php   
         $firstQuarterAttr = array(
-            'isFour'    => 'yes',        
+            'isFour'    => 'no',        
             'wrapClass' => 'div-quarters',
             'checked'   => 'checked',
-            'labelText' => '4-й квартал 2017 года (годовая)'
+            'labelText' => '1-й квартал 2018 года'
         );   
  
         echo firstQuarter($firstQuarterAttr);
