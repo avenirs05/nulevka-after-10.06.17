@@ -26,7 +26,7 @@ $(function () {
 	// Кнопка Дальше
 	$("#btn-next-trans").click(function() {
 			$('#transactions-section').hide();
-	    $('#one-face-section').show();	    
+	    $('#szv-section').show();	    
 	});
 
 });

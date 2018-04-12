@@ -14,9 +14,7 @@ $(function () {
 				$('#workers-cnt-wrap').hide();				
 				$('#will-send-section').hide();
 
-				if ( $('#one-face-yes').prop('checked')  ) {
-							$('#one-face-section').show();
-				} else $('#szv-section').show();
+				$('#szv-section').show();
 
 
 				// очистить массив выбранных кварталов в tax-system

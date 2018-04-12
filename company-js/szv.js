@@ -29,12 +29,29 @@ $(function () {
 	// Кнопка "Назад"
 	$("#btn-back-szv").click(function() {		
 			$('#szv-section').hide();
-	    $('#one-face-section').show();	
+
+			if ( $('#general').prop('checked') ) {
+						$('#transactions-section').show();
+			}
+
+			if ( $('#simple').prop('checked') ) {
+						if ( noCheckedFourQuart() === true ) {
+									$('#tax-system-section').show();
+						} else $('#tax-base-section').show();
+			}
+
 	    szvCheckboxWrapIfSentYes = [];	
 	    $('#quart-months-wrap').remove();		
 	});
 
 	
+	// $("#btn-back-szv").click(function() {		
+	// 		$('#szv-section').hide();
+	//     $('#one-face-section').show();	
+	//     szvCheckboxWrapIfSentYes = [];	
+	//     $('#quart-months-wrap').remove();		
+	// });
+
 	// Кнопка Дальше
 	$("#btn-next-szv").click(function() {
 			$('#szv-section').hide(); 
