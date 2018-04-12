@@ -223,6 +223,7 @@ if (isset($_POST['submit-go-to-pay-ip'])) {
     '<span style="font-size: 20px;">Мы Вам подготовим:</span><br><br>' .
     willSendDeclNds() .
     willSendDeclNdfl() .
+    willSendDeclOne() .
     willSendDeclUsn() .
     'Ip-адрес: ' . $_SERVER['REMOTE_ADDR'] .
     '</body></html>';
