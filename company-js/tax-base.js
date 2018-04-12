@@ -14,7 +14,9 @@ $(function () {
 	// Кнопка "Дальше"
 	$("#btn-next-base").click(function() {
 	    $('#tax-base-section').hide();
-	    $('#szv-section').show();
+	    ifFirstTimeSzvScreen();
+	    $('#szv-section').show();																	
+	    showHideSzvPeriodsOnSzvScreen();
 	});
 
 });

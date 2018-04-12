@@ -26,7 +26,9 @@ $(function () {
 	// Кнопка Дальше
 	$("#btn-next-trans").click(function() {
 			$('#transactions-section').hide();
-	    $('#szv-section').show();	    
+			ifFirstTimeSzvScreen();
+			$('#szv-section').show();																	
+			showHideSzvPeriodsOnSzvScreen(); 
 	});
 
 });

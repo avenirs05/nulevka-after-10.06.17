@@ -21,7 +21,7 @@
     <script src="../events-general.js"></script>
     <script src="../company-js/tax-system.js"></script>
     <script src="../company-js/transactions.js"></script>
-    <script src="../company-js/one-face.js"></script>
+<!--     <script src="../company-js/one-face.js"></script> -->
     <script src="../company-js/tax-base.js"></script>
     <script src="../company-js/szv.js"></script>
     <script src="../company-js/will-send.js"></script>

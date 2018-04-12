@@ -72,29 +72,13 @@ $(function () {
 			if ( $('#simple').prop('checked') ) {
 						$('#tax-system-section').hide();
 
-						if ( noCheckedFourQuart() === true ) {
-									$('#szv-section').show();
+						if (noCheckedFourQuart() === true) {
+									ifFirstTimeSzvScreen();
+									$('#szv-section').show();																	
+									showHideSzvPeriodsOnSzvScreen();
 						} else $('#tax-base-section').show();
 			}
 	});
-
-	// $("#btn-next-tax-system").click(function() {
-	// 		var checkbox = '.div-quarters input:checkbox';
-	// 		var wrap = '.div-quarters';
-
-	// 		if ( $('#general').prop('checked') ) {
-	// 					$('#tax-system-section').hide();
-	// 					$('#transactions-section').show();
-	// 		}
-
-	// 		if ( $('#simple').prop('checked') ) {
-	// 					$('#tax-system-section').hide();
-
-	// 					if ( noCheckedFourQuart() === true ) {
-	// 								$('#one-face-section').show();
-	// 					} else $('#tax-base-section').show();
-	// 		}
-	// });
 
 
 	// Если все чекбоксы сняты, кнопка "Дальше" становится неактивной

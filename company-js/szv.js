@@ -11,6 +11,7 @@ $(function () {
 			$('#btn-next-szv').show();		
 			if ( $(this).prop('checked') ) {
 					$('#choice-period-text').show();
+					//console.log(szvCheckboxWrapIfSentYes);
 					$('#choice-period-text').after( showAllItemsOfSzvCheckboxWrapIfSentYes() );
 					makeCheckedSzvIfBtnBack();
 			}
@@ -45,13 +46,6 @@ $(function () {
 	});
 
 	
-	// $("#btn-back-szv").click(function() {		
-	// 		$('#szv-section').hide();
-	//     $('#one-face-section').show();	
-	//     szvCheckboxWrapIfSentYes = [];	
-	//     $('#quart-months-wrap').remove();		
-	// });
-
 	// Кнопка Дальше
 	$("#btn-next-szv").click(function() {
 			$('#szv-section').hide(); 

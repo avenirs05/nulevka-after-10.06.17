@@ -703,6 +703,34 @@
     }
 
 
+    //если попали в первый раз в секцию сзв
+    function ifFirstTimeSzvScreen () {
+        if ( $('#szv-quest-yes').prop('checked') == false &&  
+                 $('#szv-quest-no').prop('checked') == false) 
+        {           
+                    // формируем массив-html чекбоксов и их оберток, исходя из выбранных периодов в tax-system
+                    fillSzvCheckboxWrapIfSentYes(); 
+        }
+    }
+
+
+    function showHideSzvPeriodsOnSzvScreen () {
+        if ( $('#szv-quest-yes').prop('checked') ) {
+                    $('.quart-months-wrap').remove();
+                    fillSzvCheckboxWrapIfSentYes();
+
+                    // отображаем периоды, когда отчет сдавался
+                    $('#choice-period-text').after( showAllItemsOfSzvCheckboxWrapIfSentYes() );
+                    makeCheckedSzvIfBtnBack();                      
+        }
+        
+        if ( $('#szv-quest-no').prop('checked') ) {
+                    fillSzvCheckboxWrapIfSentYes();
+        }   
+    }
+
+
+
 
 
 
