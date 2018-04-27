@@ -610,27 +610,27 @@
 
         for (var i = 0; i < checkedQuartersTaxSystem.length; i++) {
                 if ( $('#general').prop('checked') ) {                    
-                    if ( $('#trans-no').prop('checked') && $('#one-face-yes').prop('checked') ) {
+                    if ( $('#trans-no').prop('checked') && $('#szv-quest-yes').prop('checked') ) {
                             finalSum += baseGeneral;
                     } 
 
-                    if ( $('#trans-yes').prop('checked') && $('#one-face-yes').prop('checked') ||
-                         $('#trans-no').prop('checked') && $('#one-face-no').prop('checked') )
+                    if ( $('#trans-yes').prop('checked') && $('#szv-quest-yes').prop('checked') ||
+                         $('#trans-no').prop('checked') && $('#szv-quest-no').prop('checked') )
                     {
                             finalSum += baseGeneral + 500;
                     } 
 
-                    if ( $('#trans-yes').prop('checked') && $('#one-face-no').prop('checked') ) {
+                    if ( $('#trans-yes').prop('checked') && $('#szv-quest-no').prop('checked') ) {
                             finalSum += baseGeneral + 1000;
                     }                  
                 }
 
                 if ( $('#simple').prop('checked') ) {                    
-                    if ( $('#one-face-yes').prop('checked') ) {
+                    if ( $('#szv-quest-yes').prop('checked') ) {
                             finalSum += baseSimple;
                     } 
 
-                    if ( $('#one-face-no').prop('checked') ) {
+                    if ( $('#szv-quest-no').prop('checked') ) {
                             finalSum += baseSimple + 500;
                     }
                 }                
@@ -641,11 +641,11 @@
 
         }
 
-        if ( $('.month:visible').length === 0 && 
-             $('#one-face-no').prop('checked')  ) 
-        {
-            finalSum -= 500;
-        }
+        // if ( $('.month:visible').length === 0 && 
+        //      $('#szv-quest-no').prop('checked')  ) 
+        // {
+        //     finalSum -= 500;
+        // }
 
         return separateThousands(finalSum);
     }

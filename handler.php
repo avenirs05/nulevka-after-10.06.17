@@ -73,7 +73,7 @@
 
 <?php 
 
-//d($_POST);
+d($_POST);
 
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -174,7 +174,6 @@ if (isset($_POST['submit-go-to-pay-ooo'])) {
     findUK() .
     showQuestTrans() .
     showBase() .
-    showOneFace() .
     showSzvQuest() .
     showCntWorkers() .
     showSnilsDir() .
